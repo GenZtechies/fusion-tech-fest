@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "./logo";
 import Link from "next/link";
 import { Button } from "../ui/button";
+import ArrowRightCircleFilledIcon from "../svg-icons/arrow-right-circle-filled-icon";
 
 const NAV_LINKS = [
     { name: "About", href: "/about" },
@@ -25,7 +26,9 @@ function Navbar() {
                 ))}
             </ul>
 
-            <Button>Register</Button>
+            <Button>
+                Register <ArrowRightCircleFilledIcon className="ml-2" />
+            </Button>
         </nav>
     );
 }

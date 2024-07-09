@@ -1,8 +1,9 @@
 import Navbar from "@/components/custom/navbar";
+import ArrowRightCircleFilledIcon from "@/components/svg-icons/arrow-right-circle-filled-icon";
 import CalendarIcon from "@/components/svg-icons/calendar-icon";
 import LocationIcon from "@/components/svg-icons/location-icon";
 import { Button } from "@/components/ui/button";
-import { LocateIcon, MapPin, MapPinIcon, XIcon } from "lucide-react";
+import { ArrowRightCircle, LocateIcon, MapPin, MapPinIcon, XIcon } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
@@ -36,7 +37,9 @@ function Home() {
                         }
                     </p>
 
-                    <Button className="mt-7">Register</Button>
+                    <Button className="mt-7">
+                        Register <ArrowRightCircleFilledIcon className="ml-2" />
+                    </Button>
 
                     <div className="hero-card lg:w-1/2 mx-auto p-5 flex items-center justify-between">
                         <div className="flex items-center gap-2.5">
