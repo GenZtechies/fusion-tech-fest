@@ -1,4 +1,19 @@
 @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
-  
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .heading-1 {
+        @apply uppercase mt-7 text-center text-5xl lg:text-6xl xl:text-7xl;
+        leading-trim: both;
+        text-edge: cap;
+        -webkit-text-stroke-width: 3;
+        -webkit-text-stroke-color: #d1a4ff;
+    }
+
+    .hero-card {
+        border-top: 1px solid #361566;
+        border-bottom: 1px solid #361566;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(244, 176, 233, 0.2) 50%, rgba(255, 255, 255, 0) 100%);
+    }
+}
