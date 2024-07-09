@@ -6,7 +6,7 @@ import { LocateIcon, MapPin, MapPinIcon, XIcon } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
-export function IconWrapper({ children }: { children: React.ReactNode }) {
+function IconWrapper({ children }: { children: React.ReactNode }) {
     return <div className="w-6 h-6 bg-[#361566] rounded-lg flex items-center justify-center">{children}</div>;
 }
 
