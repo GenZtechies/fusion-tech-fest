@@ -1,8 +1,8 @@
-import React from "react";
-import Logo from "./logo";
 import Link from "next/link";
-import { Button } from "../ui/button";
 import ArrowRightCircleFilledIcon from "../svg-icons/arrow-right-circle-filled-icon";
+import MenuHamburgerIcon from "../svg-icons/menu-hamburger-icon";
+import { Button } from "../ui/button";
+import Logo from "./logo";
 
 const NAV_LINKS = [
     { name: "About", href: "/about" },
@@ -15,21 +15,27 @@ const NAV_LINKS = [
 
 function Navbar() {
     return (
-        <nav className="flex items-center justify-between container border border-[#36156619] rounded-full bg-[#ffffff19] py-2.5 px-5 fixed top-9 left-1/2 -translate-x-1/2 w-full">
-            <Logo />
+        <div className="contained fixed top-9 left-1/2 -translate-x-1/2">
+            <nav className="flex items-center justify-between border border-[#36156619] rounded-full bg-[#ffffff19] py-2.5 px-5 ">
+                <Logo />
 
-            <ul className="flex items-center space-x-4">
-                {NAV_LINKS.map((link) => (
-                    <li key={link.name}>
-                        <Link href={link.href}>{link.name}</Link>
-                    </li>
-                ))}
-            </ul>
+                <ul className="hidden lg:flex items-center space-x-4">
+                    {NAV_LINKS.map((link) => (
+                        <li key={link.name} className="font-helvetica-compressed text-lg text-[#361566] tracking-wider">
+                            <Link href={link.href}>{link.name}</Link>
+                        </li>
+                    ))}
+                </ul>
 
-            <Button>
-                Register <ArrowRightCircleFilledIcon className="ml-2" />
-            </Button>
-        </nav>
+                <Button className="hidden lg:flex">
+                    Register <ArrowRightCircleFilledIcon className="ml-2" />
+                </Button>
+
+                <Button className="lg:hidden">
+                    Menu <MenuHamburgerIcon className="ml-2" />
+                </Button>
+            </nav>
+        </div>
     );
 }
 

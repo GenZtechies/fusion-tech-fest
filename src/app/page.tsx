@@ -17,12 +17,12 @@ function Home() {
             <Navbar />
 
             <div className="py-28">
-                <section className="container mx-auto mt-32 flex flex-col items-center">
+                <section className="contained mt-20 lg:mt-32 flex flex-col items-center">
                     <div className="flex justify-center items-center">
                         {["explore", "network", "build"].map((value, index) => (
                             <div key={index} className="flex items-center">
                                 {index > 0 && <div className="w-2.5 aspect-square rounded-full bg-[#FAD278]" />}
-                                <div className="bg-[#FAD278] text-[#361566] font-bold rounded-full py-2 px-4 uppercase">{value}</div>
+                                <div className="bg-[#FAD278] text-[#361566] font-bold rounded-full py-2 px-4 uppercase font-helvetica-compressed tracking-wider">{value}</div>
                             </div>
                         ))}
                     </div>
@@ -41,7 +41,7 @@ function Home() {
                         Register <ArrowRightCircleFilledIcon className="ml-2" />
                     </Button>
 
-                    <div className="hero-card lg:w-1/2 mx-auto p-5 flex items-center justify-between">
+                    <div className="hero-card lg:w-4/5 xl:w-1/2 mx-auto p-5 flex items-center justify-between mt-36">
                         <div className="flex items-center gap-2.5">
                             <IconWrapper>
                                 <CalendarIcon className="text-white" />
