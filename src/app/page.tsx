@@ -47,7 +47,7 @@ function Home() {
                                 <CalendarIcon className="text-white" />
                             </IconWrapper>
 
-                            <p>
+                            <p className="font-helvetica-compressed tracking-wider text-xl text-[#361566] leading-5">
                                 26th - 31st <br /> August, 2024
                             </p>
                         </div>
@@ -63,7 +63,7 @@ function Home() {
                                 <LocationIcon className="text-white" />
                             </IconWrapper>
 
-                            <p>
+                            <p className="font-helvetica-compressed tracking-wider text-xl text-[#361566] leading-5">
                                 Random Hall, <br /> Lagos, Nigeria
                             </p>
                         </div>
