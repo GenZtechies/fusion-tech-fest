@@ -16,7 +16,7 @@ function Home() {
         <main className="">
             <Navbar />
 
-            <div className="py-28">
+            <div className="py-28 bg-[#FFF3FD] bg-hero-stars">
                 <section className="contained mt-20 lg:mt-32 flex flex-col items-center">
                     <div className="flex justify-center items-center">
                         {["explore", "network", "build"].map((value, index) => (
@@ -41,7 +41,7 @@ function Home() {
                         Register <ArrowRightCircleFilledIcon className="ml-2" />
                     </Button>
 
-                    <div className="hero-card lg:w-4/5 xl:w-1/2 mx-auto p-5 flex items-center justify-between mt-36">
+                    <div className="hero-card lg:w-4/5 mx-auto p-5 flex items-center justify-between mt-36">
                         <div className="flex items-center gap-2.5">
                             <IconWrapper>
                                 <CalendarIcon className="text-white" />
