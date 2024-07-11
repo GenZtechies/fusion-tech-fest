@@ -15,7 +15,7 @@ const NAV_LINKS = [
 
 function Navbar() {
     return (
-        <div className="contained fixed top-9 left-1/2 -translate-x-1/2">
+        <div className="contained absolute top-9 left-1/2 -translate-x-1/2">
             <nav className="flex items-center justify-between border border-[#36156619] rounded-full bg-[#ffffff19] py-2.5 px-5 ">
                 <Logo />
 

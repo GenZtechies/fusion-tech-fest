@@ -41,18 +41,18 @@ function Home() {
                         Register <ArrowRightCircleFilledIcon className="ml-2" />
                     </Button>
 
-                    <div className="hero-card lg:w-4/5 mx-auto p-5 flex items-center justify-between mt-36">
+                    <div className="hero-card w-4/5 mx-auto p-5 flex items-center justify-between mt-36">
                         <div className="flex items-center gap-2.5">
                             <IconWrapper>
                                 <CalendarIcon className="text-white" />
                             </IconWrapper>
 
-                            <p className="font-helvetica-compressed tracking-wider text-xl text-[#361566] leading-5">
+                            <p className="font-helvetica-compressed tracking-wider text-base lg:text-xl text-[#361566] leading-5">
                                 26th - 31st <br /> August, 2024
                             </p>
                         </div>
 
-                        <div className="div flex items-center gap-2.5">
+                        <div className="div flex-row  space-y-1 lg:space-y-0 lg:flex items-center gap-2.5">
                             <Image src="/images/genz-logo.png" width={56} height={32} alt="genz logo" />
                             <XIcon size={24} />
                             <Image src="/images/code-space-logo.png" width={154} height={21} alt="code space logo" />
@@ -63,7 +63,7 @@ function Home() {
                                 <LocationIcon className="text-white" />
                             </IconWrapper>
 
-                            <p className="font-helvetica-compressed tracking-wider text-xl text-[#361566] leading-5">
+                            <p className="font-helvetica-compressed tracking-wider text-base lg:text-xl text-[#361566] leading-5">
                                 Random Hall, <br /> Lagos, Nigeria
                             </p>
                         </div>
