@@ -1,0 +1,6 @@
+{
+    "editor.formatOnSave": true,
+    "prettier.requireConfig": true,
+    "eslint.codeActionsOnSave.rules": null,
+    "cSpell.words": ["cashblast", "NUBAN", "PAYSTACK", "Sinzu", "transferrecipient", "ussd"]
+}

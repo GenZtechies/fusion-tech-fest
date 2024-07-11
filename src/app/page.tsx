@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRightCircle, LocateIcon, MapPin, MapPinIcon, XIcon } from "lucide-react";
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 
 function IconWrapper({ children }: { children: React.ReactNode }) {
     return <div className="w-6 h-6 bg-[#361566] rounded-lg flex items-center justify-center">{children}</div>;
@@ -52,7 +53,7 @@ function Home() {
                             </p>
                         </div>
 
-                        <div className="div flex-row  space-y-1 lg:space-y-0 lg:flex items-center gap-2.5">
+                        <div className="flex flex-col lg:flex-row space-y-1 lg:space-y-0 items-center gap-2.5">
                             <Image src="/images/genz-logo.png" width={56} height={32} alt="genz logo" />
                             <XIcon size={24} />
                             <Image src="/images/code-space-logo.png" width={154} height={21} alt="code space logo" />
@@ -70,6 +71,32 @@ function Home() {
                     </div>
                 </section>
             </div>
+
+            <footer className="bg-[#FFF3FD] px-20 h-full py-8">
+                <div className="flex justify-center items-center">
+                    <Image src="/images/logo.svg" alt="Logo" width={872} height={337} />
+                </div>
+
+                <div className="flex flex-col lg:flex lg:justify-between mt-10">
+                    <h1 className="text-sm text-center lg:text-left">&copy; 2024 GenZtechies X Codespace | All rights reserved.</h1>
+                    <div className="order-first lg:order-last">
+                        <ul className="flex  justify-center lg:justify-start space-x-4 uppercase">
+                            <Link href="/">
+                                <li>initiatives</li>
+                            </Link>
+                            <Link href="/">
+                                <li>Donate</li>
+                            </Link>
+                            <Link href="/">
+                                <li>Gallery</li>
+                            </Link>
+                            <Link href="/">
+                                <li>press</li>
+                            </Link>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
         </main>
     );
 }
