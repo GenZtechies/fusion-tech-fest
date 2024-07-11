@@ -9,6 +9,7 @@ import Image from "next/image";
 import React from "react";
 import SectionLabel from "@/components/custom/section-label";
 import Link from "next/link";
+import AboutImage from "../../public/images/about.png";
 import FacebookIcon from "@/components/svg-icons/facebook-icon";
 import InstagramIcon from "@/components/svg-icons/instagram-icon";
 import TelegramIcon from "@/components/svg-icons/telegram-icon";
@@ -87,6 +88,10 @@ function Home() {
                 <p className="text-[#361566] text-justify">
                     Fusion Tech Fest is a pioneering event hosted by <span className="font-bold">GenZTechies</span> and <span className="font-bold">Code Space</span> to unite GenZ tech enthusiasts in a collaborative endeavor to push the boundaries of innovation and technology. Under the theme <span className="font-bold">&quot;Collaborative Minds, Limitless Possibilities,&quot;</span> we aim to showcase the transformative power of teamwork and innovative thinking in tech. There will be a virtual hackathonfrom <span className="font-bold">August 26th</span>to <span className="font-bold">30th</span> and a one-day conference on <span className="font-bold">August 31st</span> will serve as a beacon for aspiring tech pioneers and seasoned professionals alike.
                 </p>
+
+                <div className="flex justify-center items-center">
+                    <Image src={AboutImage} alt="About" />
+                </div>
             </div>
 
             <div className="my-10">
