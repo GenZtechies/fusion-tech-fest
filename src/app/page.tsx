@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRightCircle, LocateIcon, MapPin, MapPinIcon, XIcon } from "lucide-react";
 import Image from "next/image";
 import React from "react";
+import SectionLabel from "@/components/custom/section-label";
 import Link from "next/link";
 import FacebookIcon from "@/components/svg-icons/facebook-icon";
 import InstagramIcon from "@/components/svg-icons/instagram-icon";
@@ -74,6 +75,34 @@ function Home() {
                         </div>
                     </div>
                 </section>
+            </div>
+
+            <div className="my-10">
+                <SectionLabel text="SPONSORS AND PARTNERS" />
+            </div>
+
+            <div className="my-10">
+                <SectionLabel text="About Us" />
+            </div>
+
+            <div className="my-10">
+                <SectionLabel text="Event Schedule" />
+            </div>
+
+            <div className="my-10">
+                <SectionLabel text="Keynote Speakers" />
+            </div>
+
+            <div className="my-10">
+                <SectionLabel text="Judges" />
+            </div>
+
+            <div className="my-10">
+                <SectionLabel text="faqs" />
+            </div>
+
+            <div className="my-10">
+                <SectionLabel text="Gallery" />
             </div>
 
             <footer className="bg-[#FFF3FD] px-20 h-full py-10">
