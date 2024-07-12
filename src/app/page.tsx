@@ -21,7 +21,7 @@ import FacebookIconAlt from "@/components/svg-icons/facebook-icon-alt";
 import InstagramIconAlt from "@/components/svg-icons/instagram-icon-alt";
 import XTwitterIconAlt from "@/components/svg-icons/x-twitter-icon-alt";
 import TelegramIconAlt from "@/components/svg-icons/telegram-icon-alt";
-import { eventScheduleList, Faqs, FaqTabs, SponsorsLogo } from "@/lib/data";
+import { eventScheduleList, Faqs, FaqTabs, SpeakersPhotos, SponsorsLogo } from "@/lib/data";
 import PinIcon from "@/components/svg-icons/pin-icon";
 
 function IconWrapper({ children }: { children: React.ReactNode }) {
@@ -144,7 +144,7 @@ function Home() {
                 </div>
                 <div className="mt-20 space-y-4">
                     {eventScheduleList.map((item, index) => (
-                        <div key={index} className="bg-[#FFFAF0] border p-4 border-[#361566] rounded-md grid grid-cols-2 md:grid-cols-[auto_auto_auto_1fr] md:gap-14 items-center">
+                        <div key={index} className="bg-[#FFFAF0] border p-4 border-[#361566] rounded-md grid grid-cols-2 lg:grid-cols-[auto_auto_auto_1fr] lg:gap-14 items-center">
                             <div className="flex gap-3">
                                 <div className="p-[4px] bg-[#361566] rounded-md h-fit my-auto">
                                     <CalendarIcon className="text-white text-[24px]" />
@@ -171,12 +171,22 @@ function Home() {
                 </div>
             </div>
 
-            <div id="speakers" className="my-10">
+            <div id="speakers" className="my-10 contained">
                 <SectionLabel text="Keynote Speakers" />
+                <div className="flex flex-wrap gap-5">
+                    {SpeakersPhotos.map((sponsor, i) => (
+                        <Image key={i} src={sponsor.photo} alt="sponsors" height={350} width={314} className="aspect-[0.89] max-w-fit mx-auto" />
+                    ))}
+                </div>
             </div>
 
-            <div id="judges" className="my-10">
+            <div id="judges" className="my-10 contained">
                 <SectionLabel text="Judges" />
+                <div className="flex flex-wrap gap-5">
+                    {SpeakersPhotos.map((sponsor, i) => (
+                        <Image key={i} src={sponsor.photo} alt="sponsors" height={350} width={314} className="aspect-[0.89] max-w-fit mx-auto" />
+                    ))}
+                </div>
             </div>
 
             <div id="faqs" className="bg-[#F2FAFF] px-6 md:px-14 lg:px-32 pb-16">
@@ -192,7 +202,7 @@ function Home() {
                     </div>
                 </div>
 
-                <div className="mt-10">
+                <div className="mt-10 max-w-[1064px] mx-auto">
                     {Faqs.map((faq, index) => {
                         if (faq.tab !== activeFaqTab) return null;
 
