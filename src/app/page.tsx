@@ -94,7 +94,7 @@ function Home() {
                 </section>
             </div>
 
-            <div className="my-10 contained px-6 md:px-20 lg:px-48 pb-16">
+            <div className="bg-[#FFFBF2] my-10 contained px-4 md:px-20 lg:px-48 pb-16">
                 <SectionLabel text="SPONSORS AND PARTNERS" />
                 <div className="flex flex-wrap justify-center gap-8">
                     {SponsorsLogo.map((sponsor, index) => (
@@ -102,6 +102,7 @@ function Home() {
                     ))}
                 </div>
             </div>
+
             <div className="bg-[#FFFBF2]">
                 <div className="px-6 contained md:px-20 lg:px-48 pb-16">
                     <SectionLabel text="About Us" />
