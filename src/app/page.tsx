@@ -82,7 +82,7 @@ function Home() {
                 <SectionLabel text="SPONSORS AND PARTNERS" />
             </div>
 
-            <div className="bg-[#FFFBF2] px-14 lg:px-48">
+            <div className="bg-[#FFFBF2] px-6 md:px-20 lg:px-48 pb-16">
                 <SectionLabel text="About Us" />
 
                 <p className="text-[#361566] text-justify">
@@ -90,7 +90,7 @@ function Home() {
                 </p>
 
                 <div className="flex justify-center items-center mt-10">
-                    <Image src={AboutImage} alt="About" />
+                    <Image className="rounded-lg text-[#361566] border border-[#361566] shadow-[3px_6px_0px_0px_#361566] hover:shadow-[3px_6px_0px_0px_#421683]" src={AboutImage} alt="About" />
                 </div>
             </div>
 
