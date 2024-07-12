@@ -1,3 +1,5 @@
+"use client";
+
 import Navbar from "@/components/custom/navbar";
 import ArrowRightCircleFilledIcon from "@/components/svg-icons/arrow-right-circle-filled-icon";
 import CalendarIcon from "@/components/svg-icons/calendar-icon";
@@ -23,7 +25,15 @@ function IconWrapper({ children }: { children: React.ReactNode }) {
     return <div className="w-6 h-6 bg-[#361566] rounded-lg flex items-center justify-center">{children}</div>;
 }
 
+const faqTabs = [
+    { name: "General", id: "general" },
+    { name: "Hackathon", id: "hackathon" },
+    { name: "Conference", id: "conference" },
+]
+
 function Home() {
+    const [activeFaqTab, setActiveFaqTab] = React.useState(faqTabs[0].id);
+
     return (
         <main className="">
             <Navbar />
@@ -118,8 +128,22 @@ function Home() {
                 <SectionLabel text="Judges" />
             </div>
 
-            <div className="my-10">
+            <div className="bg-[#F2FAFF] px-6 md:px-20 lg:px-48 pb-16">
                 <SectionLabel text="faqs" />
+
+                <div className="flex items-center justify-center">
+                    <div className="flex space-x-2 border-2 rounded-3xl border-[#361566] w-fit px-1 py-1">
+                        {faqTabs.map((tab, index) => (
+                            <button
+                                key={index}
+                                onClick={() => setActiveFaqTab(tab.id)}
+                                className={`text-center uppercase font-helvetica-compressed text-xl md:text-2xl text-[#361566] px-3 md:px-5 py-0.5 ${activeFaqTab === tab.id && "bg-[#F4B0E9] rounded-3xl border-2 border-[#361566]"}`}
+                            >
+                                {tab.name}
+                            </button>
+                        ))}
+                    </div>
+                </div>
             </div>
 
             <div className="my-10">
