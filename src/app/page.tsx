@@ -21,7 +21,7 @@ import FacebookIconAlt from "@/components/svg-icons/facebook-icon-alt";
 import InstagramIconAlt from "@/components/svg-icons/instagram-icon-alt";
 import XTwitterIconAlt from "@/components/svg-icons/x-twitter-icon-alt";
 import TelegramIconAlt from "@/components/svg-icons/telegram-icon-alt";
-import { eventScheduleList, Faqs, FaqTabs, SpeakersPhotos, SponsorsLogo } from "@/lib/data";
+import { EventScheduleList, EventDaysList, Faqs, FaqTabs, SpeakersPhotos, SponsorsLogo } from "@/lib/data";
 import PinIcon from "@/components/svg-icons/pin-icon";
 
 function IconWrapper({ children }: { children: React.ReactNode }) {
@@ -123,11 +123,7 @@ function Home() {
                 <SectionLabel text="Event Schedule" />
                 <div className="contained py-12">
                     <div className="flex flex-col space-y-10 lg:flex-row lg:space-x-8 lg:space-y-0">
-                        {[
-                            { date: "26th", fullDate: "August, 2024", event: "HACKATHON STARTS" },
-                            { date: "30th", fullDate: "August, 2024", event: "HACKATHON ENDS" },
-                            { date: "31st", fullDate: "August, 2024", event: "CONFERENCE DAY" },
-                        ].map((item, index) => (
+                        {EventDaysList.map((item, index) => (
                             <div key={index} className="border border-[#361566] bg-[#FFCF7B] rounded-lg p-4 shadow-event space-y-5 w-full md:min-w-[275px] relative">
                                 <div className="flex gap-3">
                                     <div className="p-[4px] bg-[#361566] rounded-md h-fit my-auto">
@@ -144,7 +140,7 @@ function Home() {
                         ))}
                     </div>
                     <div className="mt-20 space-y-4">
-                        {eventScheduleList.map((item, index) => (
+                        {EventScheduleList.map((item, index) => (
                             <div key={index} className="bg-[#FFFAF0] border p-4 border-[#361566] rounded-md grid grid-cols-2 lg:grid-cols-[auto_auto_auto_1fr] lg:gap-14 items-center">
                                 <div className="flex gap-3">
                                     <div className="p-[4px] bg-[#361566] rounded-md h-fit my-auto">
