@@ -1,20 +1,21 @@
 import KoraLogo from "../../public/images/sponsors/kora-logo.png";
 import QuineLogo from "../../public/images/sponsors/quine-logo.png";
 import VercelLogo from "../../public/images/sponsors/vercel-logo.png";
-import ChimoneyLogo from "../../public/images/sponsors/chimoney-logo.png";
 import TrefordLogo from "../../public/images/sponsors/treford-logo.png";
+import ChimoneyLogo from "../../public/images/sponsors/chimoney-logo.png";
 import PaystackLogo from "../../public/images/sponsors/paystack-logo.png";
 import NexascaleLogo from "../../public/images/sponsors/nexascale-logo.png";
 import IngressiveLogo from "../../public/images/sponsors/ingressive-logo.png";
 import innovationLabLogo from "../../public/images/sponsors/innovation-lab-logo.png";
-import jude from "../../public/images/jude-dike.png";
-import ighodaro from "../../public/images/ighodaro-alexandra.png";
-import victor from "../../public/images/fatanmi-victor.png";
-import rasheeed from "../../public/images/rasheed-aro.png";
-import eunice from "../../public/images/eunice-azu.png";
-import uche from "../../public/images/travis-uche.png";
-import doughlas from "../../public/images/douglas-kendyson.png";
+
 import asikpo from "../../public/images/asikpo.png";
+import jude from "../../public/images/jude-dike.png";
+import uche from "../../public/images/travis-uche.png";
+import eunice from "../../public/images/eunice-azu.png";
+import rasheeed from "../../public/images/rasheed-aro.png";
+import victor from "../../public/images/fatanmi-victor.png";
+import doughlas from "../../public/images/douglas-kendyson.png";
+import ighodaro from "../../public/images/ighodaro-alexandra.png";
 
 export const SponsorsLogo = [
     { name: "Quine", logo: QuineLogo },
@@ -27,6 +28,7 @@ export const SponsorsLogo = [
     { name: "Treford", logo: TrefordLogo },
     { name: "Nexascale", logo: NexascaleLogo },
 ];
+
 export const SpeakersPhotos = [
     { name: "Jude", photo: jude },
     { name: "Ighodaro", photo: ighodaro },
