@@ -20,6 +20,9 @@ const config: Config = {
                 "hero-stars": "url('/images/hero-stars.png')",
                 "footer-backdrop": "url('/images/footer-backdrop.svg')",
             },
+            boxShadow: {
+                event: "6px 10px 0px 0px #361566",
+            },
         },
     },
     plugins: [],

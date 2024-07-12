@@ -20,6 +20,7 @@ import FacebookIconAlt from "@/components/svg-icons/facebook-icon-alt";
 import InstagramIconAlt from "@/components/svg-icons/instagram-icon-alt";
 import XTwitterIconAlt from "@/components/svg-icons/x-twitter-icon-alt";
 import TelegramIconAlt from "@/components/svg-icons/telegram-icon-alt";
+import PinIcon from "@/components/svg-icons/pin-icon";
 
 function IconWrapper({ children }: { children: React.ReactNode }) {
     return <div className="w-6 h-6 bg-[#361566] rounded-lg flex items-center justify-center">{children}</div>;
@@ -29,7 +30,7 @@ const faqTabs = [
     { name: "General", id: "general" },
     { name: "Hackathon", id: "hackathon" },
     { name: "Conference", id: "conference" },
-]
+];
 
 function Home() {
     const [activeFaqTab, setActiveFaqTab] = React.useState(faqTabs[0].id);
@@ -93,7 +94,7 @@ function Home() {
                 </section>
             </div>
 
-            <div className="my-10 contained">
+            <div className="my-10 contained px-6 md:px-20 lg:px-48 pb-16">
                 <SectionLabel text="SPONSORS AND PARTNERS" />
                 <div className="flex flex-wrap justify-center gap-8">
                     {["/images/quine.png", "/images/paystack-logo.png", "/images/chimoney-logo.png", "/images/innovation-lab.png", "/images/vercel-logo.png", "/images/kora-logo.png", "/images/ingressive-logo.png", "/images/treford-logo.png", "/images/nexascale-logo.png"].map((src, index) => (
@@ -101,23 +102,44 @@ function Home() {
                     ))}
                 </div>
             </div>
+            <div className="bg-[#FFFBF2]">
+                <div className="px-6 contained md:px-20 lg:px-48 pb-16">
+                    <SectionLabel text="About Us" />
 
-            <div className="bg-[#FFFBF2] px-6 md:px-20 lg:px-48 pb-16">
-                <SectionLabel text="About Us" />
+                    <p className="text-[#361566] text-justify font-helvetica">
+                        Fusion Tech Fest is a pioneering event hosted by <span className="font-bold">GenZTechies</span> and <span className="font-bold">Code Space</span> to unite GenZ tech enthusiasts in a collaborative endeavor to push the boundaries of innovation and technology. Under the theme{" "}
+                        <span className="font-bold">&quot;Collaborative Minds, Limitless Possibilities,&quot;</span> we aim to showcase the transformative power of teamwork and innovative thinking in tech. There will be a virtual hackathonfrom <span className="font-bold">August 26th</span>to <span className="font-bold">30th</span> and a one-day
+                        conference on <span className="font-bold">August 31st</span> will serve as a beacon for aspiring tech pioneers and seasoned professionals alike.
+                    </p>
 
-                <p className="text-[#361566] text-justify font-helvetica">
-                    Fusion Tech Fest is a pioneering event hosted by <span className="font-bold">GenZTechies</span> and <span className="font-bold">Code Space</span> to unite GenZ tech enthusiasts in a collaborative endeavor to push the boundaries of innovation and technology. Under the theme{" "}
-                    <span className="font-bold">&quot;Collaborative Minds, Limitless Possibilities,&quot;</span> we aim to showcase the transformative power of teamwork and innovative thinking in tech. There will be a virtual hackathonfrom <span className="font-bold">August 26th</span>to <span className="font-bold">30th</span> and a one-day
-                    conference on <span className="font-bold">August 31st</span> will serve as a beacon for aspiring tech pioneers and seasoned professionals alike.
-                </p>
-
-                <div className="flex justify-center items-center mt-10">
-                    <Image className="rounded-lg text-[#361566] border border-[#361566] shadow-[3px_6px_0px_0px_#361566] hover:shadow-[3px_6px_0px_0px_#421683]" src={AboutImage} alt="About" />
+                    <div className="flex justify-center items-center mt-10">
+                        <Image className="rounded-lg text-[#361566] border border-[#361566] shadow-[3px_6px_0px_0px_#361566] hover:shadow-[3px_6px_0px_0px_#421683]" src={AboutImage} alt="About" />
+                    </div>
                 </div>
             </div>
-
-            <div className="my-10">
+            <div className="my-10 contained px-6 md:px-20 lg:px-48 pb-16">
                 <SectionLabel text="Event Schedule" />
+                <div className="grid md:gap-[70px] md:grid-cols-3 gap-12">
+                    {[
+                        { date: "26th", fullDate: "August, 2024", event: "HACKATHON STARTS" },
+                        { date: "30th", fullDate: "August, 2024", event: "HACKATHON ENDS" },
+                        { date: "31st", fullDate: "August, 2024", event: "CONFERENCE DAY" },
+                    ].map((item, index) => (
+                        <div key={index} className="border border-[#361566] bg-[#FFCF7B] rounded-lg p-4 shadow-event space-y-5 w-full md:min-w-[275px] relative">
+                            <div className="flex gap-3">
+                                <div className="p-[4px] bg-[#361566] rounded-md h-fit my-auto">
+                                    <CalendarIcon className="text-white text-[24px]" />
+                                </div>
+                                <div className="font-helvetica-compressed text-[#361566] text-xl">
+                                    <p>{item.date}</p>
+                                    <p className="-mt-2">{item.fullDate}</p>
+                                </div>
+                            </div>
+                            <h4 className="font-helvetica-compressed text-[#361566] text-4xl">{item.event}</h4>
+                            <PinIcon className="absolute -right-6 -top-14" />
+                        </div>
+                    ))}
+                </div>
             </div>
 
             <div className="my-10">
@@ -134,11 +156,7 @@ function Home() {
                 <div className="flex items-center justify-center">
                     <div className="flex space-x-2 border-2 rounded-3xl border-[#361566] w-fit px-1 py-1">
                         {faqTabs.map((tab, index) => (
-                            <button
-                                key={index}
-                                onClick={() => setActiveFaqTab(tab.id)}
-                                className={`text-center uppercase font-helvetica-compressed text-xl md:text-2xl text-[#361566] px-3 md:px-5 py-0.5 ${activeFaqTab === tab.id && "bg-[#F4B0E9] rounded-3xl border-2 border-[#361566]"}`}
-                            >
+                            <button key={index} onClick={() => setActiveFaqTab(tab.id)} className={`text-center uppercase f text-xl md:text-2xl text-[#361566] px-3 md:px-5 py-0.5 ${activeFaqTab === tab.id && "bg-[#F4B0E9] rounded-3xl border-2 border-[#361566]"}`}>
                                 {tab.name}
                             </button>
                         ))}
