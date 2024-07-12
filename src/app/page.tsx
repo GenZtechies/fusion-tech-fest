@@ -82,14 +82,14 @@ function Home() {
                 <SectionLabel text="SPONSORS AND PARTNERS" />
             </div>
 
-            <div className="bg-[#FFFBF2]">
+            <div className="bg-[#FFFBF2] px-14 lg:px-48">
                 <SectionLabel text="About Us" />
 
                 <p className="text-[#361566] text-justify">
                     Fusion Tech Fest is a pioneering event hosted by <span className="font-bold">GenZTechies</span> and <span className="font-bold">Code Space</span> to unite GenZ tech enthusiasts in a collaborative endeavor to push the boundaries of innovation and technology. Under the theme <span className="font-bold">&quot;Collaborative Minds, Limitless Possibilities,&quot;</span> we aim to showcase the transformative power of teamwork and innovative thinking in tech. There will be a virtual hackathonfrom <span className="font-bold">August 26th</span>to <span className="font-bold">30th</span> and a one-day conference on <span className="font-bold">August 31st</span> will serve as a beacon for aspiring tech pioneers and seasoned professionals alike.
                 </p>
 
-                <div className="flex justify-center items-center">
+                <div className="flex justify-center items-center mt-10">
                     <Image src={AboutImage} alt="About" />
                 </div>
             </div>
