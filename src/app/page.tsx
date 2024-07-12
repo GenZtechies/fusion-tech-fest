@@ -88,15 +88,22 @@ function Home() {
                 </section>
             </div>
 
-            <div className="my-10">
+            <div className="my-10 contained">
                 <SectionLabel text="SPONSORS AND PARTNERS" />
+                <div className="flex flex-wrap justify-center gap-8">
+                    {["/images/quine.png", "/images/paystack-logo.png", "/images/chimoney-logo.png", "/images/innovation-lab.png", "/images/vercel-logo.png", "/images/kora-logo.png", "/images/ingressive-logo.png", "/images/treford-logo.png", "/images/nexascale-logo.png"].map((src, index) => (
+                        <Image key={index} src={src} width={165} height={64} alt="Sponsors" className="object-contain" />
+                    ))}
+                </div>
             </div>
 
             <div className="bg-[#FFFBF2] px-6 md:px-14 lg:px-32 pb-16">
                 <SectionLabel text="About Us" />
 
                 <p className="text-[#361566] text-justify font-helvetica">
-                    Fusion Tech Fest is a pioneering event hosted by <span className="font-bold">GenZTechies</span> and <span className="font-bold">Code Space</span> to unite GenZ tech enthusiasts in a collaborative endeavor to push the boundaries of innovation and technology. Under the theme <span className="font-bold">&quot;Collaborative Minds, Limitless Possibilities,&quot;</span> we aim to showcase the transformative power of teamwork and innovative thinking in tech. There will be a virtual hackathonfrom <span className="font-bold">August 26th</span>to <span className="font-bold">30th</span> and a one-day conference on <span className="font-bold">August 31st</span> will serve as a beacon for aspiring tech pioneers and seasoned professionals alike.
+                    Fusion Tech Fest is a pioneering event hosted by <span className="font-bold">GenZTechies</span> and <span className="font-bold">Code Space</span> to unite GenZ tech enthusiasts in a collaborative endeavor to push the boundaries of innovation and technology. Under the theme{" "}
+                    <span className="font-bold">&quot;Collaborative Minds, Limitless Possibilities,&quot;</span> we aim to showcase the transformative power of teamwork and innovative thinking in tech. There will be a virtual hackathonfrom <span className="font-bold">August 26th</span>to <span className="font-bold">30th</span> and a one-day
+                    conference on <span className="font-bold">August 31st</span> will serve as a beacon for aspiring tech pioneers and seasoned professionals alike.
                 </p>
 
                 <div className="flex justify-center items-center mt-10 w-full">
@@ -157,7 +164,9 @@ function Home() {
                 <div className="bg-footer-backdrop bg-cover w-full rounded-xl py-12 lg:py-24 px-4 md:px-8 lg:px-10 mt-16">
                     <div className="flex flex-col lg:flex-row justify-between items-center">
                         <div className="lg:w-1/2">
-                            <h1 className="text-center lg:text-left text-white text-6xl lg:text-7xl uppercase font-helvetica-compressed">Join the <span className="text-[#F4B0E9]">community</span> and <span className="text-[#F4B0E9]">Network</span> with like minds</h1>
+                            <h1 className="text-center lg:text-left text-white text-6xl lg:text-7xl uppercase font-helvetica-compressed">
+                                Join the <span className="text-[#F4B0E9]">community</span> and <span className="text-[#F4B0E9]">Network</span> with like minds
+                            </h1>
                             <div className="flex items-center justify-center lg:items-start lg:justify-start">
                                 <div className="bg-white/30 px-4 py-2.5 w-fit rounded-3xl mt-4 lg:mt-8">
                                     <div className="flex items-center justify-center space-x-3">
@@ -225,7 +234,7 @@ function Home() {
                     </div>
                 </div>
             </footer>
-        </main >
+        </main>
     );
 }
 
