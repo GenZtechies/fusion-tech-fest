@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRightCircle, LocateIcon, MapPin, MapPinIcon, XIcon } from "lucide-react";
 import Image from "next/image";
 import React from "react";
+import Logo from "../../public/images/logo.svg";
 import SectionLabel from "@/components/custom/section-label";
 import Link from "next/link";
 import AboutImage from "../../public/images/about.png";
@@ -200,8 +201,8 @@ function Home() {
                     </div>
                 </div>
 
-                <div className="flex justify-center items-center mt-20">
-                    <Image src="/images/logo.svg" alt="Logo" width={872} height={337} />
+                <div className="flex justify-center items-center mt-20 w-full">
+                    <Image src={Logo} alt="Logo" width={872} />
                 </div>
 
                 <div className="flex flex-col lg:flex-row lg:justify-between items-center mt-14">
