@@ -21,7 +21,7 @@ import FacebookIconAlt from "@/components/svg-icons/facebook-icon-alt";
 import InstagramIconAlt from "@/components/svg-icons/instagram-icon-alt";
 import XTwitterIconAlt from "@/components/svg-icons/x-twitter-icon-alt";
 import TelegramIconAlt from "@/components/svg-icons/telegram-icon-alt";
-import { EventScheduleList, EventDaysList, Faqs, FaqTabs, SpeakersPhotos, SponsorsLogo } from "@/lib/data";
+import { Speakers, EventScheduleList, EventDaysList, Faqs, FaqTabs, SpeakersPhotos, SponsorsLogo } from "@/lib/data";
 import PinIcon from "@/components/svg-icons/pin-icon";
 
 function IconWrapper({ children }: { children: React.ReactNode }) {
@@ -169,12 +169,27 @@ function Home() {
                 </div>
             </div>
 
-            <div id="speakers" className="py-12 pb-24 contained">
+            <div id="speakers" className="py-12 pb-24">
                 <SectionLabel text="Keynote Speakers" />
-                <div className="flex flex-wrap gap-5">
-                    {SpeakersPhotos.map((sponsor, i) => (
-                        <Image key={i} src={sponsor.photo} alt="sponsors" height={350} width={314} className="aspect-[0.89] max-w-fit mx-auto" />
-                    ))}
+                <div className="contained mx-auto">
+                    <div className="grid grid-cols-4 gap-y-8 gap-x-6 place-items-center">
+                        {Speakers.map((speaker, index) => (
+                            <div
+                                style={{
+                                    backgroundImage: `url(${speaker.photo.src})`,
+                                    paddingTop: '100%', // This makes the height equal to the width
+                                    position: 'relative',
+                                }}
+                                key={index}
+                                className="w-full rounded-md flex bg-cover bg-center col-span-4 md:col-span-2 lg:col-span-1 border border-[#361566] shadow-[3px_6px_0px_0px_#361566] hover:shadow-[3px_6px_0px_0px_#421683]"
+                            >
+                                <div>
+                                    <h1>{speaker.name}</h1>
+                                    <h1>{speaker.title}</h1>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
 
