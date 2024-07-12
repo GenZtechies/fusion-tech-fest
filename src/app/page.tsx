@@ -38,7 +38,7 @@ function Home() {
                         fusion tech fest 2024
                     </h1>
 
-                    <p className="mt-10 lg:text-xl text-center xl:px-48 mx-auto text-[#361566]">
+                    <p className="mt-10 lg:text-xl text-center xl:px-48 mx-auto text-[#361566] font-helvetica">
                         {
                             "Get ready to dive into the future at Fusion Tech Fest! Join us for an unforgettable experience where groundbreaking innovation, cutting-edge creativity, and dynamic collaboration converge. Immerse yourself in a world of technological marvels, connect with industry leaders, and be inspired by visionary thinkers. Don't miss this chance to be part of an event that will shape the future of technology."
                         }
@@ -85,7 +85,7 @@ function Home() {
             <div className="bg-[#FFFBF2] px-6 md:px-20 lg:px-48 pb-16">
                 <SectionLabel text="About Us" />
 
-                <p className="text-[#361566] text-justify">
+                <p className="text-[#361566] text-justify font-helvetica">
                     Fusion Tech Fest is a pioneering event hosted by <span className="font-bold">GenZTechies</span> and <span className="font-bold">Code Space</span> to unite GenZ tech enthusiasts in a collaborative endeavor to push the boundaries of innovation and technology. Under the theme <span className="font-bold">&quot;Collaborative Minds, Limitless Possibilities,&quot;</span> we aim to showcase the transformative power of teamwork and innovative thinking in tech. There will be a virtual hackathonfrom <span className="font-bold">August 26th</span>to <span className="font-bold">30th</span> and a one-day conference on <span className="font-bold">August 31st</span> will serve as a beacon for aspiring tech pioneers and seasoned professionals alike.
                 </p>
 
@@ -120,7 +120,7 @@ function Home() {
                 </div>
 
                 <div className="flex flex-col lg:flex-row lg:justify-between items-center mt-14">
-                    <h1 className="text-[#361566] text-sm text-center mt-4 lg:text-left lg:mt-0">&copy; 2024 GenZtechies X Codespace | All rights reserved.</h1>
+                    <h1 className="font-helvetica text-[#361566] text-sm text-center mt-4 lg:text-left lg:mt-0">&copy; 2024 GenZtechies X Codespace | All rights reserved.</h1>
                     <div className="flex flex-col items-center lg:items-end order-first lg:order-last">
                         <ul className="flex text-[#361566] font-helvetica-compressed text-lg tracking-wide justify-center lg:justify-start space-x-4 uppercase">
                             <Link href="/">

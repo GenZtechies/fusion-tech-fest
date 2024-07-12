@@ -5,6 +5,7 @@ const config: Config = {
     theme: {
         extend: {
             fontFamily: {
+                "helvetica": ["var(--font-helvetica)"],
                 "helvetica-compressed": ["var(--font-helvetica-compressed)"],
             },
             colors: {

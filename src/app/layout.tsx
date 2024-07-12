@@ -12,6 +12,12 @@ const helveticaCompressed = localFont({
     variable: "--font-helvetica-compressed",
 });
 
+const helvetica = localFont({
+    src: "../../public/fonts/helvetica.ttf",
+    display: "swap",
+    variable: "--font-helvetica",
+});
+
 export const metadata: Metadata = {
     title: "Fusion Tech Fest 2024",
     description: "Get ready to dive into the future at Fusion Tech Fest! Join us for an unforgettable experience where groundbreaking innovation, cutting-edge creativity, and dynamic collaboration converge. Immerse yourself in a world of technological marvels, connect with industry leaders, and be inspired by visionary thinkers. Don't miss this chance to be part of an event that will shape the future of technology.",
@@ -24,7 +30,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en" className={cn(helveticaCompressed.variable)}>
-            <body className={inter.className}>{children}</body>
+            <body className={helvetica.className}>{children}</body>
         </html>
     );
 }
