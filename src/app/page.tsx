@@ -121,7 +121,7 @@ function Home() {
                 <SectionLabel text="Judges" />
             </div>
 
-            <div className="bg-[#FFFBF2] px-6 md:px-20 lg:px-48 pb-16">
+            <div className="bg-[#F2FAFF] px-6 md:px-20 lg:px-48 pb-16">
                 <SectionLabel text="faqs" />
 
                 <div className="flex items-center justify-center">
