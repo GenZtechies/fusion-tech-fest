@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRightCircle, LocateIcon, MapPin, MapPinIcon, XIcon } from "lucide-react";
 import Image from "next/image";
 import React from "react";
+import Logo from "../../public/images/logo.svg";
 import SectionLabel from "@/components/custom/section-label";
 import Link from "next/link";
 import AboutImage from "../../public/images/about.png";
@@ -20,20 +21,15 @@ import FacebookIconAlt from "@/components/svg-icons/facebook-icon-alt";
 import InstagramIconAlt from "@/components/svg-icons/instagram-icon-alt";
 import XTwitterIconAlt from "@/components/svg-icons/x-twitter-icon-alt";
 import TelegramIconAlt from "@/components/svg-icons/telegram-icon-alt";
+import { Faqs, FaqTabs, SponsorsLogo } from "@/lib/data";
 import PinIcon from "@/components/svg-icons/pin-icon";
 
 function IconWrapper({ children }: { children: React.ReactNode }) {
     return <div className="w-6 h-6 bg-[#361566] rounded-lg flex items-center justify-center">{children}</div>;
 }
 
-const faqTabs = [
-    { name: "General", id: "general" },
-    { name: "Hackathon", id: "hackathon" },
-    { name: "Conference", id: "conference" },
-];
-
 function Home() {
-    const [activeFaqTab, setActiveFaqTab] = React.useState(faqTabs[0].id);
+    const [activeFaqTab, setActiveFaqTab] = React.useState(FaqTabs[0].id);
 
     return (
         <main className="">
@@ -64,32 +60,36 @@ function Home() {
                         Register <ArrowRightCircleFilledIcon className="ml-2" />
                     </Button>
 
-                    <div className="hero-card w-full lg:w-4/5 p-5 flex items-center justify-between mt-36">
-                        <div className="flex items-center gap-2.5">
-                            <IconWrapper>
-                                <CalendarIcon className="text-white" />
-                            </IconWrapper>
+                    <div className="hero-card w-full lg:w-4/5 mt-36">
+                        <div className="gradient-border"></div>
+                        <div className="p-5 flex items-center justify-between">
+                            <div className="flex items-center gap-2.5">
+                                <IconWrapper>
+                                    <CalendarIcon className="text-white" />
+                                </IconWrapper>
 
-                            <p className="font-helvetica-compressed tracking-wider sm:text-sm md:text-base lg:text-xl text-[#361566] leading-5">
-                                26th - 31st <br /> August, 2024
-                            </p>
+                                <p className="font-helvetica-compressed tracking-wider sm:text-sm md:text-base lg:text-xl text-[#361566] leading-5">
+                                    26th - 31st <br /> August, 2024
+                                </p>
+                            </div>
+
+                            <div className="flex flex-col lg:flex-row space-y-1 lg:space-y-0 items-center gap-2.5">
+                                <Image src="/images/genz-logo.png" width={56} height={32} alt="genz logo" />
+                                <XIcon size={24} />
+                                <Image src="/images/code-space-logo.png" width={154} height={21} alt="code space logo" />
+                            </div>
+
+                            <div className="flex items-center gap-2.5">
+                                <IconWrapper>
+                                    <LocationIcon className="text-white" />
+                                </IconWrapper>
+
+                                <p className="font-helvetica-compressed tracking-wider sm:text-sm md:text-base lg:text-xl text-[#361566] leading-5">
+                                    Random Hall, <br /> Lagos, Nigeria
+                                </p>
+                            </div>
                         </div>
-
-                        <div className="flex flex-col lg:flex-row space-y-1 lg:space-y-0 items-center gap-2.5">
-                            <Image src="/images/genz-logo.png" width={56} height={32} alt="genz logo" />
-                            <XIcon size={24} />
-                            <Image src="/images/code-space-logo.png" width={154} height={21} alt="code space logo" />
-                        </div>
-
-                        <div className="flex items-center gap-2.5">
-                            <IconWrapper>
-                                <LocationIcon className="text-white" />
-                            </IconWrapper>
-
-                            <p className="font-helvetica-compressed tracking-wider sm:text-sm md:text-base lg:text-xl text-[#361566] leading-5">
-                                Random Hall, <br /> Lagos, Nigeria
-                            </p>
-                        </div>
+                        <div className="gradient-border"></div>
                     </div>
                 </section>
             </div>
@@ -97,8 +97,8 @@ function Home() {
             <div className="my-10 contained px-6 md:px-20 lg:px-48 pb-16">
                 <SectionLabel text="SPONSORS AND PARTNERS" />
                 <div className="flex flex-wrap justify-center gap-8">
-                    {["/images/quine.png", "/images/paystack-logo.png", "/images/chimoney-logo.png", "/images/innovation-lab.png", "/images/vercel-logo.png", "/images/kora-logo.png", "/images/ingressive-logo.png", "/images/treford-logo.png", "/images/nexascale-logo.png"].map((src, index) => (
-                        <Image key={index} src={src} width={165} height={64} alt="Sponsors" className="object-contain" />
+                    {SponsorsLogo.map((sponsor, index) => (
+                        <Image key={index} src={sponsor.logo} alt={sponsor.name} className="object-contain" />
                     ))}
                 </div>
             </div>
@@ -112,8 +112,8 @@ function Home() {
                         conference on <span className="font-bold">August 31st</span> will serve as a beacon for aspiring tech pioneers and seasoned professionals alike.
                     </p>
 
-                    <div className="flex justify-center items-center mt-10">
-                        <Image className="rounded-lg text-[#361566] border border-[#361566] shadow-[3px_6px_0px_0px_#361566] hover:shadow-[3px_6px_0px_0px_#421683]" src={AboutImage} alt="About" />
+                    <div className="flex justify-center items-center mt-10 w-full">
+                        <Image className="rounded-lg w-full text-[#361566] border border-[#361566] shadow-[3px_6px_0px_0px_#361566] hover:shadow-[3px_6px_0px_0px_#421683]" src={AboutImage} alt="About" />
                     </div>
                 </div>
             </div>
@@ -150,17 +150,32 @@ function Home() {
                 <SectionLabel text="Judges" />
             </div>
 
-            <div className="bg-[#F2FAFF] px-6 md:px-20 lg:px-48 pb-16">
+            <div className="bg-[#F2FAFF] px-6 md:px-14 lg:px-32 pb-16">
                 <SectionLabel text="faqs" />
 
                 <div className="flex items-center justify-center">
                     <div className="flex space-x-2 border-2 rounded-3xl border-[#361566] w-fit px-1 py-1">
-                        {faqTabs.map((tab, index) => (
-                            <button key={index} onClick={() => setActiveFaqTab(tab.id)} className={`text-center uppercase f text-xl md:text-2xl text-[#361566] px-3 md:px-5 py-0.5 ${activeFaqTab === tab.id && "bg-[#F4B0E9] rounded-3xl border-2 border-[#361566]"}`}>
+                        {FaqTabs.map((tab, index) => (
+                            <button key={index} onClick={() => setActiveFaqTab(tab.id)} className={`text-center uppercase font-helvetica-compressed text-lg sm:text-xl md:text-2xl text-[#361566] px-3 md:px-5 py-0.5 ${activeFaqTab === tab.id && "bg-[#F4B0E9] rounded-3xl border-2 border-[#361566]"}`}>
                                 {tab.name}
                             </button>
                         ))}
                     </div>
+                </div>
+
+                <div className="mt-10">
+                    {Faqs.map((faq, index) => {
+                        if (faq.tab !== activeFaqTab) return null;
+
+                        return (
+                            <div key={index} className="mt-4 bg-[#F4B0E9] border-2 rounded-md border-[#361566] px-10 py-6">
+                                <div className="flex flex-col lg:flex-row lg:space-x-4 lg:justify-center lg:items-center">
+                                    <h1 className="lg:w-1/3 uppercase font-helvetica-compressed text-2xl text-[#361566]">{faq.title}</h1>
+                                    <p className="lg:w-2/3 mt-2 text-[#361566] font-helvetica">{faq.content}</p>
+                                </div>
+                            </div>
+                        );
+                    })}
                 </div>
             </div>
 
@@ -178,7 +193,7 @@ function Home() {
                             <div className="flex items-center justify-center lg:items-start lg:justify-start">
                                 <div className="bg-white/30 px-4 py-2.5 w-fit rounded-3xl mt-4 lg:mt-8">
                                     <div className="flex items-center justify-center space-x-3">
-                                        <h1 className="text-[#F4B0E9] text-2xl font-helvetica-compressed tracking-wider">Join Communtity</h1>
+                                        <h1 className="text-[#F4B0E9] text-xl lg:text-2xl font-helvetica-compressed tracking-wider">Join Communtity</h1>
                                         <div className="flex space-x-3">
                                             <Link href="/">
                                                 <InstagramIconAlt />
@@ -204,8 +219,8 @@ function Home() {
                     </div>
                 </div>
 
-                <div className="flex justify-center items-center mt-20">
-                    <Image src="/images/logo.svg" alt="Logo" width={872} height={337} />
+                <div className="flex justify-center items-center mt-20 w-full">
+                    <Image src={Logo} alt="Logo" width={872} />
                 </div>
 
                 <div className="flex flex-col lg:flex-row lg:justify-between items-center mt-14">
