@@ -130,7 +130,7 @@ function Home() {
                             <button
                                 key={index}
                                 onClick={() => setActiveFaqTab(tab.id)}
-                                className={`text-center font-helvetica-compressed text-xl md:text-2xl text-[#361566] px-3 md:px-5 py-0.5 ${activeFaqTab === tab.id && "bg-[#F4B0E9] rounded-3xl border-2 border-[#361566]"}`}
+                                className={`text-center uppercase font-helvetica-compressed text-xl md:text-2xl text-[#361566] px-3 md:px-5 py-0.5 ${activeFaqTab === tab.id && "bg-[#F4B0E9] rounded-3xl border-2 border-[#361566]"}`}
                             >
                                 {tab.name}
                             </button>
