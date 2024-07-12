@@ -26,7 +26,7 @@ function Navbar() {
 
     return (
         <>
-            <div className={`bg-hero-stars bg-[#FFF3FD] w-full h-screen fixed z-50 flex flex-col justify-between px-12 py-14 lg:hidden ${!isMenuOpen && "hidden"}`}>
+            <div className={`bg-hero-stars bg-[#FFF3FD] w-full h-screen fixed z-50 flex flex-col justify-between px-12 py-20 lg:hidden ${!isMenuOpen && "hidden"}`}>
                 <div className="flex items-end justify-end">
                     <Button
                         onClick={() => setIsMenuOpen(false)}
