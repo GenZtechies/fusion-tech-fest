@@ -169,7 +169,7 @@ function Home() {
                 </div>
             </div>
 
-            <div id="speakers" className="py-12 contained">
+            <div id="speakers" className="py-12 pb-24 contained">
                 <SectionLabel text="Keynote Speakers" />
                 <div className="flex flex-wrap gap-5">
                     {SpeakersPhotos.map((sponsor, i) => (
