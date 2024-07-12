@@ -82,3 +82,10 @@ export const Faqs = [
         tab: "conference",
     },
 ];
+
+export const eventScheduleList = [
+    { date: "26th", fullDate: "August, 2024", event: "PANEL SESSION", details: "Lorem ipsum dolor sit amet consectetur. Congue sapien nunc ut arcu ut non quis at. Imperdiet scelerisque ut venenatis dui mattis montes lorem urna at. Eu id nisl arcu.", time: "09:00AM-12:00PM" },
+    { date: "26th", fullDate: "August, 2024", event: "KEYNOTE/SPEAKING SESSIONS", details: "Lorem ipsum dolor sit amet consectetur. Congue sapien nunc ut arcu ut non quis at. Imperdiet scelerisque ut venenatis dui mattis montes lorem urna at. Eu id nisl arcu.", time: "09:00AM-12:00PM" },
+    { date: "26th", fullDate: "August, 2024", event: "PRODUCT SHOWCASE", details: "Lorem ipsum dolor sit amet consectetur. Congue sapien nunc ut arcu ut non quis at. Imperdiet scelerisque ut venenatis dui mattis montes lorem urna at. Eu id nisl arcu.", time: "09:00AM-12:00PM" },
+    { date: "26th", fullDate: "August, 2024", event: "LEISURE AND NETWORKING", details: "Lorem ipsum dolor sit amet consectetur. Congue sapien nunc ut arcu ut non quis at. Imperdiet scelerisque ut venenatis dui mattis montes lorem urna at. Eu id nisl arcu.", time: "09:00AM-12:00PM" },
+];

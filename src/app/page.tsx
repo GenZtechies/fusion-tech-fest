@@ -21,7 +21,7 @@ import FacebookIconAlt from "@/components/svg-icons/facebook-icon-alt";
 import InstagramIconAlt from "@/components/svg-icons/instagram-icon-alt";
 import XTwitterIconAlt from "@/components/svg-icons/x-twitter-icon-alt";
 import TelegramIconAlt from "@/components/svg-icons/telegram-icon-alt";
-import { Faqs, FaqTabs, SponsorsLogo } from "@/lib/data";
+import { eventScheduleList, Faqs, FaqTabs, SponsorsLogo } from "@/lib/data";
 import PinIcon from "@/components/svg-icons/pin-icon";
 
 function IconWrapper({ children }: { children: React.ReactNode }) {
@@ -137,6 +137,33 @@ function Home() {
                             </div>
                             <h4 className="font-helvetica-compressed text-[#361566] text-4xl">{item.event}</h4>
                             <PinIcon className="absolute -right-6 -top-14" />
+                        </div>
+                    ))}
+                </div>
+                <div className="mt-20 space-y-4">
+                    {eventScheduleList.map((item, index) => (
+                        <div className="bg-[#FFFAF0] border p-4 border-[#361566] rounded-md grid grid-cols-2 md:grid-cols-[auto_auto_auto_1fr] md:gap-14 items-center">
+                            <div className="flex gap-3">
+                                <div className="p-[4px] bg-[#361566] rounded-md h-fit my-auto">
+                                    <CalendarIcon className="text-white text-[24px]" />
+                                </div>
+                                <div className="font-helvetica-compressed text-[#361566] text-xl">
+                                    <p>{item.date}</p>
+                                    <p className="-mt-2">{item.fullDate}</p>
+                                </div>
+                            </div>
+                            <div className="flex gap-3 justify-self-end">
+                                <div className="p-[4px] bg-[#361566] rounded-md h-fit my-auto">
+                                    <CalendarIcon className="text-white text-[24px]" />
+                                </div>
+                                <div className="font-helvetica-compressed text-[#361566] text-xl ">
+                                    <p>09:00AM</p>
+                                    <p className="-mt-2">09:00AM</p>
+                                </div>
+                            </div>
+
+                            <h2 className="font-helvetica-compressed text-[#361566] text-3xl col-span-2 md:col-span-1 md:max-w-[225px] md:w-[225px]">{item.event}</h2>
+                            <p className="text-[#361566] text-base col-span-2 md:col-span-1">{item.details}</p>
                         </div>
                     ))}
                 </div>
