@@ -161,15 +161,15 @@ function Home() {
                                     </div>
                                 </div>
 
-                                <h2 className="font-helvetica-compressed text-[#361566] text-3xl col-span-2 md:col-span-1 md:max-w-[225px] md:w-[225px]">{item.event}</h2>
-                                <p className="text-[#361566] text-base col-span-2 md:col-span-1">{item.details}</p>
+                                <h2 className="font-helvetica-compressed text-[#361566] mt-4 md:mt-4 lg:mt-0 text-3xl col-span-2 md:col-span-1 md:max-w-[225px] md:w-[225px]">{item.event}</h2>
+                                <p className="text-[#361566] text-base col-span-2 md:col-span-1 mt-0 md:mt-4 lg:mt-0">{item.details}</p>
                             </div>
                         ))}
                     </div>
                 </div>
             </div>
 
-            <div id="speakers" className="my-10 contained">
+            <div id="speakers" className="py-12 contained">
                 <SectionLabel text="Keynote Speakers" />
                 <div className="flex flex-wrap gap-5">
                     {SpeakersPhotos.map((sponsor, i) => (
@@ -178,7 +178,7 @@ function Home() {
                 </div>
             </div>
 
-            <div id="judges" className="my-10 contained">
+            <div id="judges" className="bg-[#F2FAFF] py-12 contained">
                 <SectionLabel text="Judges" />
                 <div className="flex flex-wrap gap-5">
                     {SpeakersPhotos.map((sponsor, i) => (
