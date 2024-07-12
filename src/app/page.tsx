@@ -20,14 +20,14 @@ import FacebookIconAlt from "@/components/svg-icons/facebook-icon-alt";
 import InstagramIconAlt from "@/components/svg-icons/instagram-icon-alt";
 import XTwitterIconAlt from "@/components/svg-icons/x-twitter-icon-alt";
 import TelegramIconAlt from "@/components/svg-icons/telegram-icon-alt";
-import { faqs, faqTabs } from "@/lib/data";
+import { Faqs, FaqTabs, SponsorsLogo } from "@/lib/data";
 
 function IconWrapper({ children }: { children: React.ReactNode }) {
     return <div className="w-6 h-6 bg-[#361566] rounded-lg flex items-center justify-center">{children}</div>;
 }
 
 function Home() {
-    const [activeFaqTab, setActiveFaqTab] = React.useState(faqTabs[0].id);
+    const [activeFaqTab, setActiveFaqTab] = React.useState(FaqTabs[0].id);
 
     return (
         <main className="">
@@ -88,11 +88,11 @@ function Home() {
                 </section>
             </div>
 
-            <div className="my-10 contained">
+            <div className="bg-[#FFFBF2] py-12 contained">
                 <SectionLabel text="SPONSORS AND PARTNERS" />
                 <div className="flex flex-wrap justify-center gap-8">
-                    {["/images/quine.png", "/images/paystack-logo.png", "/images/chimoney-logo.png", "/images/innovation-lab.png", "/images/vercel-logo.png", "/images/kora-logo.png", "/images/ingressive-logo.png", "/images/treford-logo.png", "/images/nexascale-logo.png"].map((src, index) => (
-                        <Image key={index} src={src} width={165} height={64} alt="Sponsors" className="object-contain" />
+                    {SponsorsLogo.map((sponsor, index) => (
+                        <Image key={index} src={sponsor.logo} alt={sponsor.name} className="object-contain" />
                     ))}
                 </div>
             </div>
@@ -128,7 +128,7 @@ function Home() {
 
                 <div className="flex items-center justify-center">
                     <div className="flex space-x-2 border-2 rounded-3xl border-[#361566] w-fit px-1 py-1">
-                        {faqTabs.map((tab, index) => (
+                        {FaqTabs.map((tab, index) => (
                             <button
                                 key={index}
                                 onClick={() => setActiveFaqTab(tab.id)}
@@ -141,7 +141,7 @@ function Home() {
                 </div>
 
                 <div className="mt-10">
-                    {faqs.map((faq, index) => {
+                    {Faqs.map((faq, index) => {
                         if (faq.tab !== activeFaqTab) return null;
 
                         return (

@@ -4,7 +4,7 @@
 
 @layer components {
     .contained {
-        @apply mx-auto max-w-[1512px] w-full px-[1.5rem] md:px-[3rem] lg:px-[4rem] xl:px-[5rem] 2xl:px-[6rem];
+        @apply mx-auto max-w-[1512px] w-full px-[1rem] md:px-[3rem] lg:px-[4rem] xl:px-[5rem] 2xl:px-[6rem];
     }
 
     .heading-1 {
