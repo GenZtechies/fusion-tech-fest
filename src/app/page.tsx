@@ -104,7 +104,7 @@ function Home() {
             </div>
 
             <div id="about" className="bg-[#FFFBF2]">
-                <div className="px-6 contained md:px-20 lg:px-48 pb-16">
+                <div className="contained pb-16">
                     <SectionLabel text="About Us" />
 
                     <p className="text-[#361566] text-justify font-helvetica">
@@ -119,55 +119,57 @@ function Home() {
                 </div>
             </div>
 
-            <div id="schedule" className="my-10 contained px-6 md:px-20 lg:px-48 pb-16">
+            <div id="schedule" className="">
                 <SectionLabel text="Event Schedule" />
-                <div className="grid md:gap-[70px] md:grid-cols-3 gap-12">
-                    {[
-                        { date: "26th", fullDate: "August, 2024", event: "HACKATHON STARTS" },
-                        { date: "30th", fullDate: "August, 2024", event: "HACKATHON ENDS" },
-                        { date: "31st", fullDate: "August, 2024", event: "CONFERENCE DAY" },
-                    ].map((item, index) => (
-                        <div key={index} className="border border-[#361566] bg-[#FFCF7B] rounded-lg p-4 shadow-event space-y-5 w-full md:min-w-[275px] relative">
-                            <div className="flex gap-3">
-                                <div className="p-[4px] bg-[#361566] rounded-md h-fit my-auto">
-                                    <CalendarIcon className="text-white text-[24px]" />
+                <div className="contained py-12">
+                    <div className="flex flex-col space-y-10 lg:flex-row lg:space-x-8 lg:space-y-0">
+                        {[
+                            { date: "26th", fullDate: "August, 2024", event: "HACKATHON STARTS" },
+                            { date: "30th", fullDate: "August, 2024", event: "HACKATHON ENDS" },
+                            { date: "31st", fullDate: "August, 2024", event: "CONFERENCE DAY" },
+                        ].map((item, index) => (
+                            <div key={index} className="border border-[#361566] bg-[#FFCF7B] rounded-lg p-4 shadow-event space-y-5 w-full md:min-w-[275px] relative">
+                                <div className="flex gap-3">
+                                    <div className="p-[4px] bg-[#361566] rounded-md h-fit my-auto">
+                                        <CalendarIcon className="text-white text-[24px]" />
+                                    </div>
+                                    <div className="font-helvetica-compressed text-[#361566] text-xl">
+                                        <p>{item.date}</p>
+                                        <p className="-mt-2">{item.fullDate}</p>
+                                    </div>
                                 </div>
-                                <div className="font-helvetica-compressed text-[#361566] text-xl">
-                                    <p>{item.date}</p>
-                                    <p className="-mt-2">{item.fullDate}</p>
-                                </div>
+                                <h4 className="font-helvetica-compressed text-[#361566] text-4xl">{item.event}</h4>
+                                <PinIcon className="absolute -right-6 -top-14" />
                             </div>
-                            <h4 className="font-helvetica-compressed text-[#361566] text-4xl">{item.event}</h4>
-                            <PinIcon className="absolute -right-6 -top-14" />
-                        </div>
-                    ))}
-                </div>
-                <div className="mt-20 space-y-4">
-                    {eventScheduleList.map((item, index) => (
-                        <div key={index} className="bg-[#FFFAF0] border p-4 border-[#361566] rounded-md grid grid-cols-2 lg:grid-cols-[auto_auto_auto_1fr] lg:gap-14 items-center">
-                            <div className="flex gap-3">
-                                <div className="p-[4px] bg-[#361566] rounded-md h-fit my-auto">
-                                    <CalendarIcon className="text-white text-[24px]" />
+                        ))}
+                    </div>
+                    <div className="mt-20 space-y-4">
+                        {eventScheduleList.map((item, index) => (
+                            <div key={index} className="bg-[#FFFAF0] border p-4 border-[#361566] rounded-md grid grid-cols-2 lg:grid-cols-[auto_auto_auto_1fr] lg:gap-14 items-center">
+                                <div className="flex gap-3">
+                                    <div className="p-[4px] bg-[#361566] rounded-md h-fit my-auto">
+                                        <CalendarIcon className="text-white text-[24px]" />
+                                    </div>
+                                    <div className="font-helvetica-compressed text-[#361566] text-xl">
+                                        <p>{item.date}</p>
+                                        <p className="-mt-2">{item.fullDate}</p>
+                                    </div>
                                 </div>
-                                <div className="font-helvetica-compressed text-[#361566] text-xl">
-                                    <p>{item.date}</p>
-                                    <p className="-mt-2">{item.fullDate}</p>
+                                <div className="flex gap-3 justify-self-end">
+                                    <div className="p-[4px] bg-[#361566] rounded-md h-fit my-auto">
+                                        <CalendarIcon className="text-white text-[24px]" />
+                                    </div>
+                                    <div className="font-helvetica-compressed text-[#361566] text-xl ">
+                                        <p>09:00AM</p>
+                                        <p className="-mt-2">09:00AM</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="flex gap-3 justify-self-end">
-                                <div className="p-[4px] bg-[#361566] rounded-md h-fit my-auto">
-                                    <CalendarIcon className="text-white text-[24px]" />
-                                </div>
-                                <div className="font-helvetica-compressed text-[#361566] text-xl ">
-                                    <p>09:00AM</p>
-                                    <p className="-mt-2">09:00AM</p>
-                                </div>
-                            </div>
 
-                            <h2 className="font-helvetica-compressed text-[#361566] text-3xl col-span-2 md:col-span-1 md:max-w-[225px] md:w-[225px]">{item.event}</h2>
-                            <p className="text-[#361566] text-base col-span-2 md:col-span-1">{item.details}</p>
-                        </div>
-                    ))}
+                                <h2 className="font-helvetica-compressed text-[#361566] text-3xl col-span-2 md:col-span-1 md:max-w-[225px] md:w-[225px]">{item.event}</h2>
+                                <p className="text-[#361566] text-base col-span-2 md:col-span-1">{item.details}</p>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
 
