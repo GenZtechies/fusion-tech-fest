@@ -13,6 +13,7 @@ import AboutImage from "../../public/images/about.png";
 import FacebookIcon from "@/components/svg-icons/facebook-icon";
 import InstagramIcon from "@/components/svg-icons/instagram-icon";
 import TelegramIcon from "@/components/svg-icons/telegram-icon";
+import YiyaoImage from "../../public/images/yiyao.svg";
 
 function IconWrapper({ children }: { children: React.ReactNode }) {
     return <div className="w-6 h-6 bg-[#361566] rounded-lg flex items-center justify-center">{children}</div>;
@@ -114,8 +115,20 @@ function Home() {
                 <SectionLabel text="Gallery" />
             </div>
 
-            <footer className="bg-[#FFF3FD] px-20 h-full py-10">
-                <div className="flex justify-center items-center">
+            <footer className="bg-[#FFF3FD] px-4 md:px-20 h-full py-10">
+                <div className="bg-footer-backdrop bg-cover w-full rounded-xl py-10 px-4 lg:px-10 mt-16">
+                    <div className="flex flex-col lg:flex-row justify-between items-center">
+                        <div className="lg:w-1/2">
+                            <h1 className="text-white text-4xl md:text-6xl lg:text-8xl uppercase font-helvetica-compressed">Join the <span className="text-[#F4B0E9]">community</span> <br /> and <span className="text-[#F4B0E9]">Network</span> with like<br /> minds</h1>
+                        </div>
+
+                        <div className="flex items-center justify-center lg:w-1/2">
+                            <Image src={YiyaoImage} alt="Image" />
+                        </div>
+                    </div>
+                </div>
+
+                <div className="flex justify-center items-center mt-20">
                     <Image src="/images/logo.svg" alt="Logo" width={872} height={337} />
                 </div>
 
