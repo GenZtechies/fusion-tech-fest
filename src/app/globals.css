@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
+
 @layer components {
     .contained {
         @apply mx-auto max-w-[1512px] w-full px-[1rem] md:px-[3rem] lg:px-[4rem] xl:px-[5rem] 2xl:px-[6rem];
@@ -12,6 +16,14 @@
         leading-trim: both;
         text-edge: cap;
         -webkit-text-stroke-width: 3;
+        -webkit-text-stroke-color: #d1a4ff;
+    }
+
+    .heading-nav {
+        @apply uppercase text-[#361566] mt-7 text-center text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-helvetica-compressed;
+        leading-trim: both;
+        text-edge: cap;
+        -webkit-text-stroke-width: 1;
         -webkit-text-stroke-color: #d1a4ff;
     }
 
