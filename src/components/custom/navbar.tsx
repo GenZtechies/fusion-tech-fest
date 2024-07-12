@@ -10,12 +10,12 @@ import MenuHamburgerIcon from "../svg-icons/menu-hamburger-icon";
 import ArrowRightCircleFilledIcon from "../svg-icons/arrow-right-circle-filled-icon";
 
 const NAV_LINKS = [
-    { name: "About", href: "/about" },
-    { name: "Schedule", href: "/schedule" },
-    { name: "Speakers", href: "/speakers" },
-    { name: "Judges", href: "/judges" },
-    { name: "FAQs", href: "/faqs" },
-    { name: "Gallery", href: "/gallery" },
+    { name: "About", href: "/#about" },
+    { name: "Schedule", href: "/#schedule" },
+    { name: "Speakers", href: "/#speakers" },
+    { name: "Judges", href: "/#judges" },
+    { name: "FAQs", href: "/#faqs" },
+    { name: "Gallery", href: "/#gallery" },
 ];
 
 function Navbar() {
