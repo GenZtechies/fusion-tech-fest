@@ -20,16 +20,11 @@ import FacebookIconAlt from "@/components/svg-icons/facebook-icon-alt";
 import InstagramIconAlt from "@/components/svg-icons/instagram-icon-alt";
 import XTwitterIconAlt from "@/components/svg-icons/x-twitter-icon-alt";
 import TelegramIconAlt from "@/components/svg-icons/telegram-icon-alt";
+import { faqs, faqTabs } from "@/lib/data";
 
 function IconWrapper({ children }: { children: React.ReactNode }) {
     return <div className="w-6 h-6 bg-[#361566] rounded-lg flex items-center justify-center">{children}</div>;
 }
-
-const faqTabs = [
-    { name: "General", id: "general" },
-    { name: "Hackathon", id: "hackathon" },
-    { name: "Conference", id: "conference" },
-]
 
 function Home() {
     const [activeFaqTab, setActiveFaqTab] = React.useState(faqTabs[0].id);
@@ -97,15 +92,15 @@ function Home() {
                 <SectionLabel text="SPONSORS AND PARTNERS" />
             </div>
 
-            <div className="bg-[#FFFBF2] px-6 md:px-20 lg:px-48 pb-16">
+            <div className="bg-[#FFFBF2] px-6 md:px-14 lg:px-32 pb-16">
                 <SectionLabel text="About Us" />
 
                 <p className="text-[#361566] text-justify font-helvetica">
                     Fusion Tech Fest is a pioneering event hosted by <span className="font-bold">GenZTechies</span> and <span className="font-bold">Code Space</span> to unite GenZ tech enthusiasts in a collaborative endeavor to push the boundaries of innovation and technology. Under the theme <span className="font-bold">&quot;Collaborative Minds, Limitless Possibilities,&quot;</span> we aim to showcase the transformative power of teamwork and innovative thinking in tech. There will be a virtual hackathonfrom <span className="font-bold">August 26th</span>to <span className="font-bold">30th</span> and a one-day conference on <span className="font-bold">August 31st</span> will serve as a beacon for aspiring tech pioneers and seasoned professionals alike.
                 </p>
 
-                <div className="flex justify-center items-center mt-10">
-                    <Image className="rounded-lg text-[#361566] border border-[#361566] shadow-[3px_6px_0px_0px_#361566] hover:shadow-[3px_6px_0px_0px_#421683]" src={AboutImage} alt="About" />
+                <div className="flex justify-center items-center mt-10 w-full">
+                    <Image className="rounded-lg w-full text-[#361566] border border-[#361566] shadow-[3px_6px_0px_0px_#361566] hover:shadow-[3px_6px_0px_0px_#421683]" src={AboutImage} alt="About" />
                 </div>
             </div>
 
@@ -121,7 +116,7 @@ function Home() {
                 <SectionLabel text="Judges" />
             </div>
 
-            <div className="bg-[#F2FAFF] px-6 md:px-20 lg:px-48 pb-16">
+            <div className="bg-[#F2FAFF] px-6 md:px-14 lg:px-32 pb-16">
                 <SectionLabel text="faqs" />
 
                 <div className="flex items-center justify-center">
@@ -130,12 +125,27 @@ function Home() {
                             <button
                                 key={index}
                                 onClick={() => setActiveFaqTab(tab.id)}
-                                className={`text-center uppercase font-helvetica-compressed text-xl md:text-2xl text-[#361566] px-3 md:px-5 py-0.5 ${activeFaqTab === tab.id && "bg-[#F4B0E9] rounded-3xl border-2 border-[#361566]"}`}
+                                className={`text-center uppercase font-helvetica-compressed text-lg sm:text-xl md:text-2xl text-[#361566] px-3 md:px-5 py-0.5 ${activeFaqTab === tab.id && "bg-[#F4B0E9] rounded-3xl border-2 border-[#361566]"}`}
                             >
                                 {tab.name}
                             </button>
                         ))}
                     </div>
+                </div>
+
+                <div className="mt-10">
+                    {faqs.map((faq, index) => {
+                        if (faq.tab !== activeFaqTab) return null;
+
+                        return (
+                            <div key={index} className="mt-4 bg-[#F4B0E9] border-2 rounded-md border-[#361566] px-10 py-6">
+                                <div className="flex flex-col lg:flex-row lg:space-x-4 lg:justify-center lg:items-center">
+                                    <h1 className="lg:w-1/3 uppercase font-helvetica-compressed text-2xl text-[#361566]">{faq.title}</h1>
+                                    <p className="lg:w-2/3 mt-2 text-[#361566] font-helvetica">{faq.content}</p>
+                                </div>
+                            </div>
+                        );
+                    })}
                 </div>
             </div>
 
