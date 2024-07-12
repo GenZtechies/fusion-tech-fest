@@ -144,7 +144,7 @@ function Home() {
                 </div>
                 <div className="mt-20 space-y-4">
                     {eventScheduleList.map((item, index) => (
-                        <div className="bg-[#FFFAF0] border p-4 border-[#361566] rounded-md grid grid-cols-2 md:grid-cols-[auto_auto_auto_1fr] md:gap-14 items-center">
+                        <div key={index} className="bg-[#FFFAF0] border p-4 border-[#361566] rounded-md grid grid-cols-2 md:grid-cols-[auto_auto_auto_1fr] md:gap-14 items-center">
                             <div className="flex gap-3">
                                 <div className="p-[4px] bg-[#361566] rounded-md h-fit my-auto">
                                     <CalendarIcon className="text-white text-[24px]" />
