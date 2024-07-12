@@ -15,6 +15,14 @@
         -webkit-text-stroke-color: #d1a4ff;
     }
 
+    .heading-nav {
+        @apply uppercase text-[#361566] mt-7 text-center text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-helvetica-compressed;
+        leading-trim: both;
+        text-edge: cap;
+        -webkit-text-stroke-width: 1;
+        -webkit-text-stroke-color: #d1a4ff;
+    }
+
     .hero-card {
         /* border-top: 1px solid #361566; */
         /* border-bottom: 1px solid #361566; */

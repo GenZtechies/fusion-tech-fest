@@ -33,7 +33,11 @@ function Navbar() {
                 </div>
 
                 <div>
-                    <h1>Hi</h1>
+                    {NAV_LINKS.map((link) => (
+                        <h1 className="heading-nav text-left font-bold" style={{ WebkitTextStrokeWidth: 1, WebkitTextStrokeColor: "#D1A4FF" }}>
+                            <Link href={link.href}>{link.name}</Link>
+                        </h1>
+                    ))}
                 </div>
             </div>
             <div className="contained absolute top-9 left-1/2 -translate-x-1/2">
