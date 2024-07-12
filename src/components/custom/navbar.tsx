@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 import Logo from "./logo";
 import { Button } from "../ui/button";
@@ -21,6 +22,8 @@ const NAV_LINKS = [
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
+    const router = useRouter();
+
     return (
         <>
             <div className={`bg-hero-stars bg-[#FFF3FD] w-full h-screen fixed z-50 flex flex-col justify-between px-12 py-14 lg:hidden ${!isMenuOpen && "hidden"}`}>
@@ -34,8 +37,15 @@ function Navbar() {
 
                 <div>
                     {NAV_LINKS.map((link) => (
-                        <h1 className="heading-nav text-left font-bold" style={{ WebkitTextStrokeWidth: 1, WebkitTextStrokeColor: "#D1A4FF" }}>
-                            <Link href={link.href}>{link.name}</Link>
+                        <h1 key={link.name} className="heading-nav text-left font-bold" style={{ WebkitTextStrokeWidth: 1, WebkitTextStrokeColor: "#D1A4FF" }}>
+                            <button
+                                onClick={() => {
+                                    setIsMenuOpen(false);
+                                    router.push(link.href);
+                                }}
+                            >
+                                {link.name}
+                            </button>
                         </h1>
                     ))}
                 </div>

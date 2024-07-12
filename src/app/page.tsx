@@ -103,7 +103,7 @@ function Home() {
                 </div>
             </div>
 
-            <div className="bg-[#FFFBF2]">
+            <div id="about" className="bg-[#FFFBF2]">
                 <div className="px-6 contained md:px-20 lg:px-48 pb-16">
                     <SectionLabel text="About Us" />
 
@@ -118,7 +118,8 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <div className="my-10 contained px-6 md:px-20 lg:px-48 pb-16">
+
+            <div id="schedule" className="my-10 contained px-6 md:px-20 lg:px-48 pb-16">
                 <SectionLabel text="Event Schedule" />
                 <div className="grid md:gap-[70px] md:grid-cols-3 gap-12">
                     {[
@@ -143,15 +144,15 @@ function Home() {
                 </div>
             </div>
 
-            <div className="my-10">
+            <div id="speakers" className="my-10">
                 <SectionLabel text="Keynote Speakers" />
             </div>
 
-            <div className="my-10">
+            <div id="judges" className="my-10">
                 <SectionLabel text="Judges" />
             </div>
 
-            <div className="bg-[#F2FAFF] px-6 md:px-14 lg:px-32 pb-16">
+            <div id="faqs" className="bg-[#F2FAFF] px-6 md:px-14 lg:px-32 pb-16">
                 <SectionLabel text="faqs" />
 
                 <div className="flex items-center justify-center">
@@ -180,7 +181,7 @@ function Home() {
                 </div>
             </div>
 
-            <div className="my-10">
+            <div id="gallery" className="my-10">
                 <SectionLabel text="Gallery" />
             </div>
 
