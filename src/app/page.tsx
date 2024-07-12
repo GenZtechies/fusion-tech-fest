@@ -2,7 +2,7 @@ import Navbar from "@/components/custom/navbar";
 import ArrowRightCircleFilledIcon from "@/components/svg-icons/arrow-right-circle-filled-icon";
 import CalendarIcon from "@/components/svg-icons/calendar-icon";
 import LocationIcon from "@/components/svg-icons/location-icon";
-import XTwitterIcon from "@/components/svg-icons/x-icon";
+import XTwitterIcon from "@/components/svg-icons/x-twitter-icon";
 import { Button } from "@/components/ui/button";
 import { ArrowRightCircle, LocateIcon, MapPin, MapPinIcon, XIcon } from "lucide-react";
 import Image from "next/image";
@@ -14,6 +14,10 @@ import FacebookIcon from "@/components/svg-icons/facebook-icon";
 import InstagramIcon from "@/components/svg-icons/instagram-icon";
 import TelegramIcon from "@/components/svg-icons/telegram-icon";
 import YiyaoImage from "../../public/images/yiyao.svg";
+import FacebookIconAlt from "@/components/svg-icons/facebook-icon-alt";
+import InstagramIconAlt from "@/components/svg-icons/instagram-icon-alt";
+import XTwitterIconAlt from "@/components/svg-icons/x-twitter-icon-alt";
+import TelegramIconAlt from "@/components/svg-icons/telegram-icon-alt";
 
 function IconWrapper({ children }: { children: React.ReactNode }) {
     return <div className="w-6 h-6 bg-[#361566] rounded-lg flex items-center justify-center">{children}</div>;
@@ -116,13 +120,34 @@ function Home() {
             </div>
 
             <footer className="bg-[#FFF3FD] px-4 md:px-20 h-full py-10">
-                <div className="bg-footer-backdrop bg-cover w-full rounded-xl py-10 px-4 md:px-8 lg:px-10 mt-16">
+                <div className="bg-footer-backdrop bg-cover w-full rounded-xl py-12 lg:py-24 px-4 md:px-8 lg:px-10 mt-16">
                     <div className="flex flex-col lg:flex-row justify-between items-center">
                         <div className="lg:w-1/2">
-                            <h1 className="text-white text-4xl md:text-6xl lg:text-8xl uppercase font-helvetica-compressed">Join the <span className="text-[#F4B0E9]">community</span> and <span className="text-[#F4B0E9]">Network</span> with like minds</h1>
+                            <h1 className="text-center lg:text-left text-white text-6xl lg:text-7xl uppercase font-helvetica-compressed">Join the <span className="text-[#F4B0E9]">community</span> and <span className="text-[#F4B0E9]">Network</span> with like minds</h1>
+                            <div className="flex items-center justify-center lg:items-start lg:justify-start">
+                                <div className="bg-white/30 px-4 py-2.5 w-fit rounded-3xl mt-4 lg:mt-8">
+                                    <div className="flex items-center justify-center space-x-3">
+                                        <h1 className="text-[#F4B0E9] text-2xl font-helvetica-compressed tracking-wider">Join Communtity</h1>
+                                        <div className="flex space-x-3">
+                                            <Link href="/">
+                                                <InstagramIconAlt />
+                                            </Link>
+                                            <Link href="/">
+                                                <XTwitterIconAlt />
+                                            </Link>
+                                            <Link href="/">
+                                                <FacebookIconAlt />
+                                            </Link>
+                                            <Link href="/">
+                                                <TelegramIconAlt />
+                                            </Link>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
-                        <div className="flex items-center justify-center lg:w-1/2">
+                        <div className="flex items-center justify-center lg:w-1/2 mt-6 lg:mt-0">
                             <Image src={YiyaoImage} alt="Image" />
                         </div>
                     </div>
