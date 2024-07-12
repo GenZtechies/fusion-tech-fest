@@ -116,10 +116,10 @@ function Home() {
             </div>
 
             <footer className="bg-[#FFF3FD] px-4 md:px-20 h-full py-10">
-                <div className="bg-footer-backdrop bg-cover w-full rounded-xl py-10 px-4 lg:px-10 mt-16">
+                <div className="bg-footer-backdrop bg-cover w-full rounded-xl py-10 px-4 md:px-8 lg:px-10 mt-16">
                     <div className="flex flex-col lg:flex-row justify-between items-center">
                         <div className="lg:w-1/2">
-                            <h1 className="text-white text-4xl md:text-6xl lg:text-8xl uppercase font-helvetica-compressed">Join the <span className="text-[#F4B0E9]">community</span> <br /> and <span className="text-[#F4B0E9]">Network</span> with like<br /> minds</h1>
+                            <h1 className="text-white text-4xl md:text-6xl lg:text-8xl uppercase font-helvetica-compressed">Join the <span className="text-[#F4B0E9]">community</span> and <span className="text-[#F4B0E9]">Network</span> with like minds</h1>
                         </div>
 
                         <div className="flex items-center justify-center lg:w-1/2">
