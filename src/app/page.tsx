@@ -187,7 +187,7 @@ function Home() {
                             >
                                 <div className="font-helvetica-compressed uppercase text-[#361566]">
                                     <h1 className="bg-[#FAD278] w-fit px-1.5 py-0.5 text-2xl">{speaker.name}</h1>
-                                    <p className="bg-[#FAD278] w-fit px-1.5 py-0.5 text-lg">{speaker.title}</p>
+                                    <p className="rounded-bl-md bg-[#FAD278] w-fit px-1.5 py-0.5 text-lg">{speaker.title}</p>
                                 </div>
                             </div>
                         ))}
@@ -211,7 +211,7 @@ function Home() {
                             >
                                 <div className="font-helvetica-compressed uppercase text-[#361566]">
                                     <h1 className="bg-[#78C7FF] w-fit px-1.5 py-0.5 text-2xl">{speaker.name}</h1>
-                                    <p className="bg-[#78C7FF] w-fit px-1.5 py-0.5 text-lg">{speaker.title}</p>
+                                    <p className="rounded-bl-md bg-[#78C7FF] w-fit px-1.5 py-0.5 text-lg">{speaker.title}</p>
                                 </div>
                             </div>
                         ))}
