@@ -21,7 +21,7 @@ import FacebookIconAlt from "@/components/svg-icons/facebook-icon-alt";
 import InstagramIconAlt from "@/components/svg-icons/instagram-icon-alt";
 import XTwitterIconAlt from "@/components/svg-icons/x-twitter-icon-alt";
 import TelegramIconAlt from "@/components/svg-icons/telegram-icon-alt";
-import { Speakers, EventScheduleList, EventDaysList, Faqs, FaqTabs, SpeakersPhotos, SponsorsLogo } from "@/lib/data";
+import { Speakers, EventScheduleList, EventDaysList, Faqs, FaqTabs, Judges, SponsorsLogo } from "@/lib/data";
 import PinIcon from "@/components/svg-icons/pin-icon";
 
 function IconWrapper({ children }: { children: React.ReactNode }) {
@@ -183,9 +183,9 @@ function Home() {
                                 key={index}
                                 className="w-full rounded-md flex bg-cover bg-center col-span-4 md:col-span-2 lg:col-span-1 border border-[#361566] shadow-[3px_6px_0px_0px_#361566] hover:shadow-[3px_6px_0px_0px_#421683]"
                             >
-                                <div>
-                                    <h1>{speaker.name}</h1>
-                                    <h1>{speaker.title}</h1>
+                                <div className="font-helvetica-compressed uppercase text-[#361566]">
+                                    <h1 className="bg-[#FAD278] w-fit px-1.5 py-0.5 text-2xl">{speaker.name}</h1>
+                                    <p className="bg-[#FAD278] w-fit px-1.5 py-0.5 text-lg">{speaker.title}</p>
                                 </div>
                             </div>
                         ))}
@@ -193,12 +193,27 @@ function Home() {
                 </div>
             </div>
 
-            <div id="judges" className="bg-[#F2FAFF] py-12 contained">
+            <div id="judges" className="bg-[#F2FAFF] py-12">
                 <SectionLabel text="Judges" />
-                <div className="flex flex-wrap gap-5">
-                    {SpeakersPhotos.map((sponsor, i) => (
-                        <Image key={i} src={sponsor.photo} alt="sponsors" height={350} width={314} className="aspect-[0.89] max-w-fit mx-auto" />
-                    ))}
+                <div className="contained mx-auto">
+                    <div className="grid grid-cols-4 gap-y-8 gap-x-6 place-items-center">
+                        {Judges.map((speaker, index) => (
+                            <div
+                                style={{
+                                    backgroundImage: `url(${speaker.photo.src})`,
+                                    paddingTop: '100%', // This makes the height equal to the width
+                                    position: 'relative',
+                                }}
+                                key={index}
+                                className="w-full rounded-md flex bg-cover bg-center col-span-4 md:col-span-2 lg:col-span-1 border border-[#361566] shadow-[3px_6px_0px_0px_#361566] hover:shadow-[3px_6px_0px_0px_#421683]"
+                            >
+                                <div className="font-helvetica-compressed uppercase text-[#361566]">
+                                    <h1 className="bg-[#78C7FF] w-fit px-1.5 py-0.5 text-2xl">{speaker.name}</h1>
+                                    <p className="bg-[#78C7FF] w-fit px-1.5 py-0.5 text-lg">{speaker.title}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
 

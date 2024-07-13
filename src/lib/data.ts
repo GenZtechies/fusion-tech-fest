@@ -8,23 +8,14 @@ import NexascaleLogo from "../../public/images/sponsors/nexascale-logo.png";
 import IngressiveLogo from "../../public/images/sponsors/ingressive-logo.png";
 import innovationLabLogo from "../../public/images/sponsors/innovation-lab-logo.png";
 
-import JudeDike from "../../public/images/speakers/jude-dike.png";
-import EuniceAzu from "../../public/images/speakers/eunice-azu.png";
-import RasheedAro from "../../public/images/speakers/rasheed-aro.png";
-import TravisUche from "../../public/images/speakers/travis-uche.png";
-import VictorFatanmi from "../../public/images/speakers/victor-fatanmi.png";
-import EdidiongAsikpo from "../../public/images/speakers/edidiong-asikpo.png";
-import DouglasKendyson from "../../public/images/speakers/douglas-kendyson.png";
-import AlexandraIghodaro from "../../public/images/speakers/alexandra-ighodaro.png";
-
-import asikpo from "../../public/images/asikpo.png";
-import jude from "../../public/images/jude-dike.png";
-import uche from "../../public/images/travis-uche.png";
-import eunice from "../../public/images/eunice-azu.png";
-import rasheeed from "../../public/images/rasheed-aro.png";
-import victor from "../../public/images/fatanmi-victor.png";
-import doughlas from "../../public/images/douglas-kendyson.png";
-import ighodaro from "../../public/images/ighodaro-alexandra.png";
+import JudeDike from "../../public/images/speakers-judges/jude-dike.png";
+import EuniceAzu from "../../public/images/speakers-judges/eunice-azu.png";
+import RasheedAro from "../../public/images/speakers-judges/rasheed-aro.png";
+import TravisUche from "../../public/images/speakers-judges/travis-uche.png";
+import VictorFatanmi from "../../public/images/speakers-judges/victor-fatanmi.png";
+import EdidiongAsikpo from "../../public/images/speakers-judges/edidiong-asikpo.png";
+import DouglasKendyson from "../../public/images/speakers-judges/douglas-kendyson.png";
+import AlexandraIghodaro from "../../public/images/speakers-judges/alexandra-ighodaro.png";
 
 export const SponsorsLogo = [
     { name: "Quine", logo: QuineLogo },
@@ -38,18 +29,50 @@ export const SponsorsLogo = [
     { name: "Nexascale", logo: NexascaleLogo },
 ];
 
-export const SpeakersPhotos = [
-    { name: "Jude", photo: jude },
-    { name: "Ighodaro", photo: ighodaro },
-    { name: "doughlas", photo: doughlas },
-    { name: "victor", photo: victor },
-    { name: "asikpo", photo: asikpo },
-    { name: "rasheed", photo: rasheeed },
-    { name: "eunice", photo: eunice },
-    { name: "uche", photo: uche },
+export const Speakers = [
+    {
+        name: "Jude Dike",
+        title: "CEO/COFOUNDER AT GETEQUITY",
+        photo: JudeDike,
+    },
+    {
+        name: "Eunice Azu",
+        title: "CEO/COFOUNDER AT GETEQUITY",
+        photo: EuniceAzu,
+    },
+    {
+        name: "Rasheed Aro",
+        title: "CEO/COFOUNDER AT GETEQUITY",
+        photo: RasheedAro,
+    },
+    {
+        name: "Travis Uche",
+        title: "CEO/COFOUNDER AT GETEQUITY",
+        photo: TravisUche,
+    },
+    {
+        name: "Victor Fatanmi",
+        title: "CEO/COFOUNDER AT GETEQUITY",
+        photo: VictorFatanmi,
+    },
+    {
+        name: "Edidiong Asikpo",
+        title: "CEO/COFOUNDER AT GETEQUITY",
+        photo: EdidiongAsikpo,
+    },
+    {
+        name: "Douglas Kendyson",
+        title: "CEO/COFOUNDER AT GETEQUITY",
+        photo: DouglasKendyson,
+    },
+    {
+        name: "Alexandra Ighodaro",
+        title: "CEO/COFOUNDER AT GETEQUITY",
+        photo: AlexandraIghodaro,
+    },
 ];
 
-export const Speakers = [
+export const Judges = [
     {
         name: "Jude Dike",
         title: "CEO/COFOUNDER AT GETEQUITY",
