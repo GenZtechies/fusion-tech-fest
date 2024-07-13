@@ -1,28 +1,30 @@
 "use client";
 
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { XIcon } from "lucide-react";
+
+import Logo from "../../public/images/logo.svg";
+import AboutImage from "../../public/images/about.png";
+import YiyaoImage from "../../public/images/yiyao.svg";
+
 import Navbar from "@/components/custom/navbar";
-import ArrowRightCircleFilledIcon from "@/components/svg-icons/arrow-right-circle-filled-icon";
+import { Button } from "@/components/ui/button";
+import PinIcon from "@/components/svg-icons/pin-icon";
+import SectionLabel from "@/components/custom/section-label";
 import CalendarIcon from "@/components/svg-icons/calendar-icon";
+import FacebookIcon from "@/components/svg-icons/facebook-icon";
+import TelegramIcon from "@/components/svg-icons/telegram-icon";
 import LocationIcon from "@/components/svg-icons/location-icon";
 import XTwitterIcon from "@/components/svg-icons/x-twitter-icon";
-import { Button } from "@/components/ui/button";
-import { ArrowRightCircle, LocateIcon, MapPin, MapPinIcon, XIcon } from "lucide-react";
-import Image from "next/image";
-import React from "react";
-import Logo from "../../public/images/logo.svg";
-import SectionLabel from "@/components/custom/section-label";
-import Link from "next/link";
-import AboutImage from "../../public/images/about.png";
-import FacebookIcon from "@/components/svg-icons/facebook-icon";
 import InstagramIcon from "@/components/svg-icons/instagram-icon";
-import TelegramIcon from "@/components/svg-icons/telegram-icon";
-import YiyaoImage from "../../public/images/yiyao.svg";
-import FacebookIconAlt from "@/components/svg-icons/facebook-icon-alt";
-import InstagramIconAlt from "@/components/svg-icons/instagram-icon-alt";
-import XTwitterIconAlt from "@/components/svg-icons/x-twitter-icon-alt";
 import TelegramIconAlt from "@/components/svg-icons/telegram-icon-alt";
+import FacebookIconAlt from "@/components/svg-icons/facebook-icon-alt";
+import XTwitterIconAlt from "@/components/svg-icons/x-twitter-icon-alt";
+import InstagramIconAlt from "@/components/svg-icons/instagram-icon-alt";
+import ArrowRightCircleFilledIcon from "@/components/svg-icons/arrow-right-circle-filled-icon";
 import { Speakers, EventScheduleList, EventDaysList, Faqs, FaqTabs, Judges, SponsorsLogo } from "@/lib/data";
-import PinIcon from "@/components/svg-icons/pin-icon";
 
 function IconWrapper({ children }: { children: React.ReactNode }) {
     return <div className="w-6 h-6 bg-[#361566] rounded-lg flex items-center justify-center">{children}</div>;
