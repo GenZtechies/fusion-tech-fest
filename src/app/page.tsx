@@ -96,12 +96,14 @@ function Home() {
                 </section>
             </div>
 
-            <div className="bg-[#FFFBF2] py-12 contained">
+            <div className="bg-[#FFFBF2]">
                 <SectionLabel text="SPONSORS AND PARTNERS" />
-                <div className="flex flex-wrap justify-center gap-8">
-                    {SponsorsLogo.map((sponsor, index) => (
-                        <Image key={index} src={sponsor.logo} alt={sponsor.name} className="object-contain" />
-                    ))}
+                <div className="py-12 contained">
+                    <div className="flex flex-wrap justify-center gap-8">
+                        {SponsorsLogo.map((sponsor, index) => (
+                            <Image key={index} src={sponsor.logo} alt={sponsor.name} className="object-contain" />
+                        ))}
+                    </div>
                 </div>
             </div>
 
@@ -253,7 +255,7 @@ function Home() {
             </div>
 
             <footer className="bg-[#FFF3FD] px-4 md:px-20 h-full py-10">
-                <div className="bg-footer-backdrop bg-cover w-full rounded-xl py-12 lg:py-24 px-4 md:px-8 lg:px-10 mt-16">
+                <div className="bg-footer-backdrop contained bg-cover w-full rounded-xl py-12 lg:py-24 px-4 md:px-8 lg:px-10 mt-16">
                     <div className="flex flex-col lg:flex-row justify-between items-center">
                         <div className="lg:w-1/2">
                             <h1 className="text-center lg:text-left text-white text-6xl lg:text-7xl uppercase font-helvetica-compressed">
@@ -292,7 +294,7 @@ function Home() {
                     <Image src={Logo} alt="Logo" width={872} />
                 </div>
 
-                <div className="flex flex-col lg:flex-row lg:justify-between items-center mt-14">
+                <div className="contained flex flex-col lg:flex-row lg:justify-between items-center mt-14">
                     <h1 className="font-helvetica text-[#361566] text-sm text-center mt-4 lg:text-left lg:mt-0">&copy; 2024 GenZtechies X Codespace | All rights reserved.</h1>
                     <div className="flex flex-col items-center lg:items-end order-first lg:order-last">
                         <ul className="flex text-[#361566] font-helvetica-compressed text-lg tracking-wide justify-center lg:justify-start space-x-4 uppercase">
