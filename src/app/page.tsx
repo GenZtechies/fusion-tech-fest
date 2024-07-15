@@ -9,7 +9,6 @@ import Logo from "../../public/images/logo.svg";
 import AboutImage from "../../public/images/about.png";
 import YiyaoImage from "../../public/images/yiyao.svg";
 
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Navbar from "@/components/custom/navbar";
 import { Button } from "@/components/ui/button";
 import PinIcon from "@/components/svg-icons/pin-icon";
@@ -25,8 +24,8 @@ import FacebookIconAlt from "@/components/svg-icons/facebook-icon-alt";
 import XTwitterIconAlt from "@/components/svg-icons/x-twitter-icon-alt";
 import InstagramIconAlt from "@/components/svg-icons/instagram-icon-alt";
 import ArrowRightCircleFilledIcon from "@/components/svg-icons/arrow-right-circle-filled-icon";
-import { Speakers, EventScheduleList, EventDaysList, Faqs, FaqTabs, Judges, SponsorsLogo } from "@/lib/data";
-import { Carousel } from "react-responsive-carousel";
+import { Carousel, CarouselItem, CarouselContent, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { Speakers, GalleryItems, EventScheduleList, EventDaysList, Faqs, FaqTabs, Judges, SponsorsLogo } from "@/lib/data";
 
 function IconWrapper({ children }: { children: React.ReactNode }) {
     return <div className="w-6 h-6 bg-[#361566] rounded-lg flex items-center justify-center">{children}</div>;
@@ -252,24 +251,33 @@ function Home() {
                 </div>
             </div>
 
-            <div id="gallery" className="my-10 contained">
+            <div id="gallery" className="py-12 pb-20">
                 <SectionLabel text="Gallery" />
-                <div className="bg-[#78C7FF] py-2 max-h-[676px] rounded-lg">
-                    <Carousel renderItem={(item) => <div className="mr-3 flex justify-center">{item}</div>} renderArrowNext={() => <div>next item</div>} infiniteLoop centerMode centerSlidePercentage={20}>
-                        <div>
-                            <Image alt="" src="/images/gallery/gallery-2.png" width={387} height={329} className="justify-self-end mt-14" />
-                        </div>
-                        <div>
-                            <Image alt="" src="/images/gallery/gallery-3.png" width={316} height={373} />
-                        </div>
-                        <div>
-                            <Image alt="" src="/images/gallery/gallery-4.png" width={316} height={373} className="mt-14" />
-                        </div>
-
-                        <div>
-                            <Image alt="" src="/images/gallery/gallery-1.png" width={316} height={373} />
-                        </div>
-                    </Carousel>
+                <div className="contained">
+                    <div className="bg-[#78C7FF] py-24 rounded-md">
+                        <Carousel className="mx-6">
+                            <CarouselContent className="-ml-1">
+                                {GalleryItems.map((item, index) => (
+                                    <CarouselItem key={index} className="pl-1 md:basis-1/2 lg:basis-1/3">
+                                        <div className="p-1">
+                                            <Image className="border-2 border-[#361566] rounded-md" src={item.image} alt={item.name} />
+                                        </div>
+                                    </CarouselItem>
+                                ))}
+                            </CarouselContent>
+                            <div className="flex flex-col sm:flex-row justify-center sm:justify-between items-center space-y-4 sm:space-y-0 mt-4">
+                                <div className="flex space-x-3">
+                                    <CarouselPrevious />
+                                    <CarouselNext />
+                                </div>
+                                <Link href="/#">
+                                    <Button>
+                                        View Photos <ArrowRightCircleFilledIcon className="ml-2" />
+                                    </Button>
+                                </Link>
+                            </div>
+                        </Carousel>
+                    </div>
                 </div>
             </div>
 
