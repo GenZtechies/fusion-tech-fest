@@ -1,17 +1,14 @@
 import { StaticImageData } from "next/image";
 
-import CouchbaseLogo from "../../public/images/sponsors/couchbase-logo.png";
-import PaystackLogo from "../../public/images/sponsors/paystack-logo.png";
-import InsideTheEcosystemLogo from "../../public/images/sponsors/inside-the-tech-ecosystem-logo.jpeg";
-
-import JudeDike from "../../public/images/speakers-judges/jude-dike.png";
-import EuniceAzu from "../../public/images/speakers-judges/eunice-azu.png";
-import RasheedAro from "../../public/images/speakers-judges/rasheed-aro.png";
-import TravisUche from "../../public/images/speakers-judges/travis-uche.png";
-import VictorFatanmi from "../../public/images/speakers-judges/victor-fatanmi.png";
-import EdidiongAsikpo from "../../public/images/speakers-judges/edidiong-asikpo.png";
-import DouglasKendyson from "../../public/images/speakers-judges/douglas-kendyson.png";
-import AlexandraIghodaro from "../../public/images/speakers-judges/alexandra-ighodaro.png";
+import APMP from "../../public/images/sponsors/apmp.jpg";
+import NTIT from "../../public/images/sponsors/ntit.jpg";
+import Paystack from "../../public/images/sponsors/paystack.png";
+import TechNoob from "../../public/images/sponsors/tech-noob.jpg";
+import CouchBase from "../../public/images/sponsors/couchbase.png";
+import TheGarage from "../../public/images/sponsors/the-garage.png";
+import ProductBuddies from "../../public/images/sponsors/product-buddies.jpg";
+import DesignWithRooks from "../../public/images/sponsors/design-with-rooks.png";
+import InsideTheTechEcoSystem from "../../public/images/sponsors/inside-the-tech-ecosystem.jpg";
 
 import GalleryItem1 from "../../public/images/gallery/gallery-1.png";
 import GalleryItem2 from "../../public/images/gallery/gallery-2.png";
@@ -26,96 +23,20 @@ export const GalleryItems = [
 ];
 
 export const SponsorsLogo = [
-    { name: "Inside The Ecosystem", logo: InsideTheEcosystemLogo },
-    { name: "Paystack", logo: PaystackLogo },
-    { name: "Couchbase", logo: CouchbaseLogo },
+    { name: "Paystack", logo: Paystack },
+    { name: "CouchBase", logo: CouchBase },
+    { name: "Inside The Tech Ecosystem", logo: InsideTheTechEcoSystem },
+    { name: "NTIT", logo: NTIT },
+    { name: "Tech Noob", logo: TechNoob },
+    { name: "Design With Rooks", logo: DesignWithRooks },
+    { name: "Product Buddies", logo: ProductBuddies },
+    { name: "The Garage", logo: TheGarage },
+    { name: "APMP", logo: APMP },
 ];
 
-export const Speakers: { name: string; title: string; photo: StaticImageData }[] = [
-    // {
-    //     name: "Jude Dike",
-    //     title: "CEO/COFOUNDER AT GETEQUITY",
-    //     photo: JudeDike,
-    // },
-    // {
-    //     name: "Eunice Azu",
-    //     title: "CEO/COFOUNDER AT GETEQUITY",
-    //     photo: EuniceAzu,
-    // },
-    // {
-    //     name: "Rasheed Aro",
-    //     title: "CEO/COFOUNDER AT GETEQUITY",
-    //     photo: RasheedAro,
-    // },
-    // {
-    //     name: "Travis Uche",
-    //     title: "CEO/COFOUNDER AT GETEQUITY",
-    //     photo: TravisUche,
-    // },
-    // {
-    //     name: "Victor Fatanmi",
-    //     title: "CEO/COFOUNDER AT GETEQUITY",
-    //     photo: VictorFatanmi,
-    // },
-    // {
-    //     name: "Edidiong Asikpo",
-    //     title: "CEO/COFOUNDER AT GETEQUITY",
-    //     photo: EdidiongAsikpo,
-    // },
-    // {
-    //     name: "Douglas Kendyson",
-    //     title: "CEO/COFOUNDER AT GETEQUITY",
-    //     photo: DouglasKendyson,
-    // },
-    // {
-    //     name: "Alexandra Ighodaro",
-    //     title: "CEO/COFOUNDER AT GETEQUITY",
-    //     photo: AlexandraIghodaro,
-    // },
-];
+export const Speakers: { name: string; title: string; photo: StaticImageData }[] = [];
 
-export const Judges: { name: string; title: string; photo: StaticImageData }[] = [
-    // {
-    //     name: "Jude Dike",
-    //     title: "CEO/COFOUNDER AT GETEQUITY",
-    //     photo: JudeDike,
-    // },
-    // {
-    //     name: "Eunice Azu",
-    //     title: "CEO/COFOUNDER AT GETEQUITY",
-    //     photo: EuniceAzu,
-    // },
-    // {
-    //     name: "Rasheed Aro",
-    //     title: "CEO/COFOUNDER AT GETEQUITY",
-    //     photo: RasheedAro,
-    // },
-    // {
-    //     name: "Travis Uche",
-    //     title: "CEO/COFOUNDER AT GETEQUITY",
-    //     photo: TravisUche,
-    // },
-    // {
-    //     name: "Victor Fatanmi",
-    //     title: "CEO/COFOUNDER AT GETEQUITY",
-    //     photo: VictorFatanmi,
-    // },
-    // {
-    //     name: "Edidiong Asikpo",
-    //     title: "CEO/COFOUNDER AT GETEQUITY",
-    //     photo: EdidiongAsikpo,
-    // },
-    // {
-    //     name: "Douglas Kendyson",
-    //     title: "CEO/COFOUNDER AT GETEQUITY",
-    //     photo: DouglasKendyson,
-    // },
-    // {
-    //     name: "Alexandra Ighodaro",
-    //     title: "CEO/COFOUNDER AT GETEQUITY",
-    //     photo: AlexandraIghodaro,
-    // },
-];
+export const Judges: { name: string; title: string; photo: StaticImageData }[] = [];
 
 export const FaqTabs = [
     { name: "General", id: "general" },
@@ -125,57 +46,55 @@ export const FaqTabs = [
 
 export const Faqs = [
     {
-        title: "This is a dummy faq (general)",
-        content:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-        tab: "general",
-    },
-    {
-        title: "This is a dummy faq (general)",
-        content:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-        tab: "general",
-    },
-    {
-        title: "This is a dummy faq (general)",
-        content:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-        tab: "general",
-    },
-    {
-        title: "This is a dummy faq (hackathon)",
-        content:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        title: "How do I go about the registration?",
+        content: "Registration for the hackathon can be completed through our official website. Fill in the required details, select your area of interest, and submit your application. Early registration is encouraged as spots are limited.",
         tab: "hackathon",
     },
     {
-        title: "This is a dummy faq (hackathon)",
-        content:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        title: "How are teams formed?",
+        content: "Teams can be pre-formed or created during the event. If you don't have a team, you can join one through our team formation slack available on the beginning day. We encourage collaboration among participants to form diverse and skilled teams.",
         tab: "hackathon",
     },
     {
-        title: "This is a dummy faq (hackathon)",
+        title: "What are the different stages?",
         content:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "The hackathon consists of three main stages: 1) Idea Submission: Teams submit their project ideas and initial plans. 2) Development Phase: Teams work on their projects, with access to mentorship and resources. 3) Final Presentation: Teams present their finished products to a panel of judges who evaluate based on creativity, feasibility, and impact.",
         tab: "hackathon",
     },
     {
-        title: "This is a dummy faq (conference)",
+        title: "Who is this event for?",
+        content: "Fusion Tech Fest is for Gen Z developers, founders, designers, tech enthusiasts, marketers, product managers, and community builders across Africa. Whether you are a student, early-career professional, or seasoned expert, this event offers something for everyone passionate about technology and innovation.",
+        tab: "general",
+    },
+    {
+        title: "Who is allowed to apply?",
+        content: "Anyone with expertise in technology, innovation, and related fields can apply to speak at Fusion Tech Fest. We welcome applications from industry leaders, experienced professionals, and emerging voices who can share valuable insights and experiences with our diverse audience.",
+        tab: "general",
+    },
+    {
+        title: "How do I go about the product showcase?",
         content:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "To participate in the product showcase, you need to submit an application through our website. Provide details about your product, its innovative features, and how it addresses real-world problems. Once selected, you'll have the opportunity to demonstrate your product to a wide audience of tech enthusiasts and potential investors.",
+        tab: "general",
+    },
+    {
+        title: "Still have a question? 🥲",
+        content: "If you need further details or have any questions, feel free to reach out to us at hello@genztechies.com.",
+        tab: "general",
+    },
+    {
+        title: "Where is the Location?",
+        content: "The location for Fusion Tech Fest 2024 will be announced soon. Stay tuned to our website and social media channels for updates.",
         tab: "conference",
     },
     {
-        title: "This is a dummy faq (conference)",
-        content:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        title: "What is the Date and Time?",
+        content: "Fusion Tech Fest will take place from August 26th to 31st, 2024. The virtual hackathon runs from August 26th to 30th, with the one-day conference happening on August 31st.",
         tab: "conference",
     },
     {
-        title: "This is a dummy faq (conference)",
-        content:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+        title: "How do I Sponsor or Partner for the event?",
+        content: "For sponsorship or partnership opportunities, please visit our website's partnership section or contact us directly at afolabi@genztechies.com. We offer various packages that can be tailored to meet your needs and help you reach a broad audience of tech enthusiasts.",
         tab: "conference",
     },
 ];

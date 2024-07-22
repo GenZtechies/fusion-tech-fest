@@ -41,7 +41,7 @@ function Home() {
             <div className="py-28 bg-[#FFF3FD] bg-hero-stars">
                 <section className="contained mt-20 lg:mt-32 flex flex-col items-center">
                     <div className="flex justify-center items-center">
-                        {["explore", "network", "build"].map((value, index) => (
+                        {["Collaborate", "Innovate", "Build"].map((value, index) => (
                             <div key={index} className="flex items-center">
                                 {index > 0 && <div className="w-2.5 aspect-square rounded-full bg-[#FAD278]" />}
                                 <div className="bg-[#FAD278] text-[#361566] font-bold rounded-full py-2 px-4 uppercase font-helvetica-compressed tracking-wider">{value}</div>
@@ -59,13 +59,35 @@ function Home() {
                         }
                     </p>
 
-                    <div className="mt-7 flex flex-col items-center space-y-5">
-                        <Button>
-                            Register For Product Showcase <ArrowRightCircleFilledIcon className="ml-2" />
-                        </Button>
+                    <div className="mt-7 flex flex-col lg:flex-row justify-center items-center space-x-0 lg:space-x-4 space-y-5 lg:space-y-0">
                         <div className="w-fit">
-                            <Button>
+                            <Button
+                                onClick={() => {
+                                    window.open("https://eventprime.co/e/fusion-tech-fest", "_blank");
+                                }}
+                                size={"lg"}
+                            >
                                 Get Tickets <ArrowRightCircleFilledIcon className="ml-2" />
+                            </Button>
+                        </div>
+                        <div className="w-fit">
+                            <Button
+                                onClick={() => {
+                                    window.open("https://bit.ly/3z5winx", "_blank");
+                                }}
+                                size={"lg"}
+                            >
+                                Register For Hackathon <ArrowRightCircleFilledIcon className="ml-2" />
+                            </Button>
+                        </div>
+                        <div className="w-fit">
+                            <Button
+                                onClick={() => {
+                                    window.open("https://forms.gle/HZUdwfvv9c71RK7P7", "_blank");
+                                }}
+                                size={"lg"}
+                            >
+                                Register For Product Showcase <ArrowRightCircleFilledIcon className="ml-2" />
                             </Button>
                         </div>
                     </div>
@@ -109,7 +131,7 @@ function Home() {
                 <div className="py-12 contained">
                     <div className="flex flex-wrap justify-center gap-8">
                         {SponsorsLogo.map((sponsor, index) => (
-                            <Image key={index} src={sponsor.logo} alt={sponsor.name} className="object-contain" />
+                            <Image key={index} src={sponsor.logo} alt={sponsor.name} className="max-w-[14rem] object-contain" />
                         ))}
                     </div>
                 </div>
@@ -285,7 +307,7 @@ function Home() {
                                     <CarouselPrevious />
                                     <CarouselNext />
                                 </div>
-                                <Link href="/#">
+                                <Link target="_blank" href="https://photos.google.com/share/AF1QipOMu1iJOiOysEnJ2iMkYwtpRfIiye9MkPJ3qbZ-3emRUDjPaNOVD_Xp3kBulQ4U_g?key=bW9MRkRwd1hTUFBXcndQbTZOdGtZYVE5eTNseWdn">
                                     <Button>
                                         View Photos <ArrowRightCircleFilledIcon className="ml-2" />
                                     </Button>
@@ -308,16 +330,16 @@ function Home() {
                                     <div className="flex items-center justify-center space-x-3">
                                         <h1 className="text-[#F4B0E9] text-xl lg:text-2xl font-helvetica-compressed tracking-wider">Join Communtity</h1>
                                         <div className="flex space-x-3">
-                                            <Link href="/">
+                                            <Link target="_blank" href="https://linktr.ee/fusiontechfest">
                                                 <InstagramIconAlt />
                                             </Link>
-                                            <Link href="/">
+                                            <Link target="_blank" href="https://linktr.ee/fusiontechfest">
                                                 <XTwitterIconAlt />
                                             </Link>
-                                            <Link href="/">
+                                            <Link target="_blank" href="https://linktr.ee/fusiontechfest">
                                                 <FacebookIconAlt />
                                             </Link>
-                                            <Link href="/">
+                                            <Link target="_blank" href="https://linktr.ee/fusiontechfest">
                                                 <TelegramIconAlt />
                                             </Link>
                                         </div>
@@ -340,30 +362,30 @@ function Home() {
                     <h1 className="font-helvetica text-[#361566] text-sm text-center mt-4 lg:text-left lg:mt-0">&copy; 2024 GenZtechies X Codespace | All rights reserved.</h1>
                     <div className="flex flex-col items-center lg:items-end order-first lg:order-last">
                         <ul className="flex text-[#361566] font-helvetica-compressed text-lg tracking-wide justify-center lg:justify-start space-x-4 uppercase">
-                            <Link href="/">
+                            <Link target="_blank" href="https://linktr.ee/fusiontechfest">
                                 <li>initiatives</li>
                             </Link>
-                            <Link href="/">
+                            <Link target="_blank" href="https://linktr.ee/fusiontechfest">
                                 <li>Donate</li>
                             </Link>
-                            <Link href="/">
+                            <Link target="_blank" href="https://photos.google.com/share/AF1QipOMu1iJOiOysEnJ2iMkYwtpRfIiye9MkPJ3qbZ-3emRUDjPaNOVD_Xp3kBulQ4U_g?key=bW9MRkRwd1hTUFBXcndQbTZOdGtZYVE5eTNseWdn">
                                 <li>Gallery</li>
                             </Link>
-                            <Link href="/">
+                            <Link target="_blank" href="https://linktr.ee/fusiontechfest">
                                 <li>press</li>
                             </Link>
                         </ul>
                         <div className="flex space-x-3 mt-2">
-                            <Link href="/">
+                            <Link target="_blank" href="https://linktr.ee/fusiontechfest">
                                 <InstagramIcon />
                             </Link>
-                            <Link href="/">
+                            <Link target="_blank" href="https://linktr.ee/fusiontechfest">
                                 <XTwitterIcon />
                             </Link>
-                            <Link href="/">
+                            <Link target="_blank" href="https://linktr.ee/fusiontechfest">
                                 <FacebookIcon />
                             </Link>
-                            <Link href="/">
+                            <Link target="_blank" href="https://linktr.ee/fusiontechfest">
                                 <TelegramIcon />
                             </Link>
                         </div>

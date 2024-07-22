@@ -63,7 +63,11 @@ function Navbar() {
                         ))}
                     </ul>
 
-                    <Button className="hidden lg:flex">
+                    <Button
+                        onClick={() => {
+                            window.open("https://eventprime.co/e/fusion-tech-fest", "_blank");
+                        }}
+                        className="hidden lg:flex">
                         Get Tickets <ArrowRightCircleFilledIcon className="ml-2" />
                     </Button>
 
