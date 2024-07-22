@@ -41,7 +41,7 @@ function Home() {
             <div className="py-28 bg-[#FFF3FD] bg-hero-stars">
                 <section className="contained mt-20 lg:mt-32 flex flex-col items-center">
                     <div className="flex justify-center items-center">
-                        {["Collaborate", "Innovate", "Build"].map((value, index) => (
+                        {["Innovate", "Collaborate", "Build"].map((value, index) => (
                             <div key={index} className="flex items-center">
                                 {index > 0 && <div className="w-2.5 aspect-square rounded-full bg-[#FAD278]" />}
                                 <div className="bg-[#FAD278] text-[#361566] font-bold rounded-full py-2 px-4 uppercase font-helvetica-compressed tracking-wider">{value}</div>
