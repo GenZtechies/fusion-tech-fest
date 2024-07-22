@@ -55,7 +55,7 @@ function Home() {
 
                     <p className="mt-10 lg:text-xl text-center xl:px-48 mx-auto text-[#361566] font-helvetica">
                         {
-                            "Join thousands of tech enthusiasts at FusionTechFest in a collective journey towards innovation, creativity and impact. Collaborate with like minded individuals, participate in our challenging hackathon, pitch your product at the showcase and attend inspiring keynote and panel sessions that will shape the future of technology in Africa and beyond."
+                            "Join thousands of tech enthusiasts at Fusion Tech Fest in a collective journey towards innovation, creativity and impact. Collaborate with like minded individuals, participate in our challenging hackathon, pitch your product at the showcase and attend inspiring keynote and panel sessions that will shape the future of technology in Africa and beyond."
                         }
                     </p>
 
