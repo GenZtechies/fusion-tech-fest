@@ -19,6 +19,14 @@ html {
         -webkit-text-stroke-color: #d1a4ff;
     }
 
+    .heading-2 {
+        @apply uppercase text-[#361566] mt-7 text-center text-6xl lg:text-7xl xl:text-8xl font-helvetica-compressed;
+        leading-trim: both;
+        text-edge: cap;
+        -webkit-text-stroke-width: 2;
+        -webkit-text-stroke-color: #d1a4ff;
+    }
+
     .heading-nav {
         @apply uppercase text-[#361566] mt-7 text-center text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-helvetica-compressed;
         leading-trim: both;

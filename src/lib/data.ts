@@ -1,12 +1,8 @@
-import KoraLogo from "../../public/images/sponsors/kora-logo.png";
-import QuineLogo from "../../public/images/sponsors/quine-logo.png";
-import VercelLogo from "../../public/images/sponsors/vercel-logo.png";
-import TrefordLogo from "../../public/images/sponsors/treford-logo.png";
-import ChimoneyLogo from "../../public/images/sponsors/chimoney-logo.png";
+import { StaticImageData } from "next/image";
+
+import CouchbaseLogo from "../../public/images/sponsors/couchbase-logo.png";
 import PaystackLogo from "../../public/images/sponsors/paystack-logo.png";
-import NexascaleLogo from "../../public/images/sponsors/nexascale-logo.png";
-import IngressiveLogo from "../../public/images/sponsors/ingressive-logo.png";
-import innovationLabLogo from "../../public/images/sponsors/innovation-lab-logo.png";
+import InsideTheEcosystemLogo from "../../public/images/sponsors/inside-the-tech-ecosystem-logo.jpeg";
 
 import JudeDike from "../../public/images/speakers-judges/jude-dike.png";
 import EuniceAzu from "../../public/images/speakers-judges/eunice-azu.png";
@@ -30,101 +26,95 @@ export const GalleryItems = [
 ];
 
 export const SponsorsLogo = [
-    { name: "Quine", logo: QuineLogo },
+    { name: "Inside The Ecosystem", logo: InsideTheEcosystemLogo },
     { name: "Paystack", logo: PaystackLogo },
-    { name: "Chimoney", logo: ChimoneyLogo },
-    { name: "Innovation Lab", logo: innovationLabLogo },
-    { name: "Vercel", logo: VercelLogo },
-    { name: "Kora", logo: KoraLogo },
-    { name: "Ingressive", logo: IngressiveLogo },
-    { name: "Treford", logo: TrefordLogo },
-    { name: "Nexascale", logo: NexascaleLogo },
+    { name: "Couchbase", logo: CouchbaseLogo },
 ];
 
-export const Speakers = [
-    {
-        name: "Jude Dike",
-        title: "CEO/COFOUNDER AT GETEQUITY",
-        photo: JudeDike,
-    },
-    {
-        name: "Eunice Azu",
-        title: "CEO/COFOUNDER AT GETEQUITY",
-        photo: EuniceAzu,
-    },
-    {
-        name: "Rasheed Aro",
-        title: "CEO/COFOUNDER AT GETEQUITY",
-        photo: RasheedAro,
-    },
-    {
-        name: "Travis Uche",
-        title: "CEO/COFOUNDER AT GETEQUITY",
-        photo: TravisUche,
-    },
-    {
-        name: "Victor Fatanmi",
-        title: "CEO/COFOUNDER AT GETEQUITY",
-        photo: VictorFatanmi,
-    },
-    {
-        name: "Edidiong Asikpo",
-        title: "CEO/COFOUNDER AT GETEQUITY",
-        photo: EdidiongAsikpo,
-    },
-    {
-        name: "Douglas Kendyson",
-        title: "CEO/COFOUNDER AT GETEQUITY",
-        photo: DouglasKendyson,
-    },
-    {
-        name: "Alexandra Ighodaro",
-        title: "CEO/COFOUNDER AT GETEQUITY",
-        photo: AlexandraIghodaro,
-    },
+export const Speakers: { name: string; title: string; photo: StaticImageData }[] = [
+    // {
+    //     name: "Jude Dike",
+    //     title: "CEO/COFOUNDER AT GETEQUITY",
+    //     photo: JudeDike,
+    // },
+    // {
+    //     name: "Eunice Azu",
+    //     title: "CEO/COFOUNDER AT GETEQUITY",
+    //     photo: EuniceAzu,
+    // },
+    // {
+    //     name: "Rasheed Aro",
+    //     title: "CEO/COFOUNDER AT GETEQUITY",
+    //     photo: RasheedAro,
+    // },
+    // {
+    //     name: "Travis Uche",
+    //     title: "CEO/COFOUNDER AT GETEQUITY",
+    //     photo: TravisUche,
+    // },
+    // {
+    //     name: "Victor Fatanmi",
+    //     title: "CEO/COFOUNDER AT GETEQUITY",
+    //     photo: VictorFatanmi,
+    // },
+    // {
+    //     name: "Edidiong Asikpo",
+    //     title: "CEO/COFOUNDER AT GETEQUITY",
+    //     photo: EdidiongAsikpo,
+    // },
+    // {
+    //     name: "Douglas Kendyson",
+    //     title: "CEO/COFOUNDER AT GETEQUITY",
+    //     photo: DouglasKendyson,
+    // },
+    // {
+    //     name: "Alexandra Ighodaro",
+    //     title: "CEO/COFOUNDER AT GETEQUITY",
+    //     photo: AlexandraIghodaro,
+    // },
 ];
 
-export const Judges = [
-    {
-        name: "Jude Dike",
-        title: "CEO/COFOUNDER AT GETEQUITY",
-        photo: JudeDike,
-    },
-    {
-        name: "Eunice Azu",
-        title: "CEO/COFOUNDER AT GETEQUITY",
-        photo: EuniceAzu,
-    },
-    {
-        name: "Rasheed Aro",
-        title: "CEO/COFOUNDER AT GETEQUITY",
-        photo: RasheedAro,
-    },
-    {
-        name: "Travis Uche",
-        title: "CEO/COFOUNDER AT GETEQUITY",
-        photo: TravisUche,
-    },
-    {
-        name: "Victor Fatanmi",
-        title: "CEO/COFOUNDER AT GETEQUITY",
-        photo: VictorFatanmi,
-    },
-    {
-        name: "Edidiong Asikpo",
-        title: "CEO/COFOUNDER AT GETEQUITY",
-        photo: EdidiongAsikpo,
-    },
-    {
-        name: "Douglas Kendyson",
-        title: "CEO/COFOUNDER AT GETEQUITY",
-        photo: DouglasKendyson,
-    },
-    {
-        name: "Alexandra Ighodaro",
-        title: "CEO/COFOUNDER AT GETEQUITY",
-        photo: AlexandraIghodaro,
-    },
+export const Judges: { name: string; title: string; photo: StaticImageData }[] = [
+    // {
+    //     name: "Jude Dike",
+    //     title: "CEO/COFOUNDER AT GETEQUITY",
+    //     photo: JudeDike,
+    // },
+    // {
+    //     name: "Eunice Azu",
+    //     title: "CEO/COFOUNDER AT GETEQUITY",
+    //     photo: EuniceAzu,
+    // },
+    // {
+    //     name: "Rasheed Aro",
+    //     title: "CEO/COFOUNDER AT GETEQUITY",
+    //     photo: RasheedAro,
+    // },
+    // {
+    //     name: "Travis Uche",
+    //     title: "CEO/COFOUNDER AT GETEQUITY",
+    //     photo: TravisUche,
+    // },
+    // {
+    //     name: "Victor Fatanmi",
+    //     title: "CEO/COFOUNDER AT GETEQUITY",
+    //     photo: VictorFatanmi,
+    // },
+    // {
+    //     name: "Edidiong Asikpo",
+    //     title: "CEO/COFOUNDER AT GETEQUITY",
+    //     photo: EdidiongAsikpo,
+    // },
+    // {
+    //     name: "Douglas Kendyson",
+    //     title: "CEO/COFOUNDER AT GETEQUITY",
+    //     photo: DouglasKendyson,
+    // },
+    // {
+    //     name: "Alexandra Ighodaro",
+    //     title: "CEO/COFOUNDER AT GETEQUITY",
+    //     photo: AlexandraIghodaro,
+    // },
 ];
 
 export const FaqTabs = [
@@ -191,10 +181,10 @@ export const Faqs = [
 ];
 
 export const EventScheduleList = [
-    { date: "26th", fullDate: "August, 2024", event: "PANEL SESSION", details: "Lorem ipsum dolor sit amet consectetur. Congue sapien nunc ut arcu ut non quis at. Imperdiet scelerisque ut venenatis dui mattis montes lorem urna at. Eu id nisl arcu.", time: "09:00AM-12:00PM" },
-    { date: "26th", fullDate: "August, 2024", event: "KEYNOTE/SPEAKING SESSIONS", details: "Lorem ipsum dolor sit amet consectetur. Congue sapien nunc ut arcu ut non quis at. Imperdiet scelerisque ut venenatis dui mattis montes lorem urna at. Eu id nisl arcu.", time: "09:00AM-12:00PM" },
-    { date: "26th", fullDate: "August, 2024", event: "PRODUCT SHOWCASE", details: "Lorem ipsum dolor sit amet consectetur. Congue sapien nunc ut arcu ut non quis at. Imperdiet scelerisque ut venenatis dui mattis montes lorem urna at. Eu id nisl arcu.", time: "09:00AM-12:00PM" },
-    { date: "26th", fullDate: "August, 2024", event: "LEISURE AND NETWORKING", details: "Lorem ipsum dolor sit amet consectetur. Congue sapien nunc ut arcu ut non quis at. Imperdiet scelerisque ut venenatis dui mattis montes lorem urna at. Eu id nisl arcu.", time: "09:00AM-12:00PM" },
+    { date: "26th to 30th", fullDate: "August, 2024", event: "HYBRID HACKATHON", details: "This is a week-long collaborative event where developers and people in tech across Africa and beyond come together to build innovative solutions to local & global problems.", startTime: "09:00", endTime: "17:00" },
+    { date: "31st", fullDate: "August, 2024", event: "PANEL SESSION", details: " This session brings together industry experts, thought leaders, and professionals to discuss relevant topics, trends, and challenges in the tech industry.", startTime: "09:00", endTime: "17:00" },
+    { date: "31st", fullDate: "August, 2024", event: "KEYNOTE/SPEAKING SESSION", details: "These sessions feature keynote presentations from industry experts and general talks by thought leaders in their respective industries.", startTime: "09:00", endTime: "17:00" },
+    { date: "31st", fullDate: "August, 2024", event: "PRODUCT SHOWCASE", details: "This showcase is a session where participants can present their ideas, prototypes or demos of disruptive solutions addressing a wide range of domain problems in their communities.", startTime: "09:00", endTime: "17:00" },
 ];
 
 export const EventDaysList = [

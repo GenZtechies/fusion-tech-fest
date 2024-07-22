@@ -55,15 +55,22 @@ function Home() {
 
                     <p className="mt-10 lg:text-xl text-center xl:px-48 mx-auto text-[#361566] font-helvetica">
                         {
-                            "Get ready to dive into the future at Fusion Tech Fest! Join us for an unforgettable experience where groundbreaking innovation, cutting-edge creativity, and dynamic collaboration converge. Immerse yourself in a world of technological marvels, connect with industry leaders, and be inspired by visionary thinkers. Don't miss this chance to be part of an event that will shape the future of technology."
+                            "Join thousands of tech enthusiasts at FusionTechFest in a collective journey towards innovation, creativity and impact. Collaborate with like minded individuals, participate in our challenging hackathon, pitch your product at the showcase and attend inspiring keynote and panel sessions that will shape the future of technology in Africa and beyond."
                         }
                     </p>
 
-                    <Button className="mt-7">
-                        Register <ArrowRightCircleFilledIcon className="ml-2" />
-                    </Button>
+                    <div className="mt-7 flex flex-col items-center space-y-5">
+                        <Button>
+                            Register For Product Showcase <ArrowRightCircleFilledIcon className="ml-2" />
+                        </Button>
+                        <div className="w-fit">
+                            <Button>
+                                Get Tickets <ArrowRightCircleFilledIcon className="ml-2" />
+                            </Button>
+                        </div>
+                    </div>
 
-                    <div className="hero-card w-full lg:w-4/5 mt-36">
+                    <div className="hero-card w-full lg:w-4/5 mt-28">
                         <div className="gradient-border"></div>
                         <div className="p-5 flex items-center justify-between">
                             <div className="flex items-center gap-2.5">
@@ -88,7 +95,7 @@ function Home() {
                                 </IconWrapper>
 
                                 <p className="font-helvetica-compressed tracking-wider sm:text-sm md:text-base lg:text-xl text-[#361566] leading-5">
-                                    Random Hall, <br /> Lagos, Nigeria
+                                    The Zone, <br />  Gbagada, Lagos
                                 </p>
                             </div>
                         </div>
@@ -113,9 +120,7 @@ function Home() {
                     <SectionLabel text="About Us" />
 
                     <p className="text-[#361566] text-justify font-helvetica">
-                        Fusion Tech Fest is a pioneering event hosted by <span className="font-bold">GenZTechies</span> and <span className="font-bold">Code Space</span> to unite GenZ tech enthusiasts in a collaborative endeavor to push the boundaries of innovation and technology. Under the theme{" "}
-                        <span className="font-bold">&quot;Collaborative Minds, Limitless Possibilities,&quot;</span> we aim to showcase the transformative power of teamwork and innovative thinking in tech. There will be a virtual hackathonfrom <span className="font-bold">August 26th</span>to <span className="font-bold">30th</span> and a one-day
-                        conference on <span className="font-bold">August 31st</span> will serve as a beacon for aspiring tech pioneers and seasoned professionals alike.
+                        <span className="font-bold">Fusion Tech Fest</span> is a pioneering event hosted by <span className="font-bold">GenZTechies</span> and <span className="font-bold">CodeSpace HQ</span> to unite tech enthusiasts in a collaborative endeavor to push the boundaries of innovation and technology across Africa. This event features a diverse lineup of speakers, showcases and hackers covering impactful topics, products and solutions at the intersection of innovation through technology.
                     </p>
 
                     <div className="flex justify-center items-center mt-10 w-full">
@@ -161,8 +166,8 @@ function Home() {
                                         <CalendarIcon className="text-white text-[24px]" />
                                     </div>
                                     <div className="font-helvetica-compressed text-[#361566] text-xl ">
-                                        <p>09:00AM</p>
-                                        <p className="-mt-2">09:00AM</p>
+                                        <p>{item.startTime}</p>
+                                        <p className="-mt-2">{item.endTime}</p>
                                     </div>
                                 </div>
 
@@ -177,6 +182,11 @@ function Home() {
             <div id="speakers" className="py-12 pb-24">
                 <SectionLabel text="Keynote Speakers" />
                 <div className="contained mx-auto">
+                    {Speakers.length === 0 && (
+                        <h2 className="heading-2" style={{ WebkitTextStrokeWidth: 2, WebkitTextStrokeColor: "#D1A4FF" }}>
+                            WILL BE ANNOUNCED SOON
+                        </h2>
+                    )}
                     <div className="grid grid-cols-4 gap-y-8 gap-x-6 place-items-center">
                         {Speakers.map((speaker, index) => (
                             <div
@@ -201,6 +211,11 @@ function Home() {
             <div id="judges" className="bg-[#F2FAFF] py-12">
                 <SectionLabel text="Judges" />
                 <div className="contained mx-auto">
+                    {Speakers.length === 0 && (
+                        <h2 className="heading-2" style={{ WebkitTextStrokeWidth: 2, WebkitTextStrokeColor: "#D1A4FF" }}>
+                            WILL BE ANNOUNCED SOON
+                        </h2>
+                    )}
                     <div className="grid grid-cols-4 gap-y-8 gap-x-6 place-items-center">
                         {Judges.map((speaker, index) => (
                             <div

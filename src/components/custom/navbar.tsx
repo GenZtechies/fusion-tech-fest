@@ -64,7 +64,7 @@ function Navbar() {
                     </ul>
 
                     <Button className="hidden lg:flex">
-                        Register <ArrowRightCircleFilledIcon className="ml-2" />
+                        Get Tickets <ArrowRightCircleFilledIcon className="ml-2" />
                     </Button>
 
                     <Button
