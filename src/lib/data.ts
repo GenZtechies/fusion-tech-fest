@@ -33,7 +33,7 @@ export const SponsorsLogo = [
     { name: "CouchBase", logo: CouchBase },
     { name: "Inside The Tech Ecosystem", logo: InsideTheTechEcoSystem },
     { name: "NTIT", logo: NTIT },
-    { name: "Tech Noob", logo: TechNoob },
+    { name: "Tech Noobs", logo: TechNoob },
     { name: "Design With Rooks", logo: DesignWithRooks },
     { name: "Product Buddies", logo: ProductBuddies },
     { name: "The Garage", logo: TheGarage },
