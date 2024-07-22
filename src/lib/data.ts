@@ -14,12 +14,18 @@ import GalleryItem1 from "../../public/images/gallery/gallery-1.png";
 import GalleryItem2 from "../../public/images/gallery/gallery-2.png";
 import GalleryItem3 from "../../public/images/gallery/gallery-3.png";
 import GalleryItem4 from "../../public/images/gallery/gallery-4.png";
+import GalleryItem5 from "../../public/images/gallery/gallery-5.jpg";
+import GalleryItem6 from "../../public/images/gallery/gallery-6.jpg";
+import GalleryItem7 from "../../public/images/gallery/gallery-7.jpg";
 
 export const GalleryItems = [
     { name: "Gallery Item 1", image: GalleryItem1 },
     { name: "Gallery Item 2", image: GalleryItem2 },
     { name: "Gallery Item 3", image: GalleryItem3 },
     { name: "Gallery Item 4", image: GalleryItem4 },
+    { name: "Gallery Item 5", image: GalleryItem5 },
+    { name: "Gallery Item 6", image: GalleryItem6 },
+    { name: "Gallery Item 7", image: GalleryItem7 },
 ];
 
 export const SponsorsLogo = [
