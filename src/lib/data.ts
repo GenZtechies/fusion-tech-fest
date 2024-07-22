@@ -29,8 +29,8 @@ export const GalleryItems = [
 ];
 
 export const SponsorsLogo = [
-    { name: "Paystack", logo: Paystack },
-    { name: "CouchBase", logo: CouchBase },
+    // { name: "Paystack", logo: Paystack },
+    // { name: "CouchBase", logo: CouchBase },
     { name: "Inside The Tech Ecosystem", logo: InsideTheTechEcoSystem },
     { name: "NTIT", logo: NTIT },
     { name: "Tech Noobs", logo: TechNoob },
