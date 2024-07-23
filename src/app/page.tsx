@@ -328,7 +328,7 @@ function Home() {
                             <div className="flex items-center justify-center lg:items-start lg:justify-start">
                                 <div className="bg-white/30 px-4 py-2.5 w-fit rounded-3xl mt-4 lg:mt-8">
                                     <div className="flex items-center justify-center space-x-3">
-                                        <h1 className="text-[#F4B0E9] text-xl lg:text-2xl font-helvetica-compressed tracking-wider">Join Communtity</h1>
+                                        <h1 className="text-[#F4B0E9] text-xl lg:text-2xl font-helvetica-compressed tracking-wider">Join Community</h1>
                                         <div className="flex space-x-3">
                                             <Link target="_blank" href="https://linktr.ee/fusiontechfest">
                                                 <InstagramIconAlt />
