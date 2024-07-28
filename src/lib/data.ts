@@ -2,12 +2,17 @@ import { StaticImageData } from "next/image";
 
 import APMP from "../../public/images/sponsors/apmp.jpg";
 import NTIT from "../../public/images/sponsors/ntit.jpg";
+import Tuliban from "../../public/images/sponsors/tuliban.png";
 import Paystack from "../../public/images/sponsors/paystack.png";
 import TechNoob from "../../public/images/sponsors/tech-noob.jpg";
 import CouchBase from "../../public/images/sponsors/couchbase.png";
 import TheGarage from "../../public/images/sponsors/the-garage.png";
+import EmpowerHer from "../../public/images/sponsors/empower-her.jpg";
+import TechMoonShot from "../../public/images/sponsors/tech-moon-shot.png";
 import ProductBuddies from "../../public/images/sponsors/product-buddies.jpg";
 import DesignWithRooks from "../../public/images/sponsors/design-with-rooks.png";
+import PeopleInProduct from "../../public/images/sponsors/people-in-product.jpg";
+import MarketersTherapy from "../../public/images/sponsors/marketers-therapy.jpg";
 import InsideTheTechEcoSystem from "../../public/images/sponsors/inside-the-tech-ecosystem.jpg";
 
 import GalleryItem1 from "../../public/images/gallery/gallery-1.png";
@@ -38,6 +43,11 @@ export const SponsorsLogo = [
     { name: "Product Buddies", logo: ProductBuddies },
     { name: "The Garage", logo: TheGarage },
     { name: "APMP", logo: APMP },
+    { name: "Marketers Therapy", logo: MarketersTherapy },
+    { name: "Empower Her", logo: EmpowerHer },
+    { name: "Tech Moon Shot", logo: TechMoonShot },
+    { name: "People In Product", logo: PeopleInProduct },
+    { name: "Tuliban", logo: Tuliban },
 ];
 
 export const Speakers: { name: string; title: string; photo: StaticImageData }[] = [];
