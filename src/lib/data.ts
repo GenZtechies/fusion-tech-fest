@@ -13,6 +13,7 @@ import ProductBuddies from "../../public/images/sponsors/product-buddies.jpg";
 import DesignWithRooks from "../../public/images/sponsors/design-with-rooks.png";
 import PeopleInProduct from "../../public/images/sponsors/people-in-product.jpg";
 import MarketersTherapy from "../../public/images/sponsors/marketers-therapy.jpg";
+import TheUnseriousTechShow from "../../public/images/sponsors/the-unserious-tech-show.jpg";
 import InsideTheTechEcoSystem from "../../public/images/sponsors/inside-the-tech-ecosystem.jpg";
 
 import GalleryItem1 from "../../public/images/gallery/gallery-1.png";
@@ -46,6 +47,7 @@ export const SponsorsLogo = [
     { name: "Marketers Therapy", logo: MarketersTherapy },
     { name: "Empower Her", logo: EmpowerHer },
     { name: "Tech Moon Shot", logo: TechMoonShot },
+    { name: "The Unserious Tech Show", logo: TheUnseriousTechShow },
     { name: "People In Product", logo: PeopleInProduct },
     { name: "Tuliban", logo: Tuliban },
 ];
