@@ -117,7 +117,7 @@ function Home() {
                                 </IconWrapper>
 
                                 <p className="font-helvetica-compressed tracking-wider sm:text-sm md:text-base lg:text-xl text-[#361566] leading-5">
-                                    To be <br />  Announced
+                                    Zone Tech Park,<br /> Gbagada, Lagos
                                 </p>
                             </div>
                         </div>
