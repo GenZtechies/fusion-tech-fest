@@ -233,7 +233,7 @@ function Home() {
             <div id="judges" className="bg-[#F2FAFF] py-12">
                 <SectionLabel text="Judges" />
                 <div className="contained mx-auto">
-                    {Speakers.length === 0 && (
+                    {Judges.length === 0 && (
                         <h2 className="heading-2" style={{ WebkitTextStrokeWidth: 2, WebkitTextStrokeColor: "#D1A4FF" }}>
                             WILL BE ANNOUNCED SOON
                         </h2>

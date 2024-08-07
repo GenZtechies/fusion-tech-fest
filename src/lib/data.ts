@@ -24,6 +24,20 @@ import GalleryItem5 from "../../public/images/gallery/gallery-5.jpg";
 import GalleryItem6 from "../../public/images/gallery/gallery-6.jpg";
 import GalleryItem7 from "../../public/images/gallery/gallery-7.jpg";
 
+import KanayoUzo from "../../public/images/speakers-judges/kanayo-uzo.jpg";
+import OsitaJames from "../../public/images/speakers-judges/osita-james.jpg";
+import DavidIjaola from "../../public/images/speakers-judges/david-ijaola.jpeg";
+import OrimDominic from "../../public/images/speakers-judges/orim-dominic.jpg";
+import ChiomaJudith from "../../public/images/speakers-judges/chioma-judith.jpg";
+import SodiqAkinjobi from "../../public/images/speakers-judges/sodiq-akinjobi.jpg";
+import NmesomaOkonkwo from "../../public/images/speakers-judges/nmesoma-okonkwo.png";
+import AdeolaOderinde from "../../public/images/speakers-judges/adeola-oderinde.jpg";
+import PreciousOdahunsi from "../../public/images/speakers-judges/precious-odahunsi.jpg";
+import OdehBlessingAsia from "../../public/images/speakers-judges/odeh-blessing-asia.jpg";
+import KenechukwuNwankwo from "../../public/images/speakers-judges/kenechukwu-nwankwo.png";
+import DonaldsonChineduOkoye from "../../public/images/speakers-judges/donaldson-chinedu-okoye.jpg";
+import OmotosoDolapoOreoluwa from "../../public/images/speakers-judges/omotoso-dolapo-oreoluwa.jpg";
+
 export const GalleryItems = [
     { name: "Gallery Item 1", image: GalleryItem1 },
     { name: "Gallery Item 2", image: GalleryItem2 },
@@ -52,7 +66,21 @@ export const SponsorsLogo = [
     { name: "Tuliban", logo: Tuliban },
 ];
 
-export const Speakers: { name: string; title: string; photo: StaticImageData }[] = [];
+export const Speakers: { name: string; title: string; photo: StaticImageData }[] = [
+    { name: "Kanayo Uzo", title: "__", photo: KanayoUzo },
+    { name: "Osita James", title: "__", photo: OsitaJames },
+    { name: "David Ijaola", title: "__", photo: DavidIjaola },
+    { name: "Orim Dominic", title: "__", photo: OrimDominic },
+    { name: "Chioma Judith", title: "__", photo: ChiomaJudith },
+    { name: "Sodiq Akinjobi", title: "__", photo: SodiqAkinjobi },
+    { name: "Nmesoma Okonkwo", title: "__", photo: NmesomaOkonkwo },
+    { name: "Adeola Oderinde", title: "__", photo: AdeolaOderinde },
+    { name: "Precious Odahunsi", title: "__", photo: PreciousOdahunsi },
+    { name: "Odeh Blessing Asia", title: "__", photo: OdehBlessingAsia },
+    { name: "Kenechukwu Nwankwo", title: "__", photo: KenechukwuNwankwo },
+    { name: "Donaldson Chinedu Okoye", title: "__", photo: DonaldsonChineduOkoye },
+    { name: "Omotoso Dolapo Oreoluwa", title: "__", photo: OmotosoDolapoOreoluwa },
+];
 
 export const Judges: { name: string; title: string; photo: StaticImageData }[] = [];
 
