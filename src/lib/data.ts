@@ -67,19 +67,19 @@ export const SponsorsLogo = [
 ];
 
 export const Speakers: { name: string; title: string; photo: StaticImageData }[] = [
-    { name: "Kanayo Uzo", title: "__", photo: KanayoUzo },
-    { name: "Osita James", title: "__", photo: OsitaJames },
-    { name: "David Ijaola", title: "__", photo: DavidIjaola },
-    { name: "Orim Dominic", title: "__", photo: OrimDominic },
-    { name: "Chioma Judith", title: "__", photo: ChiomaJudith },
-    { name: "Sodiq Akinjobi", title: "__", photo: SodiqAkinjobi },
-    { name: "Nmesoma Okonkwo", title: "__", photo: NmesomaOkonkwo },
-    { name: "Adeola Oderinde", title: "__", photo: AdeolaOderinde },
-    { name: "Precious Odahunsi", title: "__", photo: PreciousOdahunsi },
-    { name: "Odeh Blessing Asia", title: "__", photo: OdehBlessingAsia },
-    { name: "Kenechukwu Nwankwo", title: "__", photo: KenechukwuNwankwo },
-    { name: "Donaldson Chinedu Okoye", title: "__", photo: DonaldsonChineduOkoye },
-    { name: "Omotoso Dolapo Oreoluwa", title: "__", photo: OmotosoDolapoOreoluwa },
+    { name: "Kanayo Uzo", title: "Designer at Belonwus", photo: KanayoUzo },
+    { name: "Osita James", title: "Managing Partner, BlackCrest", photo: OsitaJames },
+    { name: "David Ijaola", title: "Product Manager at Norebase", photo: DavidIjaola },
+    { name: "Orim Dominic", title: "Software Engineer ar Zedi Inc.", photo: OrimDominic },
+    { name: "Chioma Judith", title: "Partnership Associate at Non-tech In Tech", photo: ChiomaJudith },
+    { name: "Sodiq Akinjobi", title: "Developer Ecosystem Community Manager, Google", photo: SodiqAkinjobi },
+    { name: "Nmesoma Okonkwo", title: "Product Designer", photo: NmesomaOkonkwo },
+    { name: "Adeola Oderinde", title: "Product Marketing Manager at Davu AI", photo: AdeolaOderinde },
+    { name: "Precious O'dahunsi", title: "Product Marketing Manager at Bumpa", photo: PreciousOdahunsi },
+    { name: "Odeh Blessing Asia", title: "Brand Designer, Geneza Brands", photo: OdehBlessingAsia },
+    { name: "Kenechukwu Nwankwo", title: "Senior Product Manager", photo: KenechukwuNwankwo },
+    { name: "Donaldson Chinedu Okoye", title: "Product Manager at Termii", photo: DonaldsonChineduOkoye },
+    { name: "Omotoso Dolapo Oreoluwa", title: "Revenue Growth Director at TransferGo", photo: OmotosoDolapoOreoluwa },
 ];
 
 export const Judges: { name: string; title: string; photo: StaticImageData }[] = [];
