@@ -1,5 +1,7 @@
 import { StaticImageData } from "next/image";
 
+import AWS from "../../public/images/sponsors/aws.png";
+import JetBrains from "../../public/images/sponsors/jetbrains.png";
 import APMP from "../../public/images/sponsors/apmp.jpg";
 import NTIT from "../../public/images/sponsors/ntit.jpg";
 import Tuliban from "../../public/images/sponsors/tuliban.png";
@@ -13,6 +15,7 @@ import ProductBuddies from "../../public/images/sponsors/product-buddies.jpg";
 import DesignWithRooks from "../../public/images/sponsors/design-with-rooks.png";
 import PeopleInProduct from "../../public/images/sponsors/people-in-product.jpg";
 import MarketersTherapy from "../../public/images/sponsors/marketers-therapy.jpg";
+import CommunityLeadsAfrica from "../../public/images/sponsors/community-leads-africa.png";
 import TheUnseriousTechShow from "../../public/images/sponsors/the-unserious-tech-show.jpg";
 import InsideTheTechEcoSystem from "../../public/images/sponsors/inside-the-tech-ecosystem.jpg";
 
@@ -51,6 +54,8 @@ export const GalleryItems = [
 export const SponsorsLogo = [
     // { name: "Paystack", logo: Paystack },
     // { name: "CouchBase", logo: CouchBase },
+    { name: "AWS", logo: AWS },
+    { name: "JetBrains", logo: JetBrains },
     { name: "Inside The Tech Ecosystem", logo: InsideTheTechEcoSystem },
     { name: "NTIT", logo: NTIT },
     { name: "Tech Noobs", logo: TechNoob },
@@ -61,25 +66,29 @@ export const SponsorsLogo = [
     { name: "Marketers Therapy", logo: MarketersTherapy },
     { name: "Empower Her", logo: EmpowerHer },
     { name: "Tech Moon Shot", logo: TechMoonShot },
+    { name: "Community Leads Africa", logo: CommunityLeadsAfrica },
     { name: "The Unserious Tech Show", logo: TheUnseriousTechShow },
     { name: "People In Product", logo: PeopleInProduct },
     { name: "Tuliban", logo: Tuliban },
 ];
 
 export const Speakers: { name: string; title: string; photo: StaticImageData }[] = [
-    { name: "Kanayo Uzo", title: "Designer at Belonwus", photo: KanayoUzo },
-    { name: "Osita James", title: "Managing Partner, BlackCrest", photo: OsitaJames },
+    // Speakers
+    { name: "Kanayo Uzo", title: "Brand Designer at Belonwus", photo: KanayoUzo },
     { name: "David Ijaola", title: "Product Manager at Norebase", photo: DavidIjaola },
-    { name: "Orim Dominic", title: "Software Engineer ar Zedi Inc.", photo: OrimDominic },
-    { name: "Chioma Judith", title: "Partnership Associate at Non-tech In Tech", photo: ChiomaJudith },
+    { name: "Orim Dominic", title: "Software Engineer at Zedi Africa", photo: OrimDominic },
+    { name: "Chioma Uponi", title: "Community Manager/Partnership Associate at Non-Tech In Tech", photo: ChiomaJudith },
     { name: "Sodiq Akinjobi", title: "Developer Ecosystem Community Manager, Google", photo: SodiqAkinjobi },
-    { name: "Nmesoma Okonkwo", title: "Product Designer", photo: NmesomaOkonkwo },
+    { name: "Nmesoma Okonkwo", title: "Product Designer at Fundall", photo: NmesomaOkonkwo },
     { name: "Adeola Oderinde", title: "Product Marketing Manager at Davu AI", photo: AdeolaOderinde },
-    { name: "Precious O'dahunsi", title: "Product Marketing Manager at Bumpa", photo: PreciousOdahunsi },
-    { name: "Odeh Blessing Asia", title: "Brand Designer, Geneza Brands", photo: OdehBlessingAsia },
+    { name: "Donaldson Okoye", title: "Product Manager at Termii", photo: DonaldsonChineduOkoye },
+
+    // Panelists
     { name: "Kenechukwu Nwankwo", title: "Senior Product Manager", photo: KenechukwuNwankwo },
-    { name: "Donaldson Chinedu Okoye", title: "Product Manager at Termii", photo: DonaldsonChineduOkoye },
-    { name: "Omotoso Dolapo Oreoluwa", title: "Revenue Growth Director at TransferGo", photo: OmotosoDolapoOreoluwa },
+    { name: "Osita James", title: "Managing Partner at BlackCrest", photo: OsitaJames },
+    { name: "Omotoso Dolapo", title: "Revenue Growth Director at TransferGo", photo: OmotosoDolapoOreoluwa },
+    { name: "Odeh B. Asia", title: "Brand Designer & Communications Strategist", photo: OdehBlessingAsia },
+    { name: "Precious O'dahunsi", title: "Product Marketing Manager at Bumpa", photo: PreciousOdahunsi },
 ];
 
 export const Judges: { name: string; title: string; photo: StaticImageData }[] = [];
