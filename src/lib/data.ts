@@ -73,22 +73,19 @@ export const SponsorsLogo = [
 ];
 
 export const Speakers: { name: string; title: string; photo: StaticImageData }[] = [
-    // Speakers
-    { name: "Kanayo Uzo", title: "Brand Designer at Belonwus", photo: KanayoUzo },
-    { name: "David Ijaola", title: "Product Manager at Norebase", photo: DavidIjaola },
-    { name: "Orim Dominic", title: "Software Engineer at Zedi Africa", photo: OrimDominic },
-    { name: "Chioma Uponi", title: "Community Manager/Partnership Associate at Non-Tech In Tech", photo: ChiomaJudith },
     { name: "Sodiq Akinjobi", title: "Developer Ecosystem Community Manager, Google", photo: SodiqAkinjobi },
-    { name: "Nmesoma Okonkwo", title: "Product Designer at Fundall", photo: NmesomaOkonkwo },
-    { name: "Adeola Oderinde", title: "Product Marketing Manager at Davu AI", photo: AdeolaOderinde },
-    { name: "Donaldson Okoye", title: "Product Manager at Termii", photo: DonaldsonChineduOkoye },
-
-    // Panelists
-    { name: "Kenechukwu Nwankwo", title: "Senior Product Manager", photo: KenechukwuNwankwo },
-    { name: "Osita James", title: "Managing Partner at BlackCrest", photo: OsitaJames },
     { name: "Omotoso Dolapo", title: "Revenue Growth Director at TransferGo", photo: OmotosoDolapoOreoluwa },
-    { name: "Odeh B. Asia", title: "Brand Designer & Communications Strategist", photo: OdehBlessingAsia },
     { name: "Precious O'dahunsi", title: "Product Marketing Manager at Bumpa", photo: PreciousOdahunsi },
+    { name: "Kenechukwu Nwankwo", title: "Senior Product Manager", photo: KenechukwuNwankwo },
+    { name: "Odeh B. Asia", title: "Brand Designer & Communications Strategist", photo: OdehBlessingAsia },
+    { name: "Nmesoma Okonkwo", title: "Product Designer at Fundall", photo: NmesomaOkonkwo },
+    { name: "Osita James", title: "Managing Partner at BlackCrest", photo: OsitaJames },
+    { name: "David Ijaola", title: "Product Manager at Norebase", photo: DavidIjaola },
+    { name: "Donaldson Okoye", title: "Product Manager at Termii", photo: DonaldsonChineduOkoye },
+    { name: "Kanayo Uzo", title: "Brand Designer at Belonwus", photo: KanayoUzo },
+    { name: "Adeola Oderinde", title: "Product Marketing Manager at Davu AI", photo: AdeolaOderinde },
+    { name: "Orim Dominic", title: "Software Engineer at Zedi Africa", photo: OrimDominic },
+    { name: "Chioma Uponi", title: "Partnership Associate at Non-Tech In Tech", photo: ChiomaJudith },
 ];
 
 export const Judges: { name: string; title: string; photo: StaticImageData }[] = [];
