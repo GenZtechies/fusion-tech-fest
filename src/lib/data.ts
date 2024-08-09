@@ -1,12 +1,12 @@
 import { StaticImageData } from "next/image";
 
 import AWS from "../../public/images/sponsors/aws.png";
-import JetBrains from "../../public/images/sponsors/jetbrains.png";
-import APMP from "../../public/images/sponsors/apmp.jpg";
-import NTIT from "../../public/images/sponsors/ntit.jpg";
+import APMP from "../../public/images/sponsors/apmp.png";
+import NTIT from "../../public/images/sponsors/ntit.png";
 import Tuliban from "../../public/images/sponsors/tuliban.png";
 import Paystack from "../../public/images/sponsors/paystack.png";
 import TechNoob from "../../public/images/sponsors/tech-noob.jpg";
+import JetBrains from "../../public/images/sponsors/jetbrains.png";
 import CouchBase from "../../public/images/sponsors/couchbase.png";
 import TheGarage from "../../public/images/sponsors/the-garage.png";
 import EmpowerHer from "../../public/images/sponsors/empower-her.jpg";
@@ -16,7 +16,7 @@ import DesignWithRooks from "../../public/images/sponsors/design-with-rooks.png"
 import PeopleInProduct from "../../public/images/sponsors/people-in-product.jpg";
 import MarketersTherapy from "../../public/images/sponsors/marketers-therapy.jpg";
 import CommunityLeadsAfrica from "../../public/images/sponsors/community-leads-africa.png";
-import TheUnseriousTechShow from "../../public/images/sponsors/the-unserious-tech-show.jpg";
+import TheUnseriousTechShow from "../../public/images/sponsors/the-unserious-tech-show.png";
 import InsideTheTechEcoSystem from "../../public/images/sponsors/inside-the-tech-ecosystem.jpg";
 
 import GalleryItem1 from "../../public/images/gallery/gallery-1.png";
@@ -51,41 +51,49 @@ export const GalleryItems = [
     { name: "Gallery Item 7", image: GalleryItem7 },
 ];
 
-export const SponsorsLogo = [
-    // { name: "Paystack", logo: Paystack },
-    // { name: "CouchBase", logo: CouchBase },
+export const EventSponsors = [
     { name: "AWS", logo: AWS },
     { name: "JetBrains", logo: JetBrains },
-    { name: "Inside The Tech Ecosystem", logo: InsideTheTechEcoSystem },
-    { name: "NTIT", logo: NTIT },
-    { name: "Tech Noobs", logo: TechNoob },
-    { name: "Design With Rooks", logo: DesignWithRooks },
-    { name: "Product Buddies", logo: ProductBuddies },
-    { name: "The Garage", logo: TheGarage },
-    { name: "APMP", logo: APMP },
-    { name: "Marketers Therapy", logo: MarketersTherapy },
-    { name: "Empower Her", logo: EmpowerHer },
-    { name: "Tech Moon Shot", logo: TechMoonShot },
-    { name: "Community Leads Africa", logo: CommunityLeadsAfrica },
-    { name: "The Unserious Tech Show", logo: TheUnseriousTechShow },
-    { name: "People In Product", logo: PeopleInProduct },
     { name: "Tuliban", logo: Tuliban },
+    { name: "Inside The Tech Ecosystem", logo: InsideTheTechEcoSystem },
 ];
 
+export const CommunityPartners = [
+    { name: "NTIT", logo: NTIT },
+    { name: "Design With Rooks", logo: DesignWithRooks },
+    { name: "People In Product", logo: PeopleInProduct },
+    { name: "Empower Her", logo: EmpowerHer },
+    { name: "The Garage", logo: TheGarage },
+    { name: "Marketers Therapy", logo: MarketersTherapy },
+    { name: "Community Leads Africa", logo: CommunityLeadsAfrica },
+    { name: "APMP", logo: APMP },
+    { name: "Product Buddies", logo: ProductBuddies },
+    { name: "Tech Noobs", logo: TechNoob },
+];
+
+export const MediaPartners = [
+    { name: "Tech Moon Shot", logo: TechMoonShot },
+    { name: "The Unserious Tech Show", logo: TheUnseriousTechShow },
+];
+
+export const KeynoteSpeakers: { name: string; title: string; photo: StaticImageData }[] = [{ name: "Sodiq Akinjobi", title: "Developer Ecosystem Community Manager, Google", photo: SodiqAkinjobi }];
+
 export const Speakers: { name: string; title: string; photo: StaticImageData }[] = [
-    { name: "Sodiq Akinjobi", title: "Developer Ecosystem Community Manager, Google", photo: SodiqAkinjobi },
+    { name: "Kanayo Uzo", title: "Brand Designer at Belonwus", photo: KanayoUzo },
+    { name: "Nmesoma Okonkwo", title: "Product Designer at Fundall", photo: NmesomaOkonkwo },
+    { name: "David Ijaola", title: "Product Manager at Norebase", photo: DavidIjaola },
+    { name: "Orim Dominic", title: "Software Engineer at Zedi Africa", photo: OrimDominic },
+    { name: "Donaldson Okoye", title: "Product Manager at Termii", photo: DonaldsonChineduOkoye },
+    { name: "Adeola Oderinde", title: "Product Marketing Manager at Davu AI", photo: AdeolaOderinde },
+    { name: "Chioma Uponi", title: "Partnership Associate at Non-Tech In Tech", photo: ChiomaJudith },
+];
+
+export const Panelists: { name: string; title: string; photo: StaticImageData }[] = [
+    { name: "Kenechukwu Nwankwo", title: "Senior Product Manager", photo: KenechukwuNwankwo },
+    { name: "Osita James", title: "Managing Partner at BlackCrest", photo: OsitaJames },
     { name: "Omotoso Dolapo", title: "Revenue Growth Director at TransferGo", photo: OmotosoDolapoOreoluwa },
     { name: "Precious O'dahunsi", title: "Product Marketing Manager at Bumpa", photo: PreciousOdahunsi },
-    { name: "Kenechukwu Nwankwo", title: "Senior Product Manager", photo: KenechukwuNwankwo },
     { name: "Odeh B. Asia", title: "Brand Designer & Communications Strategist", photo: OdehBlessingAsia },
-    { name: "Nmesoma Okonkwo", title: "Product Designer at Fundall", photo: NmesomaOkonkwo },
-    { name: "Osita James", title: "Managing Partner at BlackCrest", photo: OsitaJames },
-    { name: "David Ijaola", title: "Product Manager at Norebase", photo: DavidIjaola },
-    { name: "Donaldson Okoye", title: "Product Manager at Termii", photo: DonaldsonChineduOkoye },
-    { name: "Kanayo Uzo", title: "Brand Designer at Belonwus", photo: KanayoUzo },
-    { name: "Adeola Oderinde", title: "Product Marketing Manager at Davu AI", photo: AdeolaOderinde },
-    { name: "Orim Dominic", title: "Software Engineer at Zedi Africa", photo: OrimDominic },
-    { name: "Chioma Uponi", title: "Partnership Associate at Non-Tech In Tech", photo: ChiomaJudith },
 ];
 
 export const Judges: { name: string; title: string; photo: StaticImageData }[] = [];
@@ -136,7 +144,7 @@ export const Faqs = [
     },
     {
         title: "Where is the Location?",
-        content: "The location for Fusion Tech Fest 2024 will be announced soon. Stay tuned to our website and social media channels for updates.",
+        content: "Fusion Tech Fest is a hybrid event, with the virtual hackathon would be taking place online and the one-day physical conference would be happening at, Zone Tech Park, Gbagada, Lagos.",
         tab: "conference",
     },
     {

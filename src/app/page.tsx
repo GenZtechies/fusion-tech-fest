@@ -25,7 +25,7 @@ import XTwitterIconAlt from "@/components/svg-icons/x-twitter-icon-alt";
 import InstagramIconAlt from "@/components/svg-icons/instagram-icon-alt";
 import ArrowRightCircleFilledIcon from "@/components/svg-icons/arrow-right-circle-filled-icon";
 import { Carousel, CarouselItem, CarouselContent, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { Speakers, GalleryItems, EventScheduleList, EventDaysList, Faqs, FaqTabs, Judges, SponsorsLogo } from "@/lib/data";
+import { Speakers, GalleryItems, EventScheduleList, EventDaysList, Faqs, FaqTabs, Judges, CommunityPartners, EventSponsors, MediaPartners, KeynoteSpeakers, Panelists } from "@/lib/data";
 
 function IconWrapper({ children }: { children: React.ReactNode }) {
     return <div className="w-6 h-6 bg-[#361566] rounded-lg flex items-center justify-center">{children}</div>;
@@ -127,17 +127,39 @@ function Home() {
             </div>
 
             <div className="bg-[#FFFBF2]">
-                <SectionLabel text="SPONSORS AND PARTNERS" />
+                <SectionLabel text="EVENT SPONSORS" />
                 <div className="py-12 contained">
                     <div className="flex flex-wrap justify-center gap-8">
-                        {SponsorsLogo.map((sponsor, index) => (
+                        {EventSponsors.map((sponsor, index) => (
                             <Image key={index} src={sponsor.logo} alt={sponsor.name} className="max-w-[14rem] object-contain" />
                         ))}
                     </div>
                 </div>
             </div>
 
-            <div id="about" className="bg-[#FFFBF2]">
+            <div className="bg-[#FFFBF2]">
+                <SectionLabel text="COMMUNITY PARTNERS" />
+                <div className="py-12 contained">
+                    <div className="flex flex-wrap justify-center gap-8">
+                        {CommunityPartners.map((sponsor, index) => (
+                            <Image key={index} src={sponsor.logo} alt={sponsor.name} className="max-w-[14rem] object-contain" />
+                        ))}
+                    </div>
+                </div>
+            </div>
+
+            <div className="bg-[#FFFBF2]">
+                <SectionLabel text="MEDIA PARTNERS" />
+                <div className="py-12 contained">
+                    <div className="flex flex-wrap justify-center gap-8">
+                        {MediaPartners.map((sponsor, index) => (
+                            <Image key={index} src={sponsor.logo} alt={sponsor.name} className="max-w-[14rem] object-contain" />
+                        ))}
+                    </div>
+                </div>
+            </div>
+
+            <div id="about" className="">
                 <div className="contained pb-16">
                     <SectionLabel text="About Us" />
 
@@ -204,6 +226,35 @@ function Home() {
             <div id="speakers" className="py-12 pb-24">
                 <SectionLabel text="Keynote Speakers" />
                 <div className="contained mx-auto">
+                    {KeynoteSpeakers.length === 0 && (
+                        <h2 className="heading-2" style={{ WebkitTextStrokeWidth: 2, WebkitTextStrokeColor: "#D1A4FF" }}>
+                            WILL BE ANNOUNCED SOON
+                        </h2>
+                    )}
+                    <div className="grid grid-cols-4 gap-y-8 gap-x-6 place-items-center">
+                        {KeynoteSpeakers.map((speaker, index) => (
+                            <div
+                                style={{
+                                    backgroundImage: `url(${speaker.photo.src})`,
+                                    paddingTop: "100%", // This makes the height equal to the width
+                                    position: "relative",
+                                }}
+                                key={index}
+                                className="w-full rounded-md flex bg-cover bg-center col-span-4 md:col-span-2 lg:col-span-1 border border-[#361566] shadow-[3px_6px_0px_0px_#361566] hover:shadow-[3px_6px_0px_0px_#421683]"
+                            >
+                                <div className="font-helvetica-compressed uppercase text-[#361566]">
+                                    <h1 className="bg-[#FAD278] w-fit px-1.5 py-0.5 text-2xl">{speaker.name}</h1>
+                                    <p className="rounded-bl-md bg-[#FAD278] w-fit px-1.5 py-0.5 text-lg">{speaker.title}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+
+            <div id="speakers" className="py-12 pb-24">
+                <SectionLabel text="Speakers" />
+                <div className="contained mx-auto">
                     {Speakers.length === 0 && (
                         <h2 className="heading-2" style={{ WebkitTextStrokeWidth: 2, WebkitTextStrokeColor: "#D1A4FF" }}>
                             WILL BE ANNOUNCED SOON
@@ -211,6 +262,35 @@ function Home() {
                     )}
                     <div className="grid grid-cols-4 gap-y-8 gap-x-6 place-items-center">
                         {Speakers.map((speaker, index) => (
+                            <div
+                                style={{
+                                    backgroundImage: `url(${speaker.photo.src})`,
+                                    paddingTop: "100%", // This makes the height equal to the width
+                                    position: "relative",
+                                }}
+                                key={index}
+                                className="w-full rounded-md flex bg-cover bg-center col-span-4 md:col-span-2 lg:col-span-1 border border-[#361566] shadow-[3px_6px_0px_0px_#361566] hover:shadow-[3px_6px_0px_0px_#421683]"
+                            >
+                                <div className="font-helvetica-compressed uppercase text-[#361566]">
+                                    <h1 className="bg-[#FAD278] w-fit px-1.5 py-0.5 text-2xl">{speaker.name}</h1>
+                                    <p className="rounded-bl-md bg-[#FAD278] w-fit px-1.5 py-0.5 text-lg">{speaker.title}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+
+            <div id="speakers" className="py-12 pb-24 bg-[#F2FAFF]">
+                <SectionLabel text="Panelists" />
+                <div className="contained mx-auto">
+                    {Panelists.length === 0 && (
+                        <h2 className="heading-2" style={{ WebkitTextStrokeWidth: 2, WebkitTextStrokeColor: "#D1A4FF" }}>
+                            WILL BE ANNOUNCED SOON
+                        </h2>
+                    )}
+                    <div className="grid grid-cols-4 gap-y-8 gap-x-6 place-items-center">
+                        {Panelists.map((speaker, index) => (
                             <div
                                 style={{
                                     backgroundImage: `url(${speaker.photo.src})`,
