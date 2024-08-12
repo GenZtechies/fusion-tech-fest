@@ -224,15 +224,15 @@ function Home() {
             </div>
 
             <div id="speakers" className="py-12 pb-24">
-                <SectionLabel text="Panelists" />
+                <SectionLabel text="Keynote Speakers" />
                 <div className="contained mx-auto">
-                    {Panelists.length === 0 && (
+                    {KeynoteSpeakers.length === 0 && (
                         <h2 className="heading-2" style={{ WebkitTextStrokeWidth: 2, WebkitTextStrokeColor: "#D1A4FF" }}>
                             WILL BE ANNOUNCED SOON
                         </h2>
                     )}
                     <div className="grid grid-cols-4 gap-y-8 gap-x-6 place-items-center">
-                        {Panelists.map((speaker, index) => (
+                        {KeynoteSpeakers.map((speaker, index) => (
                             <div
                                 style={{
                                     backgroundImage: `url(${speaker.photo.src})`,
@@ -253,15 +253,15 @@ function Home() {
             </div>
 
             <div id="speakers" className="py-12 pb-24">
-                <SectionLabel text="Keynote Speakers" />
+                <SectionLabel text="Panelists" />
                 <div className="contained mx-auto">
-                    {KeynoteSpeakers.length === 0 && (
+                    {Panelists.length === 0 && (
                         <h2 className="heading-2" style={{ WebkitTextStrokeWidth: 2, WebkitTextStrokeColor: "#D1A4FF" }}>
                             WILL BE ANNOUNCED SOON
                         </h2>
                     )}
                     <div className="grid grid-cols-4 gap-y-8 gap-x-6 place-items-center">
-                        {KeynoteSpeakers.map((speaker, index) => (
+                        {Panelists.map((speaker, index) => (
                             <div
                                 style={{
                                     backgroundImage: `url(${speaker.photo.src})`,
@@ -309,7 +309,6 @@ function Home() {
                     </div>
                 </div>
             </div>
-
 
             <div id="judges" className="bg-[#F2FAFF] py-12">
                 <SectionLabel text="Judges" />
