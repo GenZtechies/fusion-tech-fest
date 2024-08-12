@@ -224,6 +224,35 @@ function Home() {
             </div>
 
             <div id="speakers" className="py-12 pb-24">
+                <SectionLabel text="Panelists" />
+                <div className="contained mx-auto">
+                    {Panelists.length === 0 && (
+                        <h2 className="heading-2" style={{ WebkitTextStrokeWidth: 2, WebkitTextStrokeColor: "#D1A4FF" }}>
+                            WILL BE ANNOUNCED SOON
+                        </h2>
+                    )}
+                    <div className="grid grid-cols-4 gap-y-8 gap-x-6 place-items-center">
+                        {Panelists.map((speaker, index) => (
+                            <div
+                                style={{
+                                    backgroundImage: `url(${speaker.photo.src})`,
+                                    paddingTop: "100%", // This makes the height equal to the width
+                                    position: "relative",
+                                }}
+                                key={index}
+                                className="w-full rounded-md flex bg-cover bg-center col-span-4 md:col-span-2 lg:col-span-1 border border-[#361566] shadow-[3px_6px_0px_0px_#361566] hover:shadow-[3px_6px_0px_0px_#421683]"
+                            >
+                                <div className="font-helvetica-compressed uppercase text-[#361566]">
+                                    <h1 className="bg-[#FAD278] w-fit px-1.5 py-0.5 text-2xl">{speaker.name}</h1>
+                                    <p className="rounded-bl-md bg-[#FAD278] w-fit px-1.5 py-0.5 text-lg">{speaker.title}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+
+            <div id="speakers" className="py-12 pb-24">
                 <SectionLabel text="Keynote Speakers" />
                 <div className="contained mx-auto">
                     {KeynoteSpeakers.length === 0 && (
@@ -252,7 +281,7 @@ function Home() {
                 </div>
             </div>
 
-            <div id="speakers" className="py-12 pb-24">
+            <div id="speakers" className="py-12 pb-24 bg-[#F2FAFF]">
                 <SectionLabel text="Speakers" />
                 <div className="contained mx-auto">
                     {Speakers.length === 0 && (
@@ -281,34 +310,6 @@ function Home() {
                 </div>
             </div>
 
-            <div id="speakers" className="py-12 pb-24 bg-[#F2FAFF]">
-                <SectionLabel text="Panelists" />
-                <div className="contained mx-auto">
-                    {Panelists.length === 0 && (
-                        <h2 className="heading-2" style={{ WebkitTextStrokeWidth: 2, WebkitTextStrokeColor: "#D1A4FF" }}>
-                            WILL BE ANNOUNCED SOON
-                        </h2>
-                    )}
-                    <div className="grid grid-cols-4 gap-y-8 gap-x-6 place-items-center">
-                        {Panelists.map((speaker, index) => (
-                            <div
-                                style={{
-                                    backgroundImage: `url(${speaker.photo.src})`,
-                                    paddingTop: "100%", // This makes the height equal to the width
-                                    position: "relative",
-                                }}
-                                key={index}
-                                className="w-full rounded-md flex bg-cover bg-center col-span-4 md:col-span-2 lg:col-span-1 border border-[#361566] shadow-[3px_6px_0px_0px_#361566] hover:shadow-[3px_6px_0px_0px_#421683]"
-                            >
-                                <div className="font-helvetica-compressed uppercase text-[#361566]">
-                                    <h1 className="bg-[#FAD278] w-fit px-1.5 py-0.5 text-2xl">{speaker.name}</h1>
-                                    <p className="rounded-bl-md bg-[#FAD278] w-fit px-1.5 py-0.5 text-lg">{speaker.title}</p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </div>
 
             <div id="judges" className="bg-[#F2FAFF] py-12">
                 <SectionLabel text="Judges" />

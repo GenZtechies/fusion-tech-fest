@@ -10,6 +10,7 @@ import JetBrains from "../../public/images/sponsors/jetbrains.png";
 import CouchBase from "../../public/images/sponsors/couchbase.png";
 import TheGarage from "../../public/images/sponsors/the-garage.png";
 import EmpowerHer from "../../public/images/sponsors/empower-her.jpg";
+import Terrahaptix from "../../public/images/sponsors/terrahaptix.jpg";
 import TechMoonShot from "../../public/images/sponsors/tech-moon-shot.png";
 import ProductBuddies from "../../public/images/sponsors/product-buddies.jpg";
 import DesignWithRooks from "../../public/images/sponsors/design-with-rooks.png";
@@ -27,19 +28,21 @@ import GalleryItem5 from "../../public/images/gallery/gallery-5.jpg";
 import GalleryItem6 from "../../public/images/gallery/gallery-6.jpg";
 import GalleryItem7 from "../../public/images/gallery/gallery-7.jpg";
 
-import KanayoUzo from "../../public/images/speakers-judges/kanayo-uzo.jpg";
-import OsitaJames from "../../public/images/speakers-judges/osita-james.jpg";
-import DavidIjaola from "../../public/images/speakers-judges/david-ijaola.jpeg";
-import OrimDominic from "../../public/images/speakers-judges/orim-dominic.jpg";
-import ChiomaJudith from "../../public/images/speakers-judges/chioma-judith.jpg";
-import SodiqAkinjobi from "../../public/images/speakers-judges/sodiq-akinjobi.jpg";
-import NmesomaOkonkwo from "../../public/images/speakers-judges/nmesoma-okonkwo.png";
-import AdeolaOderinde from "../../public/images/speakers-judges/adeola-oderinde.jpg";
-import PreciousOdahunsi from "../../public/images/speakers-judges/precious-odahunsi.jpg";
-import OdehBlessingAsia from "../../public/images/speakers-judges/odeh-blessing-asia.jpg";
-import KenechukwuNwankwo from "../../public/images/speakers-judges/kenechukwu-nwankwo.png";
-import DonaldsonChineduOkoye from "../../public/images/speakers-judges/donaldson-chinedu-okoye.jpg";
-import OmotosoDolapoOreoluwa from "../../public/images/speakers-judges/omotoso-dolapo-oreoluwa.jpg";
+import KanayoUzo from "../../public/images/speakers/kanayo-uzo.jpg";
+import OsitaJames from "../../public/images/speakers/osita-james.jpg";
+import DavidIjaola from "../../public/images/speakers/david-ijaola.jpeg";
+import OrimDominic from "../../public/images/speakers/orim-dominic.jpg";
+import ChiomaJudith from "../../public/images/speakers/chioma-judith.jpg";
+import SodiqAkinjobi from "../../public/images/speakers/sodiq-akinjobi.jpg";
+import NmesomaOkonkwo from "../../public/images/speakers/nmesoma-okonkwo.png";
+import AdeolaOderinde from "../../public/images/speakers/adeola-oderinde.jpg";
+import PreciousOdahunsi from "../../public/images/speakers/precious-odahunsi.jpg";
+import OdehBlessingAsia from "../../public/images/speakers/odeh-blessing-asia.jpg";
+import KenechukwuNwankwo from "../../public/images/speakers/kenechukwu-nwankwo.png";
+import DonaldsonChineduOkoye from "../../public/images/speakers/donaldson-chinedu-okoye.jpg";
+import OmotosoDolapoOreoluwa from "../../public/images/speakers/omotoso-dolapo-oreoluwa.jpg";
+
+import AdekunleKadri from "../../public/images/judges/adekunle-kadri.jpeg";
 
 export const GalleryItems = [
     { name: "Gallery Item 1", image: GalleryItem1 },
@@ -54,6 +57,7 @@ export const GalleryItems = [
 export const EventSponsors = [
     { name: "AWS", logo: AWS },
     { name: "JetBrains", logo: JetBrains },
+    { name: "Terrahaptix", logo: Terrahaptix },
     { name: "Tuliban", logo: Tuliban },
     { name: "Inside The Tech Ecosystem", logo: InsideTheTechEcoSystem },
 ];
@@ -96,7 +100,7 @@ export const Panelists: { name: string; title: string; photo: StaticImageData }[
     { name: "Odeh B. Asia", title: "Brand Designer & Communications Strategist", photo: OdehBlessingAsia },
 ];
 
-export const Judges: { name: string; title: string; photo: StaticImageData }[] = [];
+export const Judges: { name: string; title: string; photo: StaticImageData }[] = [{ name: "Adekunle Kadri", title: "Head of Product Analytics, Access Bank Plc", photo: AdekunleKadri }];
 
 export const FaqTabs = [
     { name: "General", id: "general" },
