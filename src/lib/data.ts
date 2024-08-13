@@ -42,7 +42,9 @@ import KenechukwuNwankwo from "../../public/images/speakers/kenechukwu-nwankwo.p
 import DonaldsonChineduOkoye from "../../public/images/speakers/donaldson-chinedu-okoye.jpg";
 import OmotosoDolapoOreoluwa from "../../public/images/speakers/omotoso-dolapo-oreoluwa.jpg";
 
+import MaxwellMaduka from "../../public/images/judges/maxwell-maduka.jpg";
 import AdekunleKadri from "../../public/images/judges/adekunle-kadri.jpeg";
+import BabatundeHammed from "../../public/images/judges/babatunde-hammed.jpg";
 
 export const GalleryItems = [
     { name: "Gallery Item 1", image: GalleryItem1 },
@@ -100,7 +102,11 @@ export const Panelists: { name: string; title: string; photo: StaticImageData }[
     { name: "Odeh B. Asia", title: "Brand Designer & Communications Strategist", photo: OdehBlessingAsia },
 ];
 
-export const Judges: { name: string; title: string; photo: StaticImageData }[] = [{ name: "Adekunle Kadri", title: "Head of Product Analytics, Access Bank Plc", photo: AdekunleKadri }];
+export const Judges: { name: string; title: string; photo: StaticImageData }[] = [
+    { name: "Adekunle Kadri", title: "Head of Product Analytics, Access Bank Plc", photo: AdekunleKadri },
+    { name: "Maxwell Maduka", title: "Co-Founder and CTO, Terrahaptix", photo: MaxwellMaduka },
+    { name: "Babatunde Hammed", title: "Head of Operations, ChiMoney", photo: BabatundeHammed },
+];
 
 export const FaqTabs = [
     { name: "General", id: "general" },
