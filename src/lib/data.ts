@@ -42,8 +42,12 @@ import KenechukwuNwankwo from "../../public/images/speakers/kenechukwu-nwankwo.p
 import DonaldsonChineduOkoye from "../../public/images/speakers/donaldson-chinedu-okoye.jpg";
 import OmotosoDolapoOreoluwa from "../../public/images/speakers/omotoso-dolapo-oreoluwa.jpg";
 
+import VeliswaBoya from "../../public/images/judges/veliswa-boya.jpeg";
+import CurtisEvans from "../../public/images/judges/curtis-evans.jpeg";
+import ToluKalejaiye from "../../public/images/judges/tolu-kalejaiye.jpg";
 import MaxwellMaduka from "../../public/images/judges/maxwell-maduka.jpg";
 import AdekunleKadri from "../../public/images/judges/adekunle-kadri.jpeg";
+import NgwubePrecious from "../../public/images/judges/ngwube-precious.jpg";
 import BabatundeHammed from "../../public/images/judges/babatunde-hammed.jpg";
 
 export const GalleryItems = [
@@ -106,6 +110,10 @@ export const Judges: { name: string; title: string; photo: StaticImageData }[] =
     { name: "Adekunle Kadri", title: "Head of Product Analytics, Access Bank Plc", photo: AdekunleKadri },
     { name: "Maxwell Maduka", title: "Co-Founder and CTO, Terrahaptix", photo: MaxwellMaduka },
     { name: "Babatunde Hammed", title: "Head of Operations, ChiMoney", photo: BabatundeHammed },
+    { name: "Veliswa Boya", title: "Product Manager at Google", photo: VeliswaBoya },
+    { name: "Tolu Kalejaiye", title: "Product Manager at Paystack", photo: ToluKalejaiye },
+    { name: "Curtis Evans", title: "Product Manager at Microsoft", photo: CurtisEvans },
+    { name: "Ngwube Precious", title: "Product Manager at Flutterwave", photo: NgwubePrecious },
 ];
 
 export const FaqTabs = [
@@ -128,7 +136,7 @@ export const Faqs = [
     {
         title: "What are the different stages?",
         content:
-            "The hackathon consists of three main stages: 1) Idea Submission: Teams submit their project ideas and initial plans. 2) Development Phase: Teams work on their projects, with access to mentorship and resources. 3) Final Presentation: Teams present their finished products to a panel of judges who evaluate based on creativity, feasibility, and impact.",
+            "The hackathon consists of three main stages: 1) Workshops & Mentorship Sessions : Teams attend the workshops and mentorship sessions to learn about toolings and resource 2) Development Phase: Teams work on their projects, with access to mentorship and resources. 3) Final Presentation: Teams present their finished products to a panel of judges who evaluate based on creativity, feasibility, and impact.",
         tab: "hackathon",
     },
     {
