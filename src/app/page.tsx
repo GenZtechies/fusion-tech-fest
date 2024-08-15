@@ -101,7 +101,7 @@ function Home() {
                                 </IconWrapper>
 
                                 <p className="font-helvetica-compressed tracking-wider sm:text-sm md:text-base lg:text-xl text-[#361566] leading-5">
-                                    26th - 31st <br /> August, 2024
+                                    20th - 31st <br /> August, 2024
                                 </p>
                             </div>
 

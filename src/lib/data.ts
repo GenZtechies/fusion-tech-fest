@@ -170,14 +170,14 @@ export const Faqs = [
 ];
 
 export const EventScheduleList = [
-    { date: "26th to 30th", fullDate: "August, 2024", event: "HYBRID HACKATHON", details: "This is a week-long collaborative event where developers and people in tech across Africa and beyond come together to build innovative solutions to local & global problems.", startTime: "09:00", endTime: "17:00" },
+    { date: "20th to 30th", fullDate: "August, 2024", event: "HYBRID HACKATHON", details: "This is a week-long collaborative event where developers and people in tech across Africa and beyond come together to build innovative solutions to local & global problems.", startTime: "09:00", endTime: "17:00" },
     { date: "31st", fullDate: "August, 2024", event: "PANEL SESSION", details: " This session brings together industry experts, thought leaders, and professionals to discuss relevant topics, trends, and challenges in the tech industry.", startTime: "09:00", endTime: "17:00" },
     { date: "31st", fullDate: "August, 2024", event: "KEYNOTE/SPEAKING SESSION", details: "These sessions feature keynote presentations from industry experts and general talks by thought leaders in their respective industries.", startTime: "09:00", endTime: "17:00" },
     { date: "31st", fullDate: "August, 2024", event: "PRODUCT SHOWCASE", details: "This showcase is a session where participants can present their ideas, prototypes or demos of disruptive solutions addressing a wide range of domain problems in their communities.", startTime: "09:00", endTime: "17:00" },
 ];
 
 export const EventDaysList = [
-    { date: "26th", fullDate: "August, 2024", event: "HACKATHON STARTS" },
+    { date: "20th", fullDate: "August, 2024", event: "HACKATHON STARTS" },
     { date: "30th", fullDate: "August, 2024", event: "HACKATHON ENDS" },
     { date: "31st", fullDate: "August, 2024", event: "CONFERENCE DAY" },
 ];
