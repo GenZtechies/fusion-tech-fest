@@ -110,10 +110,10 @@ export const Judges: { name: string; title: string; photo: StaticImageData }[] =
     { name: "Adekunle Kadri", title: "Head of Product Analytics, Access Bank Plc", photo: AdekunleKadri },
     { name: "Maxwell Maduka", title: "Co-Founder and CTO, Terrahaptix", photo: MaxwellMaduka },
     { name: "Babatunde Hammed", title: "Head of Operations, ChiMoney", photo: BabatundeHammed },
-    { name: "Veliswa Boya", title: "Product Manager at Google", photo: VeliswaBoya },
-    { name: "Tolu Kalejaiye", title: "Product Manager at Paystack", photo: ToluKalejaiye },
-    { name: "Curtis Evans", title: "Product Manager at Microsoft", photo: CurtisEvans },
-    { name: "Ngwube Precious", title: "Product Manager at Flutterwave", photo: NgwubePrecious },
+    { name: "Veliswa Boya", title: "Senior Developer Advocate, AWS", photo: VeliswaBoya },
+    { name: "Tolu Kalejaiye", title: "Developer Relations, Paystack", photo: ToluKalejaiye },
+    { name: "Curtis Evans", title: "Principal Developer Advocate, AWS", photo: CurtisEvans },
+    { name: "Precious Ngwube", title: "Developer Community Manager, Tublian", photo: NgwubePrecious },
 ];
 
 export const FaqTabs = [
