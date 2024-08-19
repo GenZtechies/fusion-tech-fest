@@ -16,9 +16,11 @@ import ProductBuddies from "../../public/images/sponsors/product-buddies.jpg";
 import DesignWithRooks from "../../public/images/sponsors/design-with-rooks.png";
 import PeopleInProduct from "../../public/images/sponsors/people-in-product.jpg";
 import MarketersTherapy from "../../public/images/sponsors/marketers-therapy.jpg";
+import TechiesOnLinkedin from "../../public/images/sponsors/techies-on-linkedin.png";
 import CommunityLeadsAfrica from "../../public/images/sponsors/community-leads-africa.png";
 import TheUnseriousTechShow from "../../public/images/sponsors/the-unserious-tech-show.png";
 import InsideTheTechEcoSystem from "../../public/images/sponsors/inside-the-tech-ecosystem.jpg";
+import MentorshipForAcceleration from "../../public/images/sponsors/mentorship-for-acceleration.png";
 
 import GalleryItem1 from "../../public/images/gallery/gallery-1.png";
 import GalleryItem2 from "../../public/images/gallery/gallery-2.png";
@@ -79,6 +81,8 @@ export const CommunityPartners = [
     { name: "APMP", logo: APMP },
     { name: "Product Buddies", logo: ProductBuddies },
     { name: "Tech Noobs", logo: TechNoob },
+    { name: "Techies On Linkedin", logo: TechiesOnLinkedin },
+    { name: "Mentorship For Acceleration", logo: MentorshipForAcceleration },
 ];
 
 export const MediaPartners = [
