@@ -3,11 +3,13 @@ import { StaticImageData } from "next/image";
 import AWS from "../../public/images/sponsors/aws.png";
 import APMP from "../../public/images/sponsors/apmp.png";
 import NTIT from "../../public/images/sponsors/ntit.png";
+import Pallax from "../../public/images/sponsors/pallax.png";
 import Tuliban from "../../public/images/sponsors/tuliban.png";
+import KoraPay from "../../public/images/sponsors/korapay.jpeg";
 import Paystack from "../../public/images/sponsors/paystack.png";
 import TechNoob from "../../public/images/sponsors/tech-noob.jpg";
 import JetBrains from "../../public/images/sponsors/jetbrains.png";
-import CouchBase from "../../public/images/sponsors/couchbase.png";
+import WixStudio from "../../public/images/sponsors/wix-studio.png";
 import TheGarage from "../../public/images/sponsors/the-garage.png";
 import EmpowerHer from "../../public/images/sponsors/empower-her.jpg";
 import Terrahaptix from "../../public/images/sponsors/terrahaptix.jpg";
@@ -64,9 +66,13 @@ export const GalleryItems = [
 
 export const EventSponsors = [
     { name: "AWS", logo: AWS },
-    { name: "JetBrains", logo: JetBrains },
+    { name: "Paystack", logo: Paystack },
+    { name: "Wix Studio", logo: WixStudio },
+    { name: "KoraPay", logo: KoraPay },
     { name: "Terrahaptix", logo: Terrahaptix },
+    { name: "Pallax", logo: Pallax },
     { name: "Tuliban", logo: Tuliban },
+    { name: "JetBrains", logo: JetBrains },
     { name: "Inside The Tech Ecosystem", logo: InsideTheTechEcoSystem },
 ];
 
