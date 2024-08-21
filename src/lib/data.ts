@@ -151,7 +151,7 @@ export const Faqs = [
     },
     {
         title: "Who is this event for?",
-        content: "Fusion Tech Fest is for Gen Z developers, founders, designers, tech enthusiasts, marketers, product managers, and community builders across Africa. Whether you are a student, early-career professional, or seasoned expert, this event offers something for everyone passionate about technology and innovation.",
+        content: "Fusion Tech Fest is for developers, founders, designers, tech enthusiasts, marketers, product managers, and community builders across Africa. Whether you are a student, early-career professional, or seasoned expert, this event offers something for everyone passionate about technology and innovation.",
         tab: "general",
     },
     {
