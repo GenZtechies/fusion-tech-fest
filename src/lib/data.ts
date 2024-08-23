@@ -2,10 +2,10 @@ import { StaticImageData } from "next/image";
 
 import AWS from "../../public/images/sponsors/aws.png";
 import APMP from "../../public/images/sponsors/apmp.png";
+import Kora from "../../public/images/sponsors/kora.png";
 import NTIT from "../../public/images/sponsors/ntit.png";
 import Pallax from "../../public/images/sponsors/pallax.png";
 import Tuliban from "../../public/images/sponsors/tuliban.png";
-import KoraPay from "../../public/images/sponsors/korapay.jpeg";
 import Paystack from "../../public/images/sponsors/paystack.png";
 import TechNoob from "../../public/images/sponsors/tech-noob.jpg";
 import JetBrains from "../../public/images/sponsors/jetbrains.png";
@@ -68,7 +68,7 @@ export const EventSponsors = [
     { name: "AWS", logo: AWS },
     { name: "Paystack", logo: Paystack },
     { name: "Wix Studio", logo: WixStudio },
-    { name: "KoraPay", logo: KoraPay },
+    { name: "Kora", logo: Kora },
     { name: "Terrahaptix", logo: Terrahaptix },
     { name: "Pallax", logo: Pallax },
     { name: "Tuliban", logo: Tuliban },

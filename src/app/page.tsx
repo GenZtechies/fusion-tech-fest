@@ -113,6 +113,7 @@ function Home() {
 
                             <div className="flex items-center gap-2.5">
                                 <IconWrapper>
+
                                     <LocationIcon className="text-white" />
                                 </IconWrapper>
 
