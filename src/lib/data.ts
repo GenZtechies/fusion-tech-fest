@@ -10,6 +10,7 @@ import Paystack from "../../public/images/sponsors/paystack.png";
 import TechNoob from "../../public/images/sponsors/tech-noob.jpg";
 import JetBrains from "../../public/images/sponsors/jetbrains.png";
 import WixStudio from "../../public/images/sponsors/wix-studio.png";
+import BuildHubb from "../../public/images/sponsors/build-hubb.jpg";
 import TheGarage from "../../public/images/sponsors/the-garage.png";
 import EmpowerHer from "../../public/images/sponsors/empower-her.jpg";
 import Terrahaptix from "../../public/images/sponsors/terrahaptix.jpg";
@@ -83,6 +84,7 @@ export const CommunityPartners = [
     { name: "Empower Her", logo: EmpowerHer },
     { name: "The Garage", logo: TheGarage },
     { name: "Marketers Therapy", logo: MarketersTherapy },
+    { name: "BuildHubb", logo: BuildHubb },
     { name: "Community Leads Africa", logo: CommunityLeadsAfrica },
     { name: "APMP", logo: APMP },
     { name: "Product Buddies", logo: ProductBuddies },
