@@ -47,6 +47,7 @@ import KenechukwuNwankwo from "../../public/images/speakers/kenechukwu-nwankwo.p
 import DonaldsonChineduOkoye from "../../public/images/speakers/donaldson-chinedu-okoye.jpg";
 import OmotosoDolapoOreoluwa from "../../public/images/speakers/omotoso-dolapo-oreoluwa.jpg";
 
+import EmmyCao from "../../public/images/judges/emmy-cao.png";
 import VeliswaBoya from "../../public/images/judges/veliswa-boya.jpeg";
 import CurtisEvans from "../../public/images/judges/curtis-evans.jpeg";
 import ToluKalejaiye from "../../public/images/judges/tolu-kalejaiye.jpg";
@@ -126,6 +127,7 @@ export const Judges: { name: string; title: string; photo: StaticImageData }[] =
     { name: "Tolu Kalejaiye", title: "Developer Relations, Paystack", photo: ToluKalejaiye },
     { name: "Curtis Evans", title: "Principal Developer Advocate, AWS", photo: CurtisEvans },
     { name: "Precious Ngwube", title: "Developer Community Manager, Tublian", photo: NgwubePrecious },
+    { name: "Emmy Cao", title: "Developer Advocate, Wix Studio", photo: EmmyCao },
 ];
 
 export const FaqTabs = [
