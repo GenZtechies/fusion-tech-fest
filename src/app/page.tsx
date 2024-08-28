@@ -25,7 +25,7 @@ import XTwitterIconAlt from "@/components/svg-icons/x-twitter-icon-alt";
 import InstagramIconAlt from "@/components/svg-icons/instagram-icon-alt";
 import ArrowRightCircleFilledIcon from "@/components/svg-icons/arrow-right-circle-filled-icon";
 import { Carousel, CarouselItem, CarouselContent, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
-import { Speakers, GalleryItems, EventScheduleList, EventDaysList, Faqs, FaqTabs, Judges, CommunityPartners, EventSponsors, MediaPartners, KeynoteSpeakers, Panelists } from "@/lib/data";
+import { Speakers, GalleryItems, Hosts, EventScheduleList, EventDaysList, Faqs, FaqTabs, Judges, CommunityPartners, EventSponsors, MediaPartners, KeynoteSpeakers, Panelists } from "@/lib/data";
 
 function IconWrapper({ children }: { children: React.ReactNode }) {
     return <div className="w-6 h-6 bg-[#361566] rounded-lg flex items-center justify-center">{children}</div>;
@@ -218,6 +218,35 @@ function Home() {
 
                                 <h2 className="font-helvetica-compressed text-[#361566] mt-4 md:mt-4 lg:mt-0 text-3xl col-span-2 md:col-span-1 md:max-w-[225px] md:w-[225px]">{item.event}</h2>
                                 <p className="text-[#361566] text-base col-span-2 md:col-span-1 mt-0 md:mt-4 lg:mt-0">{item.details}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+
+            <div id="Host" className="py-12 pb-24">
+                <SectionLabel text="Hosts" />
+                <div className="contained mx-auto">
+                    {Hosts.length === 0 && (
+                        <h2 className="heading-2" style={{ WebkitTextStrokeWidth: 2, WebkitTextStrokeColor: "#D1A4FF" }}>
+                            WILL BE ANNOUNCED SOON
+                        </h2>
+                    )}
+                    <div className="grid grid-cols-4 gap-y-8 gap-x-6 place-items-center">
+                        {Hosts.map((speaker, index) => (
+                            <div
+                                style={{
+                                    backgroundImage: `url(${speaker.photo.src})`,
+                                    paddingTop: "100%", // This makes the height equal to the width
+                                    position: "relative",
+                                }}
+                                key={index}
+                                className="w-full rounded-md flex bg-cover bg-center col-span-4 md:col-span-2 lg:col-span-1 border border-[#361566] shadow-[3px_6px_0px_0px_#361566] hover:shadow-[3px_6px_0px_0px_#421683]"
+                            >
+                                <div className="font-helvetica-compressed uppercase text-[#361566]">
+                                    <h1 className="bg-[#FAD278] w-fit px-1.5 py-0.5 text-2xl">{speaker.name}</h1>
+                                    <p className="rounded-bl-md bg-[#FAD278] w-fit px-1.5 py-0.5 text-lg">{speaker.title}</p>
+                                </div>
                             </div>
                         ))}
                     </div>

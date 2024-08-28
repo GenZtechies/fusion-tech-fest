@@ -33,11 +33,16 @@ import GalleryItem5 from "../../public/images/gallery/gallery-5.jpg";
 import GalleryItem6 from "../../public/images/gallery/gallery-6.jpg";
 import GalleryItem7 from "../../public/images/gallery/gallery-7.jpg";
 
+import FelixBissong from "../../public/images/hosts/felix-bissong.jpg";
+import ShalomAdebola from "../../public/images/hosts/shalom-adebola.jpg";
+import OluwatoyinAkande from "../../public/images/hosts/oluwatoyin-akande.jpg";
+
 import KanayoUzo from "../../public/images/speakers/kanayo-uzo.jpg";
 import OsitaJames from "../../public/images/speakers/osita-james.jpg";
 import DavidIjaola from "../../public/images/speakers/david-ijaola.jpeg";
 import OrimDominic from "../../public/images/speakers/orim-dominic.jpg";
 import ChiomaJudith from "../../public/images/speakers/chioma-judith.jpg";
+import PeaceObinani from "../../public/images/speakers/peace-obinani.jpg";
 import SodiqAkinjobi from "../../public/images/speakers/sodiq-akinjobi.jpg";
 import NmesomaOkonkwo from "../../public/images/speakers/nmesoma-okonkwo.png";
 import AdeolaOderinde from "../../public/images/speakers/adeola-oderinde.jpg";
@@ -99,7 +104,16 @@ export const MediaPartners = [
     { name: "The Unserious Tech Show", logo: TheUnseriousTechShow },
 ];
 
-export const KeynoteSpeakers: { name: string; title: string; photo: StaticImageData }[] = [{ name: "Sodiq Akinjobi", title: "Developer Ecosystem Community Manager, Google", photo: SodiqAkinjobi }];
+export const Hosts: { name: string; title: string; photo: StaticImageData }[] = [
+    { name: "Shalom Adebola", title: "Host/Product Designer", photo: ShalomAdebola },
+    { name: "Oluwatoyin Akande", title: "Co-Host/Digital Media Specialist", photo: OluwatoyinAkande },
+    { name: "Felix Bissong (TheGenzHR)", title: "Panel Moderator/Recruiter and HR professional", photo: FelixBissong },
+];
+
+export const KeynoteSpeakers: { name: string; title: string; photo: StaticImageData }[] = [
+    { name: "Sodiq Akinjobi", title: "Developer Ecosystem Community Manager, Google", photo: SodiqAkinjobi },
+    { name: "Peace Obinani", title: "Founder, Non-tech In Tech", photo: PeaceObinani },
+];
 
 export const Speakers: { name: string; title: string; photo: StaticImageData }[] = [
     { name: "Kanayo Uzo", title: "Brand Designer at Belonwus", photo: KanayoUzo },
