@@ -105,7 +105,7 @@ export const MediaPartners = [
 ];
 
 export const Hosts: { name: string; title: string; photo: StaticImageData }[] = [
-    { name: "Shalom Adebola", title: "Host/Product Designer", photo: ShalomAdebola },
+    { name: "Shalom Adebola", title: "Co-Host/Product Designer", photo: ShalomAdebola },
     { name: "Oluwatoyin Akande", title: "Co-Host/Digital Media Specialist", photo: OluwatoyinAkande },
     { name: "Felix Bissong (TheGenzHR)", title: "Panel Moderator/Recruiter and HR professional", photo: FelixBissong },
 ];
