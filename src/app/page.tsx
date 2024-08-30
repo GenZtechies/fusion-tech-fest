@@ -73,23 +73,28 @@ function Home() {
                         <div className="w-fit">
                             <Button
                                 onClick={() => {
-                                    window.open("https://bit.ly/3z5winx", "_blank");
+                                    window.open("https://bit.ly/4g566KM", "_blank");
                                 }}
                                 size={"lg"}
                             >
-                                Register For Hackathon <ArrowRightCircleFilledIcon className="ml-2" />
+                                Watch Online <ArrowRightCircleFilledIcon className="ml-2" />
                             </Button>
                         </div>
-                        <div className="w-fit">
-                            <Button
-                                onClick={() => {
-                                    window.open("https://forms.gle/HZUdwfvv9c71RK7P7", "_blank");
-                                }}
-                                size={"lg"}
-                            >
-                                Register For Product Showcase <ArrowRightCircleFilledIcon className="ml-2" />
-                            </Button>
-                        </div>
+                        {
+                            /*
+                            <div className="w-fit">
+                                <Button
+                                    onClick={() => {
+                                        window.open("https://forms.gle/HZUdwfvv9c71RK7P7", "_blank");
+                                    }}
+                                    size={"lg"}
+                                >
+                                    Register For Product Showcase <ArrowRightCircleFilledIcon className="ml-2" />
+                                </Button>
+                            </div>
+                            */
+                        }
+
                     </div>
 
                     <div className="hero-card w-full lg:w-4/5 mt-28">
