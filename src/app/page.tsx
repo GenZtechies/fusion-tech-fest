@@ -73,7 +73,7 @@ function Home() {
                         <div className="w-fit">
                             <Button
                                 onClick={() => {
-                                    window.open("https://bit.ly/4g566KM", "_blank");
+                                    window.open("https://bit.ly/4g3Fvh9", "_blank");
                                 }}
                                 size={"lg"}
                             >
